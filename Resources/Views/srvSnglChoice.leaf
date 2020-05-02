@@ -1,0 +1,7 @@
+#extend("index"):
+    #export("body"):
+        <h1>#(index.title)</h1>
+        <p>#(page.content)</p>
+        <h1>Display Radio Buttons</h1>
+    #endexport
+#endextend
