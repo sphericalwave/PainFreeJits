@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Question 2</title>
+    <title>LandingPg</title>
     <meta name="description" content="#(index.description)">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -18,7 +18,10 @@
         <br>
         <p>Click the Button Below to start the Survey.</p>
         <br>
-        <button type="submit" class="btn btn-primary">Yes, Tell Me What to Do Next</button>
+        
+        <form action="" method="post">
+            <button type="submit" class="btn btn-primary">Yes, Tell Me What to Do Next</button>
+        </form>
                     
         <img src="/images/sw_logo.png" alt="sw_logo"/>
         </div>

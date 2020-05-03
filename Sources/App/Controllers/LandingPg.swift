@@ -6,7 +6,6 @@
 //
 
 import Foundation
-//import Fluent
 import Vapor
 
 class LandingPg: RouteCollection
@@ -20,10 +19,8 @@ class LandingPg: RouteCollection
         return req.view.render("landingPg")
     }
     
-    func startSurvey(req: Request) -> HTTPStatus {
-        //print("Persist Answer to Session")
-        //fatalError()
-        print("postAnswer: \(req.headers.description)")
-        return .ok
+    func startSurvey(req: Request) -> Response {
+        print("LandingPg: \(req.headers.description)")
+        return req.redirect(to: "/question2")
     }
 }
