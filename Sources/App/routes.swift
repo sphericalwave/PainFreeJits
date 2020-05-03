@@ -16,10 +16,9 @@ func routes(_ app: Application) throws
         return req.view.render("srvSnglChoice", context)
     }
     
-    app.get("question2") { req -> EventLoopFuture<View> in
-        return req.view.render("question2")
-    }
-    
+    let q2 = Question2()
+    try! app.register(collection: q2)
+
     app.get("hello") { req in return "Hello, Aaron!" }
     
     let todoController = TodoController()
