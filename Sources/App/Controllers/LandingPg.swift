@@ -21,6 +21,20 @@ class LandingPg: RouteCollection
     
     func startSurvey(req: Request) -> Response {
         print("LandingPg: \(req.headers.description)")
-        return req.redirect(to: "/question2")
+        return req.redirect(to: "/question1")
+    }
+}
+
+import Foundation
+import Vapor
+
+class HelloPg: RouteCollection
+{
+    func boot(routes: RoutesBuilder) throws {
+        routes.get("hello", use: webpage(req:))
+    }
+    
+    func webpage(req: Request) -> EventLoopFuture<View> {
+        return req.view.render("helloPg")
     }
 }

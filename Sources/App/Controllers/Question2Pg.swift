@@ -8,18 +8,18 @@
 import Fluent
 import Vapor
 
-class Question2: RouteCollection
+class Question2Pg: RouteCollection
 {
     func boot(routes: RoutesBuilder) throws {
         routes.get("question2", use: webpage(req:))
-        routes.post("question2", use: postAnswer(req:))
+        routes.post("question2", use: nextPg(req:))
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
         return req.view.render("question2")
     }
     
-    func postAnswer(req: Request) -> HTTPStatus {
+    func nextPg(req: Request) -> HTTPStatus {
         print("Persist Answer to Session")
         print("postAnswer: \(req.headers.description)")
         return .ok

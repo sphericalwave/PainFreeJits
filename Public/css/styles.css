@@ -1,7 +1,20 @@
 h1 {
-    font-size: 34px;
+    display: block;
+/*    font-size: 34px;*/
+    font-size: 4vw;
     font-family: Arial, Helvetica, sans-serif;
-    color: blue;
+/*    color: blue;*/
+    text-align: center
+/*    padding-top: 99;*/
+}
+
+h2 {
+    display: block;
+/*    font-size: 9px;*/
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+/*    color: blue;*/
+    text-align: center
 }
 
 /*shrink images to fit screen*/
@@ -9,4 +22,61 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+/*header {*/
+/*    background-color: white;*/
+/*    width: 1024px;*/
+/*    height: 118px;*/
+/*}*/
+/**/
+/*nav {*/
+/*    background-color: red;*/
+/*    width: 1024px;*/
+/*    height: 40px;*/
+/*}*/
+
+section {
+    background-color: white;
+    opacity: 0.75;
+    width: 1024px;
+/*    height: 400px;*/
+/*    text-align: center*/
+    display: block;
+    border-radius: 4px;
+    min-height: 200px;
+    margin: 20px 10px;
+    padding: 20px;
+/*    border-radius: 15px;*/
+/*    padding-box: 10px*/
+}
+
+/*footer {*/
+/*    background-color: green;*/
+/*    width: 1024px;*/
+/*    height: 100px;*/
+/*}*/
+
+body {
+/*    background-image: radial-gradient(black, blue);*/
+background-image: url(/imgs/rolling_AM_v_RJ.png)
+/*background-size: cover;*/
+/*display: block;*/
+
 }

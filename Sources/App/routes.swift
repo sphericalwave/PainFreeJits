@@ -19,15 +19,14 @@ func routes(_ app: Application) throws
     let landingPg = LandingPg()
     try! app.register(collection: landingPg)
     
-    let q2 = Question2()
+    let q1Pg = Question1Pg()
+    try! app.register(collection: q1Pg)
+    
+    let q2 = Question2Pg()
     try! app.register(collection: q2)
-
-//    app.get("hello") { req in return "Hello, Aaron!" }
-//
-//    let todoController = TodoController()
-//    app.get("todos", use: todoController.index)
-//    app.post("todos", use: todoController.create)
-//    app.on(.DELETE, "todos", ":todoID", use: todoController.delete)
+    
+    let helloPg = HelloPg()
+    try! app.register(collection: helloPg)
 }
 
 struct Context: Codable

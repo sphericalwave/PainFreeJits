@@ -1,0 +1,15 @@
+#extend("basePg"):
+#export("title", "PainFreeJits")
+#export("body"):
+Let's face it, Jiujitsu hurts. Jiujitsu causes aches, pains and injuries, in periods of high movement demand, like rolling we often move in sub optimal alignment. And other times we don't tap out safely or quickly enough.</p>
+<p>Miraculously there is an Emerging revolution in biomechanics lead by a pioneer in Exercise Science who came to us from the Grappling Arts. And not only can you heal the nagging aches and pains, you can transcend them.</p>
+<p>When it comes to mastering the art of jiujitsu, there’s no one size fits all answer. But if you take a moment to tell me a little about your experience, I’ll be able to share the #1 thing you need to do next, designed specifically for YOU (absolutely FREE).</p>
+<!--                <br>-->
+<p>Click the Button Below to start the Survey.</p>
+<!--                <br>-->
+
+<form action="" method="post">
+    <button type="submit" class="btn btn-primary">Yes, Tell Me What to Do Next</button>
+</form>
+#endexport
+#endextend

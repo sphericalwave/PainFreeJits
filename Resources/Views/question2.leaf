@@ -10,9 +10,12 @@
     </head>
 
     <body>
+        
         <div class="container mt-3">
-
-        <h1>Display Radio Buttons</h1>
+            <section>
+        <h1>Discover Solutions to Your Post Jiujitsu Pain</h1>
+        <hr>
+        <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>
 
         <form method="post">
             <p>Please select your gender:</p>
@@ -39,9 +42,9 @@
             
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        
+        </section>
                     
-        <img src="/images/sw_logo.png" alt="sw_logo"/>
+<!--        <img src="/images/sw_logo.png" alt="sw_logo"/>-->
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
