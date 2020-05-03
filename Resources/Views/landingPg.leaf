@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Question 2</title>
+    <meta name="description" content="#(index.description)">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container mt-3">
+
+        <h1>Discover the Solution to Your Biggest Jiujitsu Health Problems</h1>
+        <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>
+        <p>When it comes to mastering the art of jiujitsu, there’s no one size fits all answer. But if you take a moment to tell me a little about your experience, I’ll be able to share the #1 thing you need to do next, designed specifically for YOU (absolutely FREE).</p>
+        <br>
+        <p>Click the Button Below to start the Survey.</p>
+        <br>
+        <button type="submit" class="btn btn-primary">Yes, Tell Me What to Do Next</button>
+                    
+        <img src="/images/sw_logo.png" alt="sw_logo"/>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

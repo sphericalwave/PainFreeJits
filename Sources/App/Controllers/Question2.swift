@@ -22,6 +22,7 @@ class Question2: RouteCollection
     func postAnswer(req: Request) -> HTTPStatus {
         //print("Persist Answer to Session")
         //fatalError()
+        print("postAnswer: \(req.headers.description)")
         return .ok
     }
 }
