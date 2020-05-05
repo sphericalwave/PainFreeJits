@@ -7,13 +7,6 @@
     <head>
         
     <body>
-<!--        <div class="container">-->
-<!--        <div>-->
-<!--             <!--how might i import header-->-->
-<!--             <h1>Discover Solutions to Jiujitsu Pain</h1>-->
-<!--             <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>-->
-<!--             <hr>-->
-<!--        </div>-->
         
         <div class="jumbotron">
           <h1 class="display-4">Discover Solutions to Jiujitsu Pain!</h1>
