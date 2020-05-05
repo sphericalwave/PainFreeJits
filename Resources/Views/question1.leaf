@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LandingPg</title>
-    <meta name="description" content="#(index.description)">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    </head>
-
-    <body>
-        <div class="container mt-3">
-
-            <section>
-            <h1>Discover Solutions to Your Post Jiujitsu Pain</h1>
-            <hr>
-            <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>
-            <p>What part of your body is causing you the most pain or discomfort?</p>
-            <br>
+#extend("basePg"):
+#export("title", "PainFreeJits")
+#export("body"):
+<p>What part of your body is causing you the most pain or discomfort?</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
             <input type="radio" id="toes" name="joints" value="toes">
             <label for="toes">My Toe</label><br>
             
@@ -29,7 +16,9 @@
             
             <input type="radio" id="hip" name="joints" value="hip">
             <label for="hip">My Hip</label><br>
-            
+        </div>
+        
+        <div class="col-md-3">
             <input type="radio" id="lumbar" name="joints" value="lumbar">
             <label for="lumbar">My Lower Back</label><br>
             
@@ -41,30 +30,26 @@
             
             <input type="radio" id="elbow" name="joints" value="elbow">
             <label for="elbow">My Elbow</label><br>
-            
+        </div>
+
+        <div class="col-md-3">
             <input type="radio" id="wrist" name="joints" value="wrist">
             <label for="wrist">My Wrist</label><br>
             
             <input type="radio" id="thumb" name="joints" value="thumb">
             <label for="ankles">My Thumb</label><br>
             
-            <input type="radio" id="finger" name="joints" value="finger">
-            <label for="finger">My Finger</label><br>
+            <input type="radio" id="pinky" name="joints" value="pinky">
+            <label for="finger">My Pinky</label><br>
             
-            <form action="" method="post">
-                <button type="submit" class="btn btn-primary">Next Question</button>
-            </form>
-                    
-            </section>
-            
-<!--            <img src="/images/sw_logo.png" alt="sw_logo"/>-->
-            
+            <input type="radio" id="pinky" name="joints" value="pinky">
+            <label for="finger">My Fingertip</label><br>
         </div>
+    </div>
+</div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-        
-    </body>
-</html>
+<form action="" method="post">
+      <button type="submit" class="btn btn-primary">Next Question</button>
+</form>
+#endexport
+#endextend

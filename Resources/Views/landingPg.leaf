@@ -8,7 +8,8 @@
     <hr>
     <p>Click the Button Below to start the Survey.</p>
     <form action="" method="post">
-        <button type="submit" class="btn btn-primary">Yes, Show me the Survey!</button>
+        <button type="submit" class="btn btn-primary btn-lg">Yes, Show me the Survey!</button>
+<!--        <a class="btn btn-primary btn-lg" role="button">Yes, Show me the Survey.</a>-->
     </form>
 #endexport
 #endextend

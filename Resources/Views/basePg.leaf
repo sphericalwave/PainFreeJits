@@ -1,27 +1,31 @@
 <html>
+    
     <head>
         <title>#import("title")</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
     <head>
-    <body>
-        <div class="container mt-3">
-            
-            <section>
-                <!--header-->
-                <h1>Discover Solutions to Jiujitsu Pain</h1>
-                
-                <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>
-                <hr>
-<!--            </section>-->
-            
-<!--            <section>-->
-                #import("body")
-            </section>
-        </div>
         
+    <body>
+<!--        <div class="container">-->
+<!--        <div>-->
+<!--             <!--how might i import header-->-->
+<!--             <h1>Discover Solutions to Jiujitsu Pain</h1>-->
+<!--             <h2>Even if you’ve looked everywhere and Haven’t been able to find and Answer!</h2>-->
+<!--             <hr>-->
+<!--        </div>-->
+        
+        <div class="jumbotron">
+          <h1 class="display-4">Discover Solutions to Jiujitsu Pain!</h1>
+          <h2 class="lead">Even if you’ve looked everywhere and Haven’t been able to find and Answer.</p>
+          <hr class="my-4">
+          #import("body")
+        </div>
+
         <!-- Btsrp -->
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
+    
 </html>
