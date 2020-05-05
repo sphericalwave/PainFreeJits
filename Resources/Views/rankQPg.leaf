@@ -1,0 +1,44 @@
+#extend("basePg"):
+#export("title", "PainFreeJits - Rank")
+#export("body"):
+<p>What is your belt rank in Jiujitsu?</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="radio" id="white" name="belt" value="white">
+            <label for="white">White</label><br>
+            
+            <input type="radio" id="blue" name="belt" value="blue">
+            <label for="blue">Blue</label><br>
+            
+            <input type="radio" id="purple" name="belt" value="purple">
+            <label for="purple">Purple</label><br>
+            
+            <input type="radio" id="brown" name="belt" value="brown">
+            <label for="brown">Brown</label><br>
+            
+            <input type="radio" id="hip" name="belt" value="hip">
+            <label for="hip">Black</label><br>
+        </div>
+        
+        <div class="col-md-3">
+            <input type="radio" id="one" name="stripes" value="one">
+            <label for="one">1 stripe</label><br>
+            
+            <input type="radio" id="two" name="stripes" value="two">
+            <label for="two">2 stripes</label><br>
+            
+            <input type="radio" id="three" name="stripes" value="three">
+            <label for="three">3 stripes</label><br>
+            
+            <input type="radio" id="four" name="stripes" value="four">
+            <label for="four">4 stripes</label><br>
+        </div>
+    </div>
+</div>
+
+<form action="" method="post">
+      <button type="submit" class="btn btn-primary">Next Question</button>
+</form>
+#endexport
+#endextend

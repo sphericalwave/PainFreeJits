@@ -8,19 +8,19 @@
 import Fluent
 import Vapor
 
-class Question1Pg: RouteCollection
+class JointQPg: RouteCollection
 {
     func boot(routes: RoutesBuilder) throws {
-        routes.get("question1", use: webpage(req:))
-        routes.post("question1", use: nextPg(req:))
+        routes.get("joints", use: webpage(req:))
+        routes.post("joints", use: nextPg(req:))
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
-        return req.view.render("question1")
+        return req.view.render("jointsQPg")
     }
     
     func nextPg(req: Request) -> Response {
         print("LandingPg: \(req.headers.description)")
-        return req.redirect(to: "/question2")
+        return req.redirect(to: "/demographics")
     }
 }
