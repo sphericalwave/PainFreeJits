@@ -1,15 +1,102 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>#(index.title)</title>
-    <meta name="description" content="#(index.description)">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid-play2.css">
+
+    <title>Spherical Wave Engineering</title>
+    
+    <style>
+        .mybox1 {
+            background-color: tomato;
+            min-height: 198px;
+            margin: 9px 9px;
+            padding: 9px;
+        }
+
+        .mybox2 {
+            background-color: springgreen;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+
+        .mybg1 { background-color: darkslategray; }
+        
+    </style>
   </head>
   <body>
-    <main>
-        #import("body")
-    </main>
+
+
+    <header class="container-fluid mybg1 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class= "col">
+            <div class="mybox1">
+                <h1 class="display-3">Discover Solutions to Jiujitsu Pain!</h1>
+                <h2 class="lead">Even if you’ve looked everywhere and Haven’t been able to find and Answer.</p>
+            </div>
+          </div>
+<!--          <nav class="col">-->
+<!--              <div class="mybox1">NAVIGATION</div>-->
+<!--          </nav>-->
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+      
+        <main class="col">
+          <main class="mybox1">
+            <p>Let's face it, Jiujitsu hurts. Jiujitsu causes aches, pains and injuries, in periods of high movement demand, like rolling we often move in sub optimal alignment. And other times we don't tap out safely or quickly enough.</p>
+            <p>Amazingly not only can you heal the nagging aches and pains, you can transcend them. You can learn to move like water over rocks and tap black belts. The martial arts dream is real.</p>
+            <p>I believe you can master the art of jiujitsu. But let's face it the reason most people quit jiujitsu is pain and injuries. That's tragic because the friends you make rolling are priceless. It just doesn't have to be that way. You can become a pain free, superfluid jiujitsu black belt if you invest in yourself.</p>
+            <p>There are so many powerful movements you can do to regenerate your body but it can be overwhelming diving into the deep end without a guide. That's why i put together the survey below. Take a few minutes to complete it and I’ll be able to share 3 exercises for YOU to start resolving whatever has been nagging you, absolutely FREE.</p>
+            <hr>
+            <p>Click the Button Below to start the Survey.</p>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-primary btn-lg">Yes, Show me the Survey!</button>
+            </form>
+            
+            <div class="row">
+              <div class="col">
+                <div class="mybox2">Nested 1</div>
+              </div>
+              <div class="col">
+                <div class="mybox2">Nested 2</div>
+              </div>
+            </div>
+          </main>
+        </main>
+             
+        </div>
+
+
+      <div class="row">
+        <div class="col"><div class="mybox1">Feature 1</div></div>
+        <div class="col"><div class="mybox1">Feature 2</div></div>
+        <div class="col"><div class="mybox1">Feature 3</div></div>
+
+
+
+      </div>
+    </div>
+
+
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

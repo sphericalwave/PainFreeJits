@@ -55,3 +55,35 @@ class RspsvPg: RouteCollection
         return req.redirect(to: "/RspsvPg")
     }
 }
+
+class HomePg: RouteCollection
+{
+    func boot(routes: RoutesBuilder) throws {
+        routes.get("", use: webpage(req:))
+        routes.post("", use: nextPg(req:))
+    }
+    
+    func webpage(req: Request) -> EventLoopFuture<View> {
+        return req.view.render("index")
+    }
+    
+    func nextPg(req: Request) -> Response {
+        return req.redirect(to: "/RspsvPg")
+    }
+}
+
+class YogPg: RouteCollection
+{
+    func boot(routes: RoutesBuilder) throws {
+        routes.get("yog", use: webpage(req:))
+        routes.post("yog", use: nextPg(req:))
+    }
+    
+    func webpage(req: Request) -> EventLoopFuture<View> {
+        return req.view.render("yogPg")
+    }
+    
+    func nextPg(req: Request) -> Response {
+        return req.redirect(to: "/landing")
+    }
+}

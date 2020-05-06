@@ -11,99 +11,49 @@
 
     <title>Hello, world!</title>
     <style>
-    /* // Extra small devices (portrait phones, less than 576px) */
-    /* // No media query since this is the default in Bootstrap */
+        .mybox1 {
+            background-color: lightblue;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
 
-    .mybox1 {
-        background-color: orchid;
-        min-height: 200px;
-        margin: 20px 10px;
-        padding: 20px;
-    }
+        h1 { color: red; }
 
-    h1 {
-        color: red;
-    }
+        @media (min-width: 576px) { }
 
+        @media (min-width: 768px) { }
 
+        @media (min-width: 992px) {
+            h1 {
+                color: blue;
+         }
 
-
-
-    /* // Small devices (landscape phones, 576px and up) */
-    @media (min-width: 576px) {
-
-     }
-
-
-
-    /* // Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
-
-     }
-
-
-
-    /* // Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {
-        h1 {
-            color: blue;
-     }
-
-    /* // Extra large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {
-        
-     }
+        @media (min-width: 1200px) {}
 
     </style>
   </head>
 
-
-
   <body>
-
-
-
     <div class="container">
 
       <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="mybox1">LOGO</div>
-        </div>
-        <div class="col">
-            <div class="mybox1">NAVIGATION</div>
-          </div>
-        </div>
-
+        <div class="col-12 col-md-6"> <div class="mybox1">LOGO</div> </div>
+        <div class="col"> <div class="mybox1">NAVIGATION</div> </div>
+      </div>
 
         <div class="row">
-          <div class="col">
-            <div class="mybox1">HEROBOX</div>
-          </div>
+          <div class="col"> <div class="mybox1">HEROBOX</div> </div>
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="mybox1">FEATURE 1</div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="mybox1">FEATURE 2</div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="mybox1">FEATURE 3</div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3">
-            <div class="mybox1">FEATURE 4</div>
-          </div>
+          <div class="col-12 col-md-4 col-lg-3"> <div class="mybox1">FEATURE 1</div> </div>
+          <div class="col-12 col-md-4 col-lg-3"> <div class="mybox1">FEATURE 2</div> </div>
+          <div class="col-12 col-md-4 col-lg-3"> <div class="mybox1">FEATURE 3</div> </div>
+          <div class="col-12 col-md-4 col-lg-3 d-md-none d-lg-block"> <div class="mybox1">FEATURE 4</div> </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

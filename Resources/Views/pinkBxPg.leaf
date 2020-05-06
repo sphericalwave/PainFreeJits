@@ -8,38 +8,43 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        .myhighlight {
+        .mybox {
             background-color: hotpink;
             min-height: 200px;
             margin: 20px 10px;
             padding: 20px;
         }
+    
+        .mycontainer {
+            background-color: grey;
+<!--            margin-top: 24px;-->
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container mycontainer">
         <div class="row">
             <div class="col">
-                <div class="myhighlight">Logo</div>
+                <div class="mybox">Logo</div>
             </div>
             <div class="col">
-                <div class="myhighlight">Navigation Items</div>
+                <div class="mybox">Navigation Items</div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <div class="myhighlight">Hero Box</div>
+                <div class="mybox">Hero Box</div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <div class="myhighlight">Feature 1</div>
+                <div class="mybox">Feature 1</div>
             </div>
             <div class="col">
-                <div class="myhighlight">Feature 1</div>
+                <div class="mybox">Feature 1</div>
             </div>
             <div class="col">
-                <div class="myhighlight">Feature 1</div>
+                <div class="mybox">Feature 1</div>
             </div>
         </div>
 

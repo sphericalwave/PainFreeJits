@@ -12,4 +12,6 @@ func routes(_ app: Application) throws
     try! app.register(collection: PinkBxPg())
     try! app.register(collection: OrgGrnBxPg())
     try! app.register(collection: RspsvPg())
+    try! app.register(collection: HomePg())
+    try! app.register(collection: YogPg())
 }

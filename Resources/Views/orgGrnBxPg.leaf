@@ -12,9 +12,9 @@
     <title>Spherical Wave Engineering</title>
     
     <style>
-        .myhighlight {
+        .mybox1 {
             background-color: tomato;
-            min-height: 200px;
+            min-height: 54px;
             margin: 20px 10px;
             padding: 20px;
         }
@@ -37,11 +37,11 @@
     <header class="container-fluid mybg1 mb-4">
       <div class="container">
         <div class="row">
-          <div class= "col-4">
-            <div class="myhighlight">LOGO</div>
+          <div class= "col-3">
+            <div class="mybox1 mx-n3">LOGO</div>
           </div>
           <nav class="col">
-              <div class="myhighlight">NAVIGATION</div>
+              <div class="mybox1 mx-0">NAVIGATION</div>
           </nav>
         </div>
       </div>
@@ -51,7 +51,7 @@
       <div class="row">
       
         <main class="col">
-          <main class="myhighlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos consequuntur
+          <main class="mybox1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos consequuntur
             inventore asperiores voluptates vel, beatae iste, magni ipsam ducimus nostrum aspernatur alias, ratione quia optio
             enim? Quisquam quod quae qui nihil porro molestiae quos eveniet dignissimos, nesciunt illo ut, magni cupiditate
             cumque provident. Magnam velit possimus tempore explicabo saepe provident, fugit, distinctio, culpa consequuntur
@@ -73,9 +73,9 @@
 
 
       <div class="row">
-        <div class="col"><div class="myhighlight">Feature 1</div></div>
-        <div class="col"><div class="myhighlight">Feature 2</div></div>
-        <div class="col"><div class="myhighlight">Feature 3</div></div>
+        <div class="col"><div class="mybox1">Feature 1</div></div>
+        <div class="col"><div class="mybox1">Feature 2</div></div>
+        <div class="col"><div class="mybox1">Feature 3</div></div>
 
 
 
