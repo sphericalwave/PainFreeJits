@@ -3,21 +3,13 @@ import Vapor
 
 func routes(_ app: Application) throws
 {
-    let landingPg = LandingPg()
-    try! app.register(collection: landingPg)
-    
-    let jointQPg = JointQPg()
-    try! app.register(collection: jointQPg)
-    
-    let rankQPg = RankQPg()
-    try! app.register(collection: rankQPg)
-    
-    let q2 = DemographicPg()
-    try! app.register(collection: q2)
-    
-    let ePg = EmailPg()
-    try! app.register(collection: ePg)
-    
-    let helloPg = HelloPg()
-    try! app.register(collection: helloPg)
+    try! app.register(collection: LandingPg())
+    try! app.register(collection: JointQPg())
+    try! app.register(collection: RankQPg())
+    try! app.register(collection: DemographicPg())
+    try! app.register(collection: EmailPg())
+    try! app.register(collection: HelloPg())
+    try! app.register(collection: PinkBxPg())
+    try! app.register(collection: OrgGrnBxPg())
+    try! app.register(collection: RspsvPg())
 }
