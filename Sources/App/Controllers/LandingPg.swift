@@ -25,16 +25,16 @@ class LandingPg: RouteCollection
     }
 }
 
-import Foundation
-import Vapor
-
-class HelloPg: RouteCollection
-{
-    func boot(routes: RoutesBuilder) throws {
-        routes.get("hello", use: webpage(req:))
-    }
-    
-    func webpage(req: Request) -> EventLoopFuture<View> {
-        return req.view.render("helloPg")
-    }
-}
+//import Foundation
+//import Vapor
+//
+//class HelloPg: RouteCollection
+//{
+//    func boot(routes: RoutesBuilder) throws {
+//        routes.get("hello", use: webpage(req:))
+//    }
+//    
+//    func webpage(req: Request) -> EventLoopFuture<View> {
+//        return req.view.render("helloPg")
+//    }
+//}

@@ -19,10 +19,11 @@ public func configure(_ app: Application) throws
 
 
     // Configure migrations
-    app.migrations.add(CreateTodo())
+    //app.migrations.add(CreateTodo())
+    app.migrations.add(CreateCustomer())
     try app.autoMigrate().wait() //for in memory
     
-    app.sessions.use(.memory) //.sqlite
+    app.sessions.use(.fluent(.sqlite)) //.sqlite
     app.middleware.use(app.sessions.middleware)
     app.sessions.configuration.cookieName = "PainFreeJiujitsu"
     // Configures cookie value creation.
@@ -56,13 +57,23 @@ public func configure(_ app: Application) throws
         req.session.destroy()
         return .ok
     }
+    
+    app.post("customer") { req -> EventLoopFuture<Customer> in
+        let cstmr = try req.content.decode(Customer.self)
+        return cstmr.create(on: req.db)
+            .map { cstmr }
+    }
+    
+    app.get("customer") { req in
+        Customer.query(on: req.db).all()
+    }
 
     try! app.register(collection: LandingPg())
     try! app.register(collection: JointQPg())
     try! app.register(collection: RankQPg())
     try! app.register(collection: DemographicPg())
     try! app.register(collection: EmailPg())
-    try! app.register(collection: HelloPg())
+    //try! app.register(collection: HelloPg())
     try! app.register(collection: PinkBxPg())
     try! app.register(collection: OrgGrnBxPg())
     try! app.register(collection: RspsvPg())
