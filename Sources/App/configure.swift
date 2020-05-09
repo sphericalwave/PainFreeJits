@@ -20,8 +20,8 @@ public func configure(_ app: Application) throws
 
     // Configure migrations
     //app.migrations.add(CreateTodo())
-    app.migrations.add(CreateCustomer())
-    try app.autoMigrate().wait() //for in memory
+    app.migrations.add(CustomerMgrt())
+    //try app.autoMigrate().wait() //for in memory //Some issue here if i leave this on
     
     app.sessions.use(.fluent(.sqlite)) //.sqlite
     app.middleware.use(app.sessions.middleware)
@@ -36,6 +36,11 @@ public func configure(_ app: Application) throws
     
     app.get("set", ":value") { req -> HTTPStatus in
         print(req.description)
+        for (cookie, value) in req.cookies.all {
+            print("\(cookie) : \(value)")
+            let cD = cookie.description
+            if cD == "vapor-session" { print("i see you've played knify Spoony before")}
+        }
         let input = req.parameters.get("value")
         var data = req.session.data
         data["name"] = input
@@ -59,9 +64,9 @@ public func configure(_ app: Application) throws
     }
     
     app.post("customer") { req -> EventLoopFuture<Customer> in
+        for (cookie, value) in req.cookies.all { print("\(cookie) : \(value)")}
         let cstmr = try req.content.decode(Customer.self)
-        return cstmr.create(on: req.db)
-            .map { cstmr }
+        return cstmr.create(on: req.db).map { cstmr }
     }
     
     app.get("customer") { req in

@@ -16,6 +16,8 @@ class LandingPg: RouteCollection
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
+        //if vapor-session matches customer say welcome back
+        //else create Customer with Vapor Session and say welcome to PainFree Jiujitsu
         return req.view.render("landingPg")
     }
     

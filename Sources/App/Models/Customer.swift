@@ -25,7 +25,7 @@ final class Customer: Model, Content {
 }
 
 
-struct CreateCustomer: Migration
+struct CustomerMgrt: Migration
 {
     // Prepares the database for storing Customer models.
     func prepare(on database: Database) -> EventLoopFuture<Void> {
