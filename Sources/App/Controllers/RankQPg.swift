@@ -21,6 +21,7 @@ class RankQPg: RouteCollection
     
     func nextPg(req: Request) -> Response {
         //code goes here to catch radio buttons
+        print("RankPg: \(req.description)")
         return req.redirect(to: "/joints")
     }
 }
