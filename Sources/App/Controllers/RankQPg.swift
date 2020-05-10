@@ -27,12 +27,6 @@ class RankQPg: RouteCollection
     }
 }
 
-//struct TestForm: Content
-//{
-//    var fname: String
-//    var lname: String
-//}
-
 struct Rank: Content
 {
     var belt: String

@@ -3,7 +3,6 @@
 #export("body"):
 <p>What is your belt rank in Jiujitsu?</p>
 <form action="/rank" method="post">
-
 <div class="container">
     <div class="row">
 
@@ -50,8 +49,5 @@
     <button type="submit" class="btn btn-primary">Next Question</button>
 </form>
 
-<!--<form action="" method="post">-->
-<!--      <button type="submit" class="btn btn-primary">Next Question</button>-->
-<!--</form>-->
 #endexport
 #endextend
