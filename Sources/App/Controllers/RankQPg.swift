@@ -20,8 +20,21 @@ class RankQPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        //code goes here to catch radio buttons
         print("RankPg: \(req.description)")
+        print(req.body.data?.debugDescription)
+        let testForm = try! req.content.decode(Rank.self)
         return req.redirect(to: "/joints")
     }
+}
+
+//struct TestForm: Content
+//{
+//    var fname: String
+//    var lname: String
+//}
+
+struct Rank: Content
+{
+    var belt: String
+    var stripes: String
 }
