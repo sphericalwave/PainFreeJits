@@ -30,20 +30,6 @@ class LandingPg: RouteCollection
         return req.view.render("landingPg")
     }
     
-//    app.get("set", ":value") { req -> HTTPStatus in
-//        print(req.description)
-//        for (cookie, value) in req.cookies.all {
-//            print("\(cookie) : \(value)")
-//            let cD = cookie.description
-//            if cD == "vapor-session" { print("i see you've played knify Spoony before")}
-//        }
-//        let input = req.parameters.get("value")
-//        var data = req.session.data
-//        data["name"] = input
-//        print("sessionData name \(data["name"]!)")
-//        return .ok
-//    }
-    
     func startSurvey(req: Request) -> Response {
         print("LandingPg: \(req.headers.description)")
         return req.redirect(to: "/rank")
