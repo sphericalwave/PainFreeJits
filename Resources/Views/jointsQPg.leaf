@@ -2,53 +2,54 @@
 #export("title", "PainFreeJits")
 #export("body"):
 <p>What part of your body is causing you the most pain or discomfort?</p>
+<form action="" method="post">
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="radio" id="toes" name="joints" value="toes">
+            <input type="radio" id="toes" name="joint" value="toes">
             <label for="toes">My Toe</label><br>
             
-            <input type="radio" id="ankles" name="joints" value="ankles">
+            <input type="radio" id="ankles" name="joint" value="ankles">
             <label for="ankles">My Ankle</label><br>
             
-            <input type="radio" id="knee" name="joints" value="knee">
+            <input type="radio" id="knee" name="joint" value="knee">
             <label for="knee">My Knee</label><br>
             
-            <input type="radio" id="hip" name="joints" value="hip">
+            <input type="radio" id="hip" name="joint" value="hip">
             <label for="hip">My Hip</label><br>
         </div>
         
         <div class="col-md-3">
-            <input type="radio" id="lumbar" name="joints" value="lumbar">
+            <input type="radio" id="lumbar" name="joint" value="lumbar">
             <label for="lumbar">My Lower Back</label><br>
             
-            <input type="radio" id="ribs" name="joints" value="ribs">
+            <input type="radio" id="ribs" name="joint" value="ribs">
             <label for="ribs">My Ribs</label><br>
             
-            <input type="radio" id="shoulder" name="joints" value="shoulder">
+            <input type="radio" id="shoulder" name="joint" value="shoulder">
             <label for="shoulder">My Shoulder</label><br>
             
-            <input type="radio" id="elbow" name="joints" value="elbow">
+            <input type="radio" id="elbow" name="joint" value="elbow">
             <label for="elbow">My Elbow</label><br>
         </div>
 
         <div class="col-md-3">
-            <input type="radio" id="wrist" name="joints" value="wrist">
+            <input type="radio" id="wrist" name="joint" value="wrist">
             <label for="wrist">My Wrist</label><br>
             
-            <input type="radio" id="thumb" name="joints" value="thumb">
+            <input type="radio" id="thumb" name="joint" value="thumb">
             <label for="ankles">My Thumb</label><br>
             
-            <input type="radio" id="pinky" name="joints" value="pinky">
+            <input type="radio" id="pinky" name="joint" value="pinky">
             <label for="finger">My Pinky</label><br>
             
-            <input type="radio" id="pinky" name="joints" value="pinky">
+            <input type="radio" id="pinky" name="joint" value="pinky">
             <label for="finger">My Fingertip</label><br>
         </div>
     </div>
 </div>
 
-<form action="" method="post">
+
       <button type="submit" class="btn btn-primary">Next Question</button>
 </form>
 #endexport

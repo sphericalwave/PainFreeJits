@@ -72,7 +72,7 @@ class HomePg: RouteCollection
     }
 }
 
-class YogPg: RouteCollection
+class YogurtPg: RouteCollection
 {
     func boot(routes: RoutesBuilder) throws {
         routes.get("yog", use: webpage(req:))

@@ -11,8 +11,8 @@ import Vapor
 class LandingPg: RouteCollection
 {
     func boot(routes: RoutesBuilder) throws {
-        routes.get("landingPg", use: webpage(req:))
-        routes.post("landingPg", use: startSurvey(req:))
+        routes.get("", use: webpage(req:))
+        routes.post("", use: startSurvey(req:))
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {

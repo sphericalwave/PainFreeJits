@@ -20,7 +20,19 @@ class DemographicPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        print("LandingPg: \(req.headers.description)")
+        print("DemographicPg: \(req.description)")
+        let testForm = try! req.content.decode(Demographic.self)
+        print(testForm.print())
         return req.redirect(to: "/email")
+    }
+}
+
+struct Demographic: Content
+{
+    var gender: String
+    var age: String
+    
+    func print() -> String {
+        return "Rank: " + gender + " " + age
     }
 }

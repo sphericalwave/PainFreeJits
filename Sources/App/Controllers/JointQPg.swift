@@ -20,7 +20,18 @@ class JointQPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        print("LandingPg: \(req.headers.description)")
+        print("Joint Page: \(req.description)")
+        let joint = try! req.content.decode(Joint.self)
+        print(joint.print())
         return req.redirect(to: "/demographics")
+    }
+}
+
+struct Joint: Content
+{
+    var joint: String
+    
+    func print() -> String {
+        return "Joint: " + joint
     }
 }

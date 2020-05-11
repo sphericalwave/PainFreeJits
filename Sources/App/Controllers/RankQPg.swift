@@ -21,8 +21,8 @@ class RankQPg: RouteCollection
     
     func nextPg(req: Request) -> Response {
         print("RankPg: \(req.description)")
-        print(req.body.data?.debugDescription)
         let testForm = try! req.content.decode(Rank.self)
+        print(testForm.print())
         return req.redirect(to: "/joints")
     }
 }
@@ -31,4 +31,8 @@ struct Rank: Content
 {
     var belt: String
     var stripes: String
+    
+    func print() -> String {
+        return "Rank: " + belt + " " + stripes
+    }
 }

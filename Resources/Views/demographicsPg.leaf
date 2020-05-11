@@ -2,6 +2,7 @@
 #export("title", "PainFreeJits - Rank")
 #export("body"):
 <p>What is your demographic?</p>
+<form action="" method="post">
 <div class="container">
     <div class="row">
         <div class="col-md-3">
@@ -11,9 +12,6 @@
             
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
-            
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
         </div>
         
         <div class="col-md-3">
@@ -30,7 +28,6 @@
     </div>
 </div>
 
-<form action="" method="post">
       <button type="submit" class="btn btn-primary">Next Question</button>
 </form>
 #endexport
