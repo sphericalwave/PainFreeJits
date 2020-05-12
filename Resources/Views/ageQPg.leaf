@@ -2,38 +2,44 @@
 #export("title", "PainFreeJits - Age")
 #export("body"):
 
-<p>Which decade of your life are you engaging?</p>
+<div class="col">
+      <div class="mybox1">
+            <p>Which decade of your life are you engaging?</p>
 
-<div class="progress" style="opacity: 1.0;">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">75%</div>
+            <div class="progress" style="opacity: 1.0;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">75%</div>
+            </div>
+
+            <form action="" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" id="age1" name="age" value="10" required>
+                            <label for="age1">Teens</label><br>
+                            
+                            <input type="radio" id="age1" name="age" value="20">
+                            <label for="age1">Twenties</label><br>
+                            
+                            <input type="radio" id="age1" name="age" value="30">
+                            <label for="age1">Thirties</label><br>
+                            
+                            <input type="radio" id="age2" name="age" value="40">
+                            <label for="age2">Fourties</label><br>
+                            
+                            <input type="radio" id="age3" name="age" value="50">
+                            <label for="age3">Fiftees</label><br>
+                            
+                            <input type="radio" id="age3" name="age" value="60">
+                            <label for="age3">Sixtees</label><br>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary">Next Question</button>
+            </form>
+      </div>
 </div>
 
-<form action="" method="post">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <input type="radio" id="age1" name="age" value="10" required>
-                <label for="age1">Teens</label><br>
-                
-                <input type="radio" id="age1" name="age" value="20">
-                <label for="age1">Twenties</label><br>
-                
-                <input type="radio" id="age1" name="age" value="30">
-                <label for="age1">Thirties</label><br>
-                
-                <input type="radio" id="age2" name="age" value="40">
-                <label for="age2">Fourties</label><br>
-                
-                <input type="radio" id="age3" name="age" value="50">
-                <label for="age3">Fiftees</label><br>
-                
-                <input type="radio" id="age3" name="age" value="60">
-                <label for="age3">Sixtees</label><br>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <button type="submit" class="btn btn-primary">Next Question</button>
-</form>
+
 #endexport
 #endextend

@@ -19,11 +19,7 @@
             </div>
           
           <div class="row">
-              <div class="col">
-                  <div class="mybox1">
-                        #import("body")
-                  </div>
-              </div>
+              #import("body")
           </div>
         </div>
 

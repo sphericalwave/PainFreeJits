@@ -2,34 +2,29 @@
 #export("title", "PainFreeJits")
 #export("body"):
 
-<div class="row">
-    <div class="col-4">
-        <div class="mybox1">
-              <h3>Solution to Specific Issue #1</h3>
-              <hr>
-              <div class="mybox2">test</div>
-        </div>
+<div class="col-4">
+    <div class="mybox1">
+          <h3>Solution to Specific Issue #1</h3>
+          <hr>
+          <div class="mybox2">Tuck Lunge</div>
     </div>
-    <div class="col-4">
-        <div class="mybox1">
-              <h3>Solution to Specific Issue #2</h3>
-              <hr>
-              <div class="mybox2">test</div>
-        </div>
+</div>
+            
+<div class="col-4">
+    <div class="mybox1">
+          <h3>Solution to Specific Issue #2</h3>
+          <hr>
+          <div class="mybox2">Monkey Lunge</div>
     </div>
 </div>
 
-<!--<h3>Solution to Specific Issue #1</h3>-->
-<!--<hr>-->
-<!---->
-<!--<h3>Solution to Specific Issue #2</h3>-->
-<!--<hr>-->
-<!---->
-<!--<h3>Solution to Specific Issue #3</h3>-->
-<!--<hr>-->
-<!---->
-<!--<h3>Learn more with Tacgym</h3>-->
-<!--<hr>-->
+<div class="col-4">
+    <div class="mybox1">
+          <h3>Solution to Specific Issue #3</h3>
+          <hr>
+          <div class="mybox2">Twisted Chair</div>
+    </div>
+</div>
 
 #endexport
 #endextend
