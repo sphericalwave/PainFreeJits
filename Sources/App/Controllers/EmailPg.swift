@@ -20,6 +20,16 @@ class EmailPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        return req.redirect(to: "/landingPg")
+        print("EmailPg: \(req.description)")
+        let testForm = try! req.content.decode(Contact.self)
+        print(testForm.print())
+        return req.redirect(to: "/sales")
     }
+}
+
+struct Contact: Content
+{
+    var name: String
+    var email: String
+    func print() -> String { return name + " " + email }
 }

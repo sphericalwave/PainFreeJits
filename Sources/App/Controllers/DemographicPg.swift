@@ -23,16 +23,12 @@ class DemographicPg: RouteCollection
         print("DemographicPg: \(req.description)")
         let testForm = try! req.content.decode(Demographic.self)
         print(testForm.print())
-        return req.redirect(to: "/email")
+        return req.redirect(to: "/age")
     }
 }
 
 struct Demographic: Content
 {
     var gender: String
-    var age: String
-    
-    func print() -> String {
-        return "Rank: " + gender + " " + age
-    }
+    func print() -> String { return "Rank: " + gender }
 }
