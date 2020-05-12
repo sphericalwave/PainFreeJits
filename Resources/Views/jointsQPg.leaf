@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <input type="radio" id="toes" name="joint" value="toes">
+            <input type="radio" id="toes" name="joint" value="toes" required>
             <label for="toes">My Toe</label><br>
             
             <input type="radio" id="ankles" name="joint" value="ankles">

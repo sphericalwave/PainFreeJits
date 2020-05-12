@@ -9,7 +9,7 @@
         <div class="col-md-3">
             
 
-                <input type="radio" id="white" name="belt" value="white">
+                <input type="radio" id="white" name="belt" value="white" required>
                 <label for="white">White</label><br>
                 
                 <input type="radio" id="blue" name="belt" value="blue">
