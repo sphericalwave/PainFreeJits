@@ -80,7 +80,7 @@ public func configure(_ app: Application) throws
     try! app.register(collection: EmailPg())
     //try! app.register(collection: HelloPg())
     //try! app.register(collection: PinkBxPg())
-    //try! app.register(collection: OrgGrnBxPg())
+    try! app.register(collection: OrgGrnBxPg())
     //try! app.register(collection: RspsvPg())
     //try! app.register(collection: HomePg())
     //try! app.register(collection: YogurtPg())

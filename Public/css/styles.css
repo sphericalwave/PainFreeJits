@@ -67,12 +67,6 @@ section {
 /*    padding-box: 10px*/
 }
 
-/*footer {*/
-/*    background-color: green;*/
-/*    width: 1024px;*/
-/*    height: 100px;*/
-/*}*/
-
 body {
 /*    background-image: radial-gradient(black, blue);*/
 background-image: url(/imgs/rolling_AM_v_RJ.png);
@@ -82,22 +76,36 @@ background-size: contain;
 /*display: block;*/
 }
 
-.container {
+.mybox {
         background-color: white;
         opacity: 0.75;
-        width: 1024px;
+/*        width: 1024px;*/
     /*    height: 400px;*/
     /*    text-align: center*/
-        display: block;
+/*        display: block;*/
         border-radius: 4px;
-        min-height: 200px;
-        margin: 20px 10px;
-        padding: 20px;
+/*        margin: 20px 10px;*/
+/*        padding: 20px;*/
 }
 
 .jumbotron {
     opacity: 0.75;
-    display: block;
+/*    display: block;*/
     margin: 20px 10px;
     padding: 20px;
+}
+
+html { font-size: 1rem; }
+
+@media (min-width: 576px) {
+    html { font-size: 1.25rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+    html { font-size: 1.75rem; }
+}
+@media (min-width: 1200px) {
+    html { font-size: 2rem; }
 }

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="grid-play2.css">
+<!--    <link rel="stylesheet" href="grid-play2.css">-->
 
     <title>Spherical Wave Engineering</title>
     
@@ -49,26 +49,24 @@
     
     <div class="container">
       <div class="row">
-      
-        <main class="col">
-          <main class="mybox1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos consequuntur
-            inventore asperiores voluptates vel, beatae iste, magni ipsam ducimus nostrum aspernatur alias, ratione quia optio
-            enim? Quisquam quod quae qui nihil porro molestiae quos eveniet dignissimos, nesciunt illo ut, magni cupiditate
-            cumque provident. Magnam velit possimus tempore explicabo saepe provident, fugit, distinctio, culpa consequuntur
-            modi facere quam tenetur eaque. Fuga quisquam impedit odio minus, enim nobis! Eligendi eveniet ullam
-            reprehenderit, quae recusandae odio debitis veritatis? Voluptas temporibus vitae eius provident nobis atque vero
-            culpa dolor nostrum aliquam autem delectus dolorem ipsa magni consequatur sit odio quaerat, et natus. Ullam?
-            <div class="row">
-              <div class="col">
-                <div class="mybox2">Nested 1</div>
-              </div>
-              <div class="col">
-                <div class="mybox2">Nested 2</div>
-              </div>
-            </div>
-          </main>
-        </main>
-             
+            <main class="col">
+              <main class="mybox1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dignissimos consequuntur
+                inventore asperiores voluptates vel, beatae iste, magni ipsam ducimus nostrum aspernatur alias, ratione quia optio
+                enim? Quisquam quod quae qui nihil porro molestiae quos eveniet dignissimos, nesciunt illo ut, magni cupiditate
+                cumque provident. Magnam velit possimus tempore explicabo saepe provident, fugit, distinctio, culpa consequuntur
+                modi facere quam tenetur eaque. Fuga quisquam impedit odio minus, enim nobis! Eligendi eveniet ullam
+                reprehenderit, quae recusandae odio debitis veritatis? Voluptas temporibus vitae eius provident nobis atque vero
+                culpa dolor nostrum aliquam autem delectus dolorem ipsa magni consequatur sit odio quaerat, et natus. Ullam?
+                <div class="row">
+                  <div class="col">
+                    <div class="mybox2">Nested 1</div>
+                  </div>
+                  <div class="col">
+                    <div class="mybox2">Nested 2</div>
+                  </div>
+                </div>
+              </main>
+            </main>
         </div>
 
 
@@ -76,10 +74,8 @@
         <div class="col"><div class="mybox1">Feature 1</div></div>
         <div class="col"><div class="mybox1">Feature 2</div></div>
         <div class="col"><div class="mybox1">Feature 3</div></div>
-
-
-
       </div>
+
     </div>
 
 
