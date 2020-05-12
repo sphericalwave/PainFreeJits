@@ -1,0 +1,27 @@
+body {
+    background-image: url(/imgs/jiujitsu_matrix_72.png);
+    background-size: contain;
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+.jumbotron {
+    opacity: 0.63;
+/*    display: block;*/
+    margin: 20px 10px;
+    padding: 20px;
+}

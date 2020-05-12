@@ -11,8 +11,8 @@
 <form action="" method="post">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <p>Please select your gender:</p>
+            <div class="col-md-6">
+<!--                <p>Please select your gender:</p>-->
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label><br>
                 
@@ -20,19 +20,28 @@
                 <label for="female">Female</label><br>
             </div>
             
-            <div class="col-md-3">
-                <p>Please select your age:</p>
+            <div class="col-md-6">
+                <input type="radio" id="age1" name="age" value="10">
+                <label for="age1">Teens</label><br>
+                
+                <input type="radio" id="age1" name="age" value="20">
+                <label for="age1">Twenties</label><br>
+                
                 <input type="radio" id="age1" name="age" value="30">
-                <label for="age1">0 - 30</label><br>
+                <label for="age1">Thirties</label><br>
                 
-                <input type="radio" id="age2" name="age" value="60">
-                <label for="age2">31 - 60</label><br>
+                <input type="radio" id="age2" name="age" value="40">
+                <label for="age2">Fourties</label><br>
                 
-                <input type="radio" id="age3" name="age" value="100">
-                <label for="age3">61 - 100</label><br><br>
+                <input type="radio" id="age3" name="age" value="50">
+                <label for="age3">Fiftees</label><br>
+                
+                <input type="radio" id="age3" name="age" value="60">
+                <label for="age3">Sixtees</label><br>
             </div>
         </div>
     </div>
+    <hr>
     <button type="submit" class="btn btn-primary">Next Question</button>
 </form>
 #endexport

@@ -3,7 +3,7 @@
 #export("body"):
 
 <div class="progress" style="opacity: 1.0;">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">25%</div>
+  <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">25%</div>
 </div>
 
 <p>What rank have you earned in Jiujitsu?</p>
@@ -36,6 +36,7 @@
                 <label for="four">4 stripes</label><br>
             </div>
         </div>
+        <hr class="my-4">
         <div class="row">
             <div class="col-md-6">
                 <button type="submit" class="btn btn-primary">Next Question</button>

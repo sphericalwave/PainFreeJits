@@ -54,7 +54,7 @@
     </div>
 </div>
 
-
+<hr class="my-4">
       <button type="submit" class="btn btn-primary">Next Question</button>
 </form>
 #endexport
