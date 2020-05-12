@@ -4,11 +4,13 @@
 
 <div class="col">
       <div class="mybox1">
-            <p>What hurts because of Jiujitsu?</p>
 
             <div class="progress" style="opacity: 1.0;">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
             </div>
+            <hr>
+
+            <p>What hurts because of Jiujitsu?</p>
 
             <form action="" method="post">
             <div class="container">
@@ -57,8 +59,13 @@
                 </div>
             </div>
 
-            <hr class="my-4">
-                  <button type="submit" class="btn btn-primary">Next Question</button>
+            <hr>
+            <div class="form-row text-center">
+                <form action="" method="post">
+                    <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
+                </form>
+            </div>
+            
             </form>
       </div>
 </div>
