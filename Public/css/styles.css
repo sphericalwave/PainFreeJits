@@ -1,22 +1,3 @@
-/*h1 {*/
-/*    display: block;*/
-/*/*    font-size: 34px;*/*/
-/*    font-size: 4vw;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-/*/*    color: blue;*/*/
-/*    text-align: center*/
-/*/*    padding-top: 99;*/*/
-/*}*/
-
-/*h2 {*/
-/*    display: block;*/
-/*/*    font-size: 9px;*/*/
-/*    font-size: 2vw;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-/*/*    color: blue;*/*/
-/*    text-align: center*/
-/*}*/
-
 /*shrink images to fit screen*/
 img {
   display: block;
@@ -40,18 +21,6 @@ hr {
    border-bottom: 1px solid #ffffff;
 }
 
-/*header {*/
-/*    background-color: white;*/
-/*    width: 1024px;*/
-/*    height: 118px;*/
-/*}*/
-/**/
-/*nav {*/
-/*    background-color: red;*/
-/*    width: 1024px;*/
-/*    height: 40px;*/
-/*}*/
-
 section {
     background-color: white;
     opacity: 0.75;
@@ -68,12 +37,8 @@ section {
 }
 
 body {
-/*    background-image: radial-gradient(black, blue);*/
-background-image: url(/imgs/rolling_AM_v_RJ.png);
-background-size: contain;
-/*background-repeat: no-repeat;*/
-/*background-attachment: fixed;*/
-/*display: block;*/
+    background-image: url(/imgs/rolling_AM_v_RJ.png);
+    background-size: contain;
 }
 
 .mybox {
@@ -95,17 +60,24 @@ background-size: contain;
     padding: 20px;
 }
 
-html { font-size: 1rem; }
+html {
+  font-size: 1rem;
+}
 
-@media (min-width: 576px) {
-    html { font-size: 1.25rem; }
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
 }
-@media (min-width: 768px) {
-    html { font-size: 1.5rem; }
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
 }
-@media (min-width: 992px) {
-    html { font-size: 1.75rem; }
-}
-@media (min-width: 1200px) {
-    html { font-size: 2rem; }
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
 }

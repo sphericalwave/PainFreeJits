@@ -10,7 +10,7 @@
 <form action="" method="post">
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <input type="radio" id="toes" name="joint" value="toes" required>
             <label for="toes">My Toe</label><br>
             
@@ -24,7 +24,7 @@
             <label for="hip">My Hip</label><br>
         </div>
         
-        <div class="col-md-3">
+        <div class="col-md-4">
             <input type="radio" id="lumbar" name="joint" value="lumbar">
             <label for="lumbar">My Lower Back</label><br>
             
@@ -38,7 +38,7 @@
             <label for="elbow">My Elbow</label><br>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <input type="radio" id="wrist" name="joint" value="wrist">
             <label for="wrist">My Wrist</label><br>
             
