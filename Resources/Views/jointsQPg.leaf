@@ -6,7 +6,7 @@
       <div class="mybox1">
 
             <div class="progress" style="opacity: 1.0;">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
             </div>
             <hr>
 
@@ -16,45 +16,46 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <input type="radio" id="toes" name="joint" value="toes" required>
-                        <label for="toes">My Toe</label><br>
+                        <input type="checkbox" id="toes" name="toes" value="toes">
+                        <label for="vehicle1">my toes</label><br>
                         
-                        <input type="radio" id="ankles" name="joint" value="ankles">
-                        <label for="ankles">My Ankle</label><br>
+                        <input type="checkbox" id="ankles" name="ankles" value="ankles">
+                        <label for="vehicle1">my ankles</label><br>
                         
-                        <input type="radio" id="knee" name="joint" value="knee">
-                        <label for="knee">My Knee</label><br>
+                        <input type="checkbox" id="knees" name="knees" value="knees">
+                        <label for="vehicle1">my knees</label><br>
                         
-                        <input type="radio" id="hip" name="joint" value="hip">
-                        <label for="hip">My Hip</label><br>
+                        <input type="checkbox" id="hips" name="hips" value="hips">
+                        <label for="vehicle1">my hips</label><br>
                     </div>
                     
                     <div class="col-md-4">
-                        <input type="radio" id="lumbar" name="joint" value="lumbar">
-                        <label for="lumbar">My Lower Back</label><br>
                         
-                        <input type="radio" id="ribs" name="joint" value="ribs">
-                        <label for="ribs">My Ribs</label><br>
+                        <input type="checkbox" id="lumbar" name="lumbar" value="lumbar">
+                        <label for="vehicle1">my lower back</label><br>
                         
-                        <input type="radio" id="shoulder" name="joint" value="shoulder">
-                        <label for="shoulder">My Shoulder</label><br>
+                        <input type="checkbox" id="ribs" name="ribs" value="ribs">
+                        <label for="vehicle1">my ribs</label><br>
                         
-                        <input type="radio" id="elbow" name="joint" value="elbow">
-                        <label for="elbow">My Elbow</label><br>
+                        <input type="checkbox" id="shoulders" name="shoulders" value="shoulders">
+                        <label for="vehicle1">my shoulders</label><br>
+                        
+                        <input type="checkbox" id="elbow" name="elbow" value="elbow">
+                        <label for="vehicle1">my elbow</label><br>
                     </div>
 
                     <div class="col-md-4">
-                        <input type="radio" id="wrist" name="joint" value="wrist">
-                        <label for="wrist">My Wrist</label><br>
+                        <input type="checkbox" id="wrist" name="wrist" value="wrist">
+                        <label for="vehicle1">my wrist</label><br>
                         
-                        <input type="radio" id="thumb" name="joint" value="thumb">
-                        <label for="ankles">My Thumb</label><br>
+                        <input type="checkbox" id="thumbs" name="thumbs" value="thumbs">
+                        <label for="vehicle1">my thumbs</label><br>
                         
-                        <input type="radio" id="pinky" name="joint" value="pinky">
-                        <label for="finger">My Pinky</label><br>
+                        <input type="checkbox" id="fingers" name="fingers" value="fingers">
+                        <label for="vehicle1">my fingers</label><br>
                         
-                        <input type="radio" id="pinky" name="joint" value="pinky">
-                        <label for="finger">My Fingertip</label><br>
+                        <input type="checkbox" id="fingertips" name="fingertips" value="fingertips">
+                        <label for="vehicle1">my fingertips</label><br>
                     </div>
                 </div>
             </div>

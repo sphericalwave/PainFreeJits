@@ -22,16 +22,25 @@ class JointQPg: RouteCollection
     func nextPg(req: Request) -> Response {
         print("Joint Page: \(req.description)")
         let joint = try! req.content.decode(Joint.self)
-        print(joint.print())
+        print(joint.print2())
         return req.redirect(to: "/demographics")
     }
 }
 
 struct Joint: Content
 {
-    var joint: String
+    //TODO: Complete
+    var toes: String?
+    var ankles: String?
+    var knees: String?
     
-    func print() -> String {
-        return "Joint: " + joint
+    func print2() -> String {
+        let ts = toes ?? "no toes"
+        let ank = ankles ?? "no ankles"
+        if let kn = knees {
+            print("knees")
+        }
+
+        return "Joint: " + ts + ank
     }
 }
