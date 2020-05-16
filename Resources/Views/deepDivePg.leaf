@@ -98,91 +98,95 @@
                         </div> <!--col-->
                     </div> <!--row-->
                     
-                    <div class="row no-gutters">
-                        <div class="col-5">
-                            <div class="mybox3">
-                                <form>
-                                    <label for="white">First Name</label><br>
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
-                                      
-                                      <label for="white">Email</label><br>
-                                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
-                                      
-                                      <label for="white">Age</label><br>
-
-                                   <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
-                                    <br>
-                                      
-                                  <div class="mybox2">
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Male</label>
-
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Female</label>
-                                  </div>
-                                </form>
-                            </div> <!--mybox-->
-                        </div> <!--col-->
-                        
-                        <div class="col-7">
-<!--                            -->
-<!--                                -->
-<div class="mybox3">
-
-<div class="row">
-    <div class="col-12">
-        <p>Which of the following best describes you?</p>
-    </div>
-    <div class="col-4">
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">White Belt</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Blue Belt</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Purple Belt</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Brown Belt</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Black Belt</label><br>
-
-    </div> <!--col-->
-    
-    <div class="col-4">
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Competitor</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Hobbyist</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Pro</label><br>
-    </div> <!--col-->
-    
-    <div class="col-4">
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Injury Prone & Nervous</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Tough & Beat Up</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Resilient & Superfluid</label><br>
-         
-         <input type="radio" id="white" name="belt" value="white" required>
-         <label for="white">Injured & Frustrated</label><br>
-         
-         <p>average days trained weekly</p>
-    </div> <!--col-->
-    
-</div> <!--row-->
-
-                        </div> <!--col-->
-                    </div> <!--row-->
+                    
+                    
                     <hr>
+                    
+                    <div class="mybox3">
+                           
+
+                               <div class="row">
+                               <div class="col">
+                                   <p>Which of the following best describes you?</p>
+<hr>
+                                    <p>i have earned my</p>
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">White Belt</label>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Blue Belt</label>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Purple Belt</label>
+                                    
+                               </div> <!--col-->
+                               </div> <!--row-->
+                               
+                              <div class="row">
+                              <div class="col">
+                                   <input type="radio" id="white" name="belt" value="white" required>
+                                   <label for="white">Brown Belt</label>
+                                   
+                                   <input type="radio" id="white" name="belt" value="white" required>
+                                   <label for="white">Black Belt</label>
+                                   
+                                   <input type="radio" id="white" name="belt" value="white" required>
+                                   <label for="white">Red Belt</label>
+                              </div> <!--col-->
+                              </div> <!--row-->
+
+                               <hr>
+                               
+                               <div class="row">
+                               <div class="col">
+                                   <p>i am a jiujitsu</p>
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Competitor</label>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Hobbyist</label>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Pro</label>
+                               </div> <!--col-->
+                               </div> <!--row-->
+
+                               <hr>
+
+                               
+                               
+                               <div class="row">
+                               <div class="col">
+                                    <p>i feel</p>
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Injury Prone & Nervous</label><br>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Tough & Beat Up</label><br>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Resilient & Superfluid</label><br>
+                                    
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Injured & Frustrated</label><br>
+                                    
+                               </div> <!--col-->
+                               </div> <!--row-->
+
+                               <hr>
+
+                               <div class="row">
+                               <div class="col">
+                               <label for="white">i practice jiujitsu this many times a week</label>
+                               <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                               </div> <!--col-->
+                               </div> <!--row-->
+                               
+                       </div> <!--mybox3-->
+                    
+                    
+                    
+                    
                     <div class="row">
                         <div class="col">
                             <div class="mybox3">
@@ -192,6 +196,44 @@
                             </div> <!--mybox-->
                         </div> <!--col-->
                 </div> <!--row-->
+                    
+                    
+                    <!--Lead Capture-->
+                                     <div class="row no-gutters">
+                                         <div class="col">
+                                             <div class="mybox3">
+                                                 <form>
+                                                     <label for="white">First Name</label><br>
+                                                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
+                                                       
+                                                       <label for="white">Email</label><br>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                                                       
+                                                       <label for="white">Age</label><br>
+
+                                                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
+                                                     <br>
+                                                       
+                                                   <div class="mybox2">
+                                                     <input type="radio" id="white" name="belt" value="white" required>
+                                                     <label for="white">Male</label>
+
+                                                     <input type="radio" id="white" name="belt" value="white" required>
+                                                     <label for="white">Female</label>
+                                                   </div>
+                                                 </form>
+                                             </div> <!--mybox-->
+                                         </div> <!--col-->
+                                         
+                                         <div class="col-7">
+
+                    
+                                 
+                             </div> <!--row-->
+                    
+                    
+                    
+                    
                     
                     <hr>
                     <div class="form-row text-center">
