@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Superfluid Jiujitsu</title>
+    <title>Pain Free Jiujitsu</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .mybox {
             background-color: lightgray;
-            min-height: 200px;
-            margin: 18px 9px;
+            margin-top: 9px;
             padding: 9px;
+            border-radius: 9px;
         }
+    
+    .mybox2 {
+        background-color: darkgray;
+<!--        margin: 18px 9px;-->
+<!--        padding: 9px;-->
+<!--        border-radius: 9px;-->
+    }
+    
+    .mybox3 {
+        background-color: gray;
+        padding: 9px;
+        border-radius: 9px;
+    }
     
         .mycontainer {
             background-color: white;
@@ -29,16 +42,25 @@
     </style>
 </head>
 <body>
+    <!--container-->
     <div class="container mycontainer">
-        
         <!--header-->
-        <div class="row">
-            <div class="col-3">
-                <div class="mybox">
-                    <img src="/imgs/engineering_SphericalWave_Logo.png" class="img-fluid" alt="Responsive image">
-                </div>
-            </div>
+        <div class="row no-gutters text-center">
             <div class="col-6">
+                <div class="mybox">
+                    <div class="row no-gutters text-left">
+                        <div class="col-6">
+                            <img src="/imgs/jiujitsu_glyphs_3.png" class="img" alt="Responsive image">
+                        </div> <!--col-->
+                        <div class="col-6 align-self-center">
+                            <h1>Pain</h1>
+                            <h1>Free</h1>
+                            <h1>Jiujitsu</h1>
+                        </div> <!--col-->
+                    </div> <!--row-->
+                </div> <!--mybox-->
+            </div> <!--col-->
+            <div class="col-3">
                 <div class="mybox">
                     "Just click on the button below to start unlocking the true power of your jiujitsu today..."
                 </div>
@@ -49,10 +71,10 @@
                     <img src="/imgs/engineering_SphericalWave_Logo.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
-        </div>         <!--header--> <!--row-->
+        </div>  <!--header--> <!--row-->
         
         <!--navBar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
           <a class="navbar-brand" href="#">Superfluid Jiujitsu</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,83 +97,159 @@
           </div>
         </nav>
         
-        <div class="row">
+        <!--Main Section-->
+        <div class="row no-gutters">
             <!--picture-->
             <div class="col-6">
                 <div class="mybox">
-                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid" alt="Responsive image">
+                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
                 </div>
             </div>
             
             <!--survey-->
             <div class="col-6">
                 <div class="mybox">
-                    <div class="row">
-                        <div class="col-12"><h4>Enter your Name and Email to Down the Free Kit</h4></div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="mybox2">
+                                <h4>Enter your Name and Email to Down the Free Kit</h4>
+                            </div>
+                        </div> <!--col-->
                     </div> <!--row-->
                     
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="mybox">
+                    <div class="row no-gutters">
+                        <div class="col-5">
+                            <div class="mybox3">
                                 <form>
-                                      <div class="form-group">
-                                        <label for="exampleInputPassword1">Name</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="First Name">
-                                      </div>
+                                    <label for="white">First Name</label><br>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
                                       
-                                      <div class="form-group">
-                                       <label for="exampleInputEmail1">Email</label>
-                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                     </div>
+                                      <label for="white">Email</label><br>
+                                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
                                       
-                                      <div class="form-group">
-                                           <label for="exampleInputPassword1">Age</label>
-                                           <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Age">
-                                      </div>
+                                      <label for="white">Age</label><br>
+
+                                   <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
+                                    <br>
                                       
-                                      <div class="form-group">
-                                           <label for="exampleInputPassword1">Male</label>
-                                           <input type="radio" class="form-control" id="exampleInputPassword1" placeholder="Age">
-                                      </div>
-                                      
-                                      <div class="form-group">
-                                           <label for="exampleInputPassword1">Female</label>
-                                           <input type="radio" class="form-control" id="exampleInputPassword1" placeholder="Age">
-                                      </div>
+                                  <div class="mybox2">
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Male</label>
+
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Female</label>
+                                  </div>
                                 </form>
                             </div> <!--mybox-->
                         </div> <!--col-->
                         
-                        <div class="col-8">
-                            <div class="mybox">
+                        <div class="col-7">
+                            <div class="mybox3">
                                 <div class="row">
-                                    <div class="col-12"><h5>Which of the following best describes you?</h5></div>
-                                    <div class="col-6"><h4>col 1</h4></div>
-                                    <div class="col-6"><h4>col 2</h4></div>
+                                    <div class="col-12">
+                                        <p>Which of the following best describes you?</p>
+                                    </div>
+                                    <div class="col-4">
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">White Belt</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Blue Belt</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Purple Belt</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Brown Belt</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Black Belt</label><br>
+                                    </div> <!--col-->
+                                    
+                                    <div class="col-4">
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Competitor</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Hobbyist</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Pro</label><br>
+                                    </div> <!--col-->
+                                    
+                                    <div class="col-4">
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Injury Prone & Nervous</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Tough & Beat Up</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Resilient & Superfluid</label><br>
+                                         
+                                         <input type="radio" id="white" name="belt" value="white" required>
+                                         <label for="white">Injured & Frustrated</label><br>
+                                         
+                                         <p>average days trained weekly</p>
+                                    </div> <!--col-->
+                                    
                                 </div> <!--row-->
                             </div> <!--mybox-->
                         </div> <!--col-->
-                        
                     </div> <!--row-->
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mybox3">
+                                <p>What is your single biggest question about Jiujitsu pain resolution? And what prompted you to search for the answer today in particular?</p>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <p>Privacy Blurb a,sdnnasld </p>
+                            </div> <!--mybox-->
+                        </div> <!--col-->
+                </div> <!--row-->
+                    
+                    <hr>
+                    <div class="form-row text-center">
+                        <div class="col">
+<!--                            <div class="mybox">-->
+                                <button type="submit" class="btn btn-primary btn-lg">Free Jiujitsu Moves</button>
+<!--                            </div> <!--mybox-->
+                        </div> <!--col-->
+                </div> <!--row-->
                     
                     
-                </div>
-            </div>
-        </div>
+                </div> <!--row-->
+            </div> <!--mybox-->
+        </div> <!--col-->
         
+        <!--Testimonials-->
         <div class="row">
             <div class="col">
-                <div class="mybox">Testimonial 1</div>
-            </div>
+                <div class="mybox">
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                </div>
+            </div> <!--col-->
             <div class="col">
-                <div class="mybox">Testimonial 2</div>
-            </div>
+                 <div class="mybox">
+                    <p>Testimonial 2</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Wolverine</p>
+                </div>
+            </div> <!--col-->
             <div class="col">
-                <div class="mybox">Testimonial 3</div>
-            </div>
-        </div>
+                <div class="mybox">
+                    <p>Testimonial 3</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Iron Rob</p>
+                </div> <!--my box-->
+            </div> <!--col-->
+        </div> <!--row-->
+        
+        <br>
 
-    </div>
+    </div> <!--container-->
     
 </body>
 </html>
