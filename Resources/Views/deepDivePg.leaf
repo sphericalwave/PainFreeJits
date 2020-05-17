@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .mybox {
-            background-color: lightgray;
+<!--            background-color: lightgray;-->
             margin-top: 9px;
             padding: 18px;
             border-radius: 9px;
@@ -29,38 +29,51 @@
     }
     
         .mycontainer {
-            background-color: white;
+            background-color: black;
             margin-top: 24px;
+            margin-bottom: 24px;
             border-radius: 9px;
-<!--            opacity: 0.7;-->
+<!--            opacity: 0.9;-->
 <!--            width:100%;-->
             max-width:none;
             padding:0;
         }
     
     body {
-        background-image: url(/imgs/jiujitsu_matrix_72.png);
+        background-image: url(/imgs/matrix_opening_1.png);
         background-size: contain;
     }
+    
+    h3 { color: white; }
+    p { color: white; }
+    label { color: white; }
+    
+    hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid white;
+       border-bottom: 1px solid white;
+    }
+
+
     
     </style>
 </head>
 <body>
     
-    <!--container-->
-<!--    <div class="container-fluid">-->
-<!--        <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">-->
-<!---->
-<!--    </div>-->
-    
     <div class="container mycontainer">
+        
         <!--header-->
-<!--        <div class="row no-gutters">-->
-<!--            <div class="col">-->
-<!--        <div class="container-fluid">-->
-                <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
-<!--            </div> <!--col-->
-<!--        </div> <!--row-->
+        <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
         
         <!--navBar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
@@ -86,151 +99,134 @@
           </div>
         </nav>
         
-        <!--Top Row-->
+        <!--First Picture-->
         <div class="row ">
             <!--picture-->
             <div class="col align-self-center">
             <div class="mybox">
-                <h2>Complete the free survey to discover solutions to your Jiujitsu Pain</h2>
+                <h3>Complete the free survey to discover solutions to your Jiujitsu Pain</h3>
             </div>
                 <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
         </div>
         </div> <!--col Top Row-->
         
-        <!--Main Section-->
-        <div class="row ">
+        <!--survey1-->
+        <div class="mybox">
 
-            
-            <!--survey-->
-            <div class="col">
-                <div class="mybox">
-                    
-                    
-                    
-                    
-                    <div class="mybox3">
-                           
-
-                               <div class="row">
-                               <div class="col">
-                                   <p>Which of the following best describes you?</p>
-<hr>
-                                    <p>i am a ... belt</p>
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">White Belt</label>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Blue Belt</label>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Purple Belt</label>
-                                    
-                               </div> <!--col-->
-                               </div> <!--row-->
-                               
-                              <div class="row">
-                              <div class="col">
-                                   <input type="radio" id="white" name="belt" value="white" required>
-                                   <label for="white">Brown Belt</label>
-                                   
-                                   <input type="radio" id="white" name="belt" value="white" required>
-                                   <label for="white">Black Belt</label>
-                                   
-                                   <input type="radio" id="white" name="belt" value="white" required>
-                                   <label for="white">Red Belt</label>
-                              </div> <!--col-->
-                              </div> <!--row-->
-
-                               <hr>
-                               
-                               <div class="row">
-                               <div class="col">
-                                   <p>i am a jiujitsu ...</p>
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Competitor</label>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Hobbyist</label>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Pro</label>
-                               </div> <!--col-->
-                               </div> <!--row-->
-
-                               <hr>
-
-                               
-                               
-                               <div class="row">
-                               <div class="col">
-                                   <p>i feel ...</p>
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Injury Prone & Nervous</label><br>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Tough & Beat Up</label><br>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Resilient & Superfluid</label><br>
-                                    
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Injured & Frustrated</label><br>
-                                    
-                               </div> <!--col-->
-                               </div> <!--row-->
-
-                       </div> <!--mybox3-->
-                </div> <!--row-->
-            </div> <!--mybox-->
-        </div> <!--col Main Section-->
-        
-        <!--Section2-->
-        <div class="row ">
-
-            
-            <!--survey-->
-            <div class="col-6">
-                <div class="mybox">
-                    
-                    <div class="row">
-                        <div class="col">
-                            <div class="mybox3">
-                                <label for="white">How many times a week do you practice Jiujitsu?</label>
-                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
-                            </div> <!--mybox3-->
-                        </div> <!--col-->
-                    </div> <!--row-->
-                    <hr>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mybox3">
-                                <p>What is your single biggest question about Jiujitsu pain resolution? And what prompted you to search for the answer today in particular?</p>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div> <!--mybox-->
-                        </div> <!--col-->
-                </div> <!--row-->
-                    
-                </div> <!--mybox-->
-            </div> <!--col-->
-            
-            <!--picture-->
-            <div class="col-6 align-self-center">
-                <div class="mybox">
-                    <img src="/imgs/jiujitsu_matrix_8.png" class="img-fluid rounded" alt="Responsive image">
-                </div> <!--mybox-->
-            </div> <!--col-->
-        </div> <!--row section2-->
-        
-        <!--Section3-->
-        <div class="row ">
-
-            <!--picture-->
-            <div class="col-6 align-self-center">
-                <div class="mybox">
-                    <img src="/imgs/jiujitsu_matrix_12.png" class="img-fluid rounded" alt="Responsive image">
+            <div class="row ">
+                <div class="col">
+                     <p>Which of the following best describes you?</p>
                 </div>
             </div>
             
+            <div class="row no-gutters">
+                
+                <!--belt level-->
+                <div class="col">
+                    <div class="mybox">
+                         <p>i am a __</p>
+                         <hr>
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">White Belt</label><br>
+                         
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">Blue Belt</label><br>
+                         
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">Purple Belt</label><br>
+                         
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">Brown Belt</label><br>
+                         
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">Black Belt</label><br>
+                         
+                         <input type="radio" id="white" name="belt" value="white" required>
+                         <label for="white">Red Belt</label><br>
+                     </div> <!--mybox-->
+                </div> <!--col-->
+                
+                <!--interest level-->
+                <div class="col">
+                    <div class="mybox">
+
+                    <p>i am a...</p>
+                    <hr>
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Competitor</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Hobbyist</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Pro</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Novice</label><br>
+                     </div> <!--mybox-->
+
+                </div> <!--col-->
+
+                <!--i feel...-->
+                <div class="col">
+                    <div class="mybox">
+
+                    <p>i feel ...</p>
+                    <hr>
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Injury Prone & Nervous</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Tough & Beat Up</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Resilient & Superfluid</label><br>
+                     
+                     <input type="radio" id="white" name="belt" value="white" required>
+                     <label for="white">Injured & Frustrated</label><br>
+                     </div> <!--mybox-->
+
+                </div> <!--col-->
+                
+                <!--jiujitsu per week-->
+                <div class="col">
+                    <div class="mybox">
+
+                    <label for="white">I train __ times a week</label>
+                    <hr>
+                     <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                     </div> <!--mybox-->
+
+                </div> <!--col-->
+            </div>
+        
+        </div>
+        
+        <!--picture2-->
+        <div class="row ">
+            <div class="col align-self-center">
+                <img src="/imgs/jiujitsu_matrix_8.png" class="img-fluid rounded" alt="Responsive image">
+            </div>
+        </div> <!--col Top Row-->
+        
+        <!--Survey2 Open Ended and Frequency-->
+        <div class="row ">
+            <div class="col">
+                <div class="mybox">
+                    <div class="row">
+                            <div class="col">
+                                <div class="mybox3">
+                                    <p>What is your single biggest question about Jiujitsu pain resolution? And what prompted you to search for the answer today in particular?</p>
+                                    <textarea class="form-control" rows="10" id="comment"></textarea>
+                                </div> <!--mybox-->
+                            </div> <!--col-->
+                    </div> <!--row-->
+
+                    
+                    
+                    
+                </div> <!--mybox-->
+            </div> <!--col-->
             <!--survey-->
             <div class="col-6">
                 <div class="mybox">
@@ -238,38 +234,38 @@
                     
                     
                     <!--Lead Capture-->
-                 <div class="row no-gutters">
-                     <div class="col">
-                         <div class="mybox3">
-                             <form>
-                                 <label for="white">First Name</label><br>
-                                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
-                                   
-                                  
-                                   
-                                   <label for="white">Age</label><br>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="mybox3">
+                                <form>
+                                    <label for="white">First Name</label><br>
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
+                                    
+                                    
+                                    
+                                    <label for="white">Age</label><br>
 
                                 <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
-                                 <br>
-                                   
-                               <div class="mybox2">
-                                 <input type="radio" id="white" name="belt" value="white" required>
-                                 <label for="white">Male</label>
+                                    <br>
+                                    
+                                <div class="mybox2">
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Male</label>
 
-                                 <input type="radio" id="white" name="belt" value="white" required>
-                                 <label for="white">Female</label>
-                               </div>
-                               
-                               <label for="white">Email</label><br>
-                                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
-                               
-                             </form>
-                         </div> <!--mybox-->
-                     </div> <!--col-->
-                     
+                                    <input type="radio" id="white" name="belt" value="white" required>
+                                    <label for="white">Female</label>
+                                </div>
+                                
+                                <label for="white">Email</label><br>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                                
+                                </form>
+                            </div> <!--mybox-->
+                        </div> <!--col-->
+                        
 
-             
-         </div> <!--row-->
+                
+            </div> <!--row-->
                     
                     
                     
@@ -286,9 +282,16 @@
                     
                 </div> <!--row-->
             </div> <!--mybox-->
-            
-            
-        </div> <!--col Section3-->
+        </div> <!--Survey2 Open Ended and Frequency-->
+        
+
+        
+        <!--Picture 3-->
+        <div class="row ">
+            <div class="col align-self-center">
+                <img src="/imgs/jiujitsu_matrix_12.png" class="img-fluid rounded" alt="Responsive image">
+            </div>
+        </div> <!--Picture 3-->
         
         <!--Testimonials-->
         <div class="row">
@@ -314,6 +317,13 @@
                 </div> <!--my box-->
             </div> <!--col-->
         </div> <!--row Testimonials-->
+        
+        <!--Picture 3-->
+        <div class="row ">
+            <div class="col align-self-center">
+                <img src="/imgs/jiujitsu_matrix_13.png" class="img-fluid rounded" alt="Responsive image">
+            </div>
+        </div> <!--Picture 3-->
         
         <br>
     </div> <!--container-->
