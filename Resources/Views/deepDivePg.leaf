@@ -11,7 +11,7 @@
         .mybox {
             background-color: lightgray;
             margin-top: 9px;
-            padding: 9px;
+            padding: 18px;
             border-radius: 9px;
         }
     
@@ -23,7 +23,7 @@
     }
     
     .mybox3 {
-        background-color: gray;
+<!--        background-color: gray;-->
         padding: 9px;
         border-radius: 9px;
     }
@@ -32,7 +32,10 @@
             background-color: white;
             margin-top: 24px;
             border-radius: 9px;
-<!--            opacity: 0.7-->
+<!--            opacity: 0.7;-->
+<!--            width:100%;-->
+            max-width:none;
+            padding:0;
         }
     
     body {
@@ -45,14 +48,19 @@
 <body>
     
     <!--container-->
+<!--    <div class="container-fluid">-->
+<!--        <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">-->
+<!---->
+<!--    </div>-->
+    
     <div class="container mycontainer">
         <!--header-->
-        <div class="row">
-            <div class="col">
-                <img src="/imgs/belt_banner_2.png" class="img rounded" alt="Responsive image">
-            </div> <!--col-->
-        </div> <!--row-->
-        
+<!--        <div class="row no-gutters">-->
+<!--            <div class="col">-->
+<!--        <div class="container-fluid">-->
+                <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
+<!--            </div> <!--col-->
+<!--        </div> <!--row-->
         
         <!--navBar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
@@ -78,29 +86,27 @@
           </div>
         </nav>
         
-        <!--Main Section-->
-        <div class="row no-gutters">
+        <!--Top Row-->
+        <div class="row ">
             <!--picture-->
-            <div class="col-6">
-                <div class="mybox">
-                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
-                </div>
+            <div class="col align-self-center">
+            <div class="mybox">
+                <h2>Complete the free survey to discover solutions to your Jiujitsu Pain</h2>
             </div>
+                <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
+        </div>
+        </div> <!--col Top Row-->
+        
+        <!--Main Section-->
+        <div class="row ">
+
             
             <!--survey-->
-            <div class="col-6">
+            <div class="col">
                 <div class="mybox">
-                    <div class="row no-gutters">
-                        <div class="col-12">
-                            <div class="mybox2">
-                                <h5>Complete the free survey to discover solutions to your Jiujitsu Pain</h5>
-                            </div>
-                        </div> <!--col-->
-                    </div> <!--row-->
                     
                     
                     
-                    <hr>
                     
                     <div class="mybox3">
                            
@@ -109,7 +115,7 @@
                                <div class="col">
                                    <p>Which of the following best describes you?</p>
 <hr>
-                                    <p>i have earned my</p>
+                                    <p>i am a ... belt</p>
                                     <input type="radio" id="white" name="belt" value="white" required>
                                     <label for="white">White Belt</label>
                                     
@@ -139,7 +145,7 @@
                                
                                <div class="row">
                                <div class="col">
-                                   <p>i am a jiujitsu</p>
+                                   <p>i am a jiujitsu ...</p>
                                     <input type="radio" id="white" name="belt" value="white" required>
                                     <label for="white">Competitor</label>
                                     
@@ -157,7 +163,7 @@
                                
                                <div class="row">
                                <div class="col">
-                                    <p>i feel</p>
+                                   <p>i feel ...</p>
                                     <input type="radio" id="white" name="belt" value="white" required>
                                     <label for="white">Injury Prone & Nervous</label><br>
                                     
@@ -176,25 +182,25 @@
                        </div> <!--mybox3-->
                 </div> <!--row-->
             </div> <!--mybox-->
-        </div> <!--col-->
+        </div> <!--col Main Section-->
         
         <!--Section2-->
-        <div class="row no-gutters">
+        <div class="row ">
 
             
             <!--survey-->
             <div class="col-6">
                 <div class="mybox">
                     
-                    
                     <div class="row">
                         <div class="col">
-                            <label for="white">i practice jiujitsu this many times a week</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                            <div class="mybox3">
+                                <label for="white">How many times a week do you practice Jiujitsu?</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                            </div> <!--mybox3-->
                         </div> <!--col-->
                     </div> <!--row-->
-                    
-                    
+                    <hr>
                     <div class="row">
                         <div class="col">
                             <div class="mybox3">
@@ -204,26 +210,24 @@
                         </div> <!--col-->
                 </div> <!--row-->
                     
-                    
-                    
-                </div> <!--row-->
-            </div> <!--mybox-->
+                </div> <!--mybox-->
+            </div> <!--col-->
             
             <!--picture-->
-            <div class="col-6">
+            <div class="col-6 align-self-center">
                 <div class="mybox">
-                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
-                </div>
-            </div>
-        </div> <!--col-->
+                    <img src="/imgs/jiujitsu_matrix_8.png" class="img-fluid rounded" alt="Responsive image">
+                </div> <!--mybox-->
+            </div> <!--col-->
+        </div> <!--row section2-->
         
         <!--Section3-->
-        <div class="row no-gutters">
+        <div class="row ">
 
             <!--picture-->
-            <div class="col-6">
+            <div class="col-6 align-self-center">
                 <div class="mybox">
-                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
+                    <img src="/imgs/jiujitsu_matrix_12.png" class="img-fluid rounded" alt="Responsive image">
                 </div>
             </div>
             
@@ -241,8 +245,7 @@
                                  <label for="white">First Name</label><br>
                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
                                    
-                                   <label for="white">Email</label><br>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                                  
                                    
                                    <label for="white">Age</label><br>
 
@@ -256,6 +259,10 @@
                                  <input type="radio" id="white" name="belt" value="white" required>
                                  <label for="white">Female</label>
                                </div>
+                               
+                               <label for="white">Email</label><br>
+                                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                               
                              </form>
                          </div> <!--mybox-->
                      </div> <!--col-->
@@ -267,12 +274,11 @@
                     
                     
                     
-                    
-                    <hr>
+                    <br>
                     <div class="form-row text-center">
                         <div class="col">
 <!--                            <div class="mybox">-->
-                                <button type="submit" class="btn btn-primary btn-lg">Free Jiujitsu Moves</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Give me the Download</button>
 <!--                            </div> <!--mybox-->
                         </div> <!--col-->
                 </div> <!--row-->
@@ -282,7 +288,7 @@
             </div> <!--mybox-->
             
             
-        </div> <!--col-->
+        </div> <!--col Section3-->
         
         <!--Testimonials-->
         <div class="row">
@@ -307,10 +313,9 @@
                     <p>- Iron Rob</p>
                 </div> <!--my box-->
             </div> <!--col-->
-        </div> <!--row-->
+        </div> <!--row Testimonials-->
         
         <br>
-
     </div> <!--container-->
     
 </body>
