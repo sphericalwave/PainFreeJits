@@ -93,7 +93,7 @@
                     <div class="row no-gutters">
                         <div class="col-12">
                             <div class="mybox2">
-                                <h4>Enter your Name and Email to Down the Free Kit</h4>
+                                <h5>Complete the free survey to discover solutions to your Jiujitsu Pain</h5>
                             </div>
                         </div> <!--col-->
                     </div> <!--row-->
@@ -173,18 +173,26 @@
                                </div> <!--col-->
                                </div> <!--row-->
 
-                               <hr>
-
-                               <div class="row">
-                               <div class="col">
-                               <label for="white">i practice jiujitsu this many times a week</label>
-                               <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
-                               </div> <!--col-->
-                               </div> <!--row-->
-                               
                        </div> <!--mybox3-->
+                </div> <!--row-->
+            </div> <!--mybox-->
+        </div> <!--col-->
+        
+        <!--Section2-->
+        <div class="row no-gutters">
+
+            
+            <!--survey-->
+            <div class="col-6">
+                <div class="mybox">
                     
                     
+                    <div class="row">
+                        <div class="col">
+                            <label for="white">i practice jiujitsu this many times a week</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                        </div> <!--col-->
+                    </div> <!--row-->
                     
                     
                     <div class="row">
@@ -192,44 +200,69 @@
                             <div class="mybox3">
                                 <p>What is your single biggest question about Jiujitsu pain resolution? And what prompted you to search for the answer today in particular?</p>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
-                                <p>Privacy Blurb a,sdnnasld </p>
                             </div> <!--mybox-->
                         </div> <!--col-->
                 </div> <!--row-->
                     
                     
-                    <!--Lead Capture-->
-                                     <div class="row no-gutters">
-                                         <div class="col">
-                                             <div class="mybox3">
-                                                 <form>
-                                                     <label for="white">First Name</label><br>
-                                                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
-                                                       
-                                                       <label for="white">Email</label><br>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
-                                                       
-                                                       <label for="white">Age</label><br>
-
-                                                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
-                                                     <br>
-                                                       
-                                                   <div class="mybox2">
-                                                     <input type="radio" id="white" name="belt" value="white" required>
-                                                     <label for="white">Male</label>
-
-                                                     <input type="radio" id="white" name="belt" value="white" required>
-                                                     <label for="white">Female</label>
-                                                   </div>
-                                                 </form>
-                                             </div> <!--mybox-->
-                                         </div> <!--col-->
-                                         
-                                         <div class="col-7">
-
                     
-                                 
-                             </div> <!--row-->
+                </div> <!--row-->
+            </div> <!--mybox-->
+            
+            <!--picture-->
+            <div class="col-6">
+                <div class="mybox">
+                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
+                </div>
+            </div>
+        </div> <!--col-->
+        
+        <!--Section3-->
+        <div class="row no-gutters">
+
+            <!--picture-->
+            <div class="col-6">
+                <div class="mybox">
+                    <img src="/imgs/rolling_AM_v_RJ.png" class="img-fluid rounded" alt="Responsive image">
+                </div>
+            </div>
+            
+            <!--survey-->
+            <div class="col-6">
+                <div class="mybox">
+                    
+                    
+                    
+                    <!--Lead Capture-->
+                 <div class="row no-gutters">
+                     <div class="col">
+                         <div class="mybox3">
+                             <form>
+                                 <label for="white">First Name</label><br>
+                                 <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
+                                   
+                                   <label for="white">Email</label><br>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                                   
+                                   <label for="white">Age</label><br>
+
+                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
+                                 <br>
+                                   
+                               <div class="mybox2">
+                                 <input type="radio" id="white" name="belt" value="white" required>
+                                 <label for="white">Male</label>
+
+                                 <input type="radio" id="white" name="belt" value="white" required>
+                                 <label for="white">Female</label>
+                               </div>
+                             </form>
+                         </div> <!--mybox-->
+                     </div> <!--col-->
+                     
+
+             
+         </div> <!--row-->
                     
                     
                     
@@ -247,6 +280,8 @@
                     
                 </div> <!--row-->
             </div> <!--mybox-->
+            
+            
         </div> <!--col-->
         
         <!--Testimonials-->
