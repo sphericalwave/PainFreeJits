@@ -30,11 +30,17 @@ class DeepDivePg: RouteCollection
 struct DeepDiveSurvey: Content
 {
     //TODO: Complete
-    var belt: String?
-//    var ankles: String?
-//    var knees: String?
+    var belt: String
+    var interest: String
+    var vibe: String
+    var trainingFrequency: String
+    var openEndedQuestion: String
+    var firstName: String
+    var age: String
+    var gender: String
+    var email: String
 
     func print2() {
-        print(belt ?? "nil")
+        print("Test")
     }
 }
