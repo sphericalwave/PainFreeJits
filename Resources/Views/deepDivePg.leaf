@@ -48,6 +48,12 @@
     p { color: white; }
     label { color: white; }
     
+    field_set {
+        border-color: white;
+        border-style: solid;
+    }
+
+    
     hr {
        display: block;
        position: relative;
@@ -124,6 +130,7 @@
                 <!--belt level-->
                 <div class="col">
                     <div class="mybox">
+                        <fieldset>
                          <p>i am a __</p>
                          <hr>
                          <input type="radio" id="white" name="belt" value="white" required>
@@ -143,6 +150,7 @@
                          
                          <input type="radio" id="white" name="belt" value="white" required>
                          <label for="white">Red Belt</label><br>
+                         </fieldset>
                      </div> <!--mybox-->
                 </div> <!--col-->
                 
@@ -216,8 +224,8 @@
                     <div class="row">
                             <div class="col">
                                 <div class="mybox3">
-                                    <p>What is your single biggest question about Jiujitsu pain resolution? And what prompted you to search for the answer today in particular?</p>
-                                    <textarea class="form-control" rows="10" id="comment"></textarea>
+                                    <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
+                                    <textarea class="form-control" rows="10" id="comment" placeholder="I'm concerned about my lower back, I'm concerned about my knees, I'm concerned about my fingers. I'm searching because I want to practice jiujitsu for the rest of my life but pain is a problem."></textarea>
                                 </div> <!--mybox-->
                             </div> <!--col-->
                     </div> <!--row-->
@@ -274,7 +282,7 @@
                     <div class="form-row text-center">
                         <div class="col">
 <!--                            <div class="mybox">-->
-                                <button type="submit" class="btn btn-primary btn-lg">Give me the Download</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Give me the Answers</button>
 <!--                            </div> <!--mybox-->
                         </div> <!--col-->
                 </div> <!--row-->
@@ -326,6 +334,7 @@
         </div> <!--Picture 3-->
         
         <br>
+        
     </div> <!--container-->
     
 </body>
