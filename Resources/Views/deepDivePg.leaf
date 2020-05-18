@@ -48,9 +48,11 @@
     p { color: white; }
     label { color: white; }
     
-    field_set {
-        border-color: white;
-        border-style: solid;
+    fieldset
+    {
+        border:2px solid white;
+      max-width: 500px;
+      padding: 16px;
     }
 
     
@@ -121,7 +123,7 @@
 
             <div class="row ">
                 <div class="col">
-                     <p>Which of the following best describes you?</p>
+                     <p>How would you describe your Jiujitsu?</p>
                 </div>
             </div>
             
@@ -157,20 +159,21 @@
                 <!--interest level-->
                 <div class="col">
                     <div class="mybox">
-
-                    <p>i am a...</p>
-                    <hr>
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Competitor</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Hobbyist</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Pro</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Novice</label><br>
+                        <fieldset>
+                            <p>i am a...</p>
+                            <hr>
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Competitor</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Hobbyist</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Pro</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Novice</label><br>
+                         </fieldset>
                      </div> <!--mybox-->
 
                 </div> <!--col-->
@@ -178,20 +181,21 @@
                 <!--i feel...-->
                 <div class="col">
                     <div class="mybox">
-
-                    <p>i feel ...</p>
-                    <hr>
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Injury Prone & Nervous</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Tough & Beat Up</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Resilient & Superfluid</label><br>
-                     
-                     <input type="radio" id="white" name="belt" value="white" required>
-                     <label for="white">Injured & Frustrated</label><br>
+                        <fieldset>
+                            <p>i feel ...</p>
+                            <hr>
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Injury Prone & Nervous</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Tough & Beat Up</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Resilient & Superfluid</label><br>
+                             
+                             <input type="radio" id="white" name="belt" value="white" required>
+                             <label for="white">Injured & Frustrated</label><br>
+                        </fieldset>
                      </div> <!--mybox-->
 
                 </div> <!--col-->
@@ -199,10 +203,11 @@
                 <!--jiujitsu per week-->
                 <div class="col">
                     <div class="mybox">
-
-                    <label for="white">I train __ times a week</label>
-                    <hr>
-                     <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                    <fieldset>
+                        <label for="white">I train __ times a week</label>
+                        <hr>
+                         <input type="number" class="form-control" id="exampleInputPassword1" placeholder="3">
+                    </fieldset>
                      </div> <!--mybox-->
 
                 </div> <!--col-->
@@ -218,14 +223,16 @@
         </div> <!--col Top Row-->
         
         <!--Survey2 Open Ended and Frequency-->
-        <div class="row ">
+        <div class="row no-gutters">
             <div class="col">
                 <div class="mybox">
                     <div class="row">
                             <div class="col">
                                 <div class="mybox3">
-                                    <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
-                                    <textarea class="form-control" rows="10" id="comment" placeholder="I'm concerned about my lower back, I'm concerned about my knees, I'm concerned about my fingers. I'm searching because I want to practice jiujitsu for the rest of my life but pain is a problem."></textarea>
+                                    <fieldset>
+                                        <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
+                                        <textarea class="form-control" rows="10" id="comment" placeholder="I'm concerned about my lower back, I'm concerned about my knees, I'm concerned about my fingers. I'm searching because I want to practice jiujitsu for the rest of my life but pain is a problem."></textarea>
+                                    </fieldset>
                                 </div> <!--mybox-->
                             </div> <!--col-->
                     </div> <!--row-->
@@ -245,29 +252,31 @@
                     <div class="row no-gutters">
                         <div class="col">
                             <div class="mybox3">
-                                <form>
-                                    <label for="white">First Name</label><br>
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
-                                    
-                                    
-                                    
-                                    <label for="white">Age</label><br>
+                                <fieldset>
+                                    <form>
+                                        <label for="white">First Name</label><br>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gordon">
+                                        
+                                        
+                                        
+                                        <label for="white">Age</label><br>
 
-                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
-                                    <br>
-                                    
-                                <div class="mybox2">
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Male</label>
+                                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="23">
+                                        <br>
+                                        
+                                    <div class="mybox2">
+                                        <input type="radio" id="white" name="belt" value="white" required>
+                                        <label for="white">Male</label>
 
-                                    <input type="radio" id="white" name="belt" value="white" required>
-                                    <label for="white">Female</label>
-                                </div>
-                                
-                                <label for="white">Email</label><br>
-                                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
-                                
-                                </form>
+                                        <input type="radio" id="white" name="belt" value="white" required>
+                                        <label for="white">Female</label>
+                                    </div>
+                                    
+                                    <label for="white">Email</label><br>
+                                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="g_ryan@ds.com">
+                                    
+                                    </form>
+                                </fieldset>
                             </div> <!--mybox-->
                         </div> <!--col-->
                         
@@ -305,23 +314,30 @@
         <div class="row">
             <div class="col">
                 <div class="mybox">
-                    <p>Testimonial 1</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Dr Claw</p>
+                    <fieldset>
+                        <p>Testimonial 1</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Dr Claw</p>
+                    </fieldset>
+
                 </div>
             </div> <!--col-->
             <div class="col">
                  <div class="mybox">
-                    <p>Testimonial 2</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Wolverine</p>
+                     <fieldset>
+                        <p>Testimonial 2</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Wolverine</p>
+                    </fieldset>
                 </div>
             </div> <!--col-->
             <div class="col">
                 <div class="mybox">
-                    <p>Testimonial 3</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Iron Rob</p>
+                    <fieldset>
+                        <p>Testimonial 3</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Iron Rob</p>
+                    </fieldset>
                 </div> <!--my box-->
             </div> <!--col-->
         </div> <!--row Testimonials-->
