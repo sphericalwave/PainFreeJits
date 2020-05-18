@@ -12,35 +12,29 @@ class DeepDivePg: RouteCollection
 {
     func boot(routes: RoutesBuilder) throws {
         routes.get("dd", use: webpage(req:))
-        routes.post("dd", use: nextPg(req:))
+        routes.post("dd", use: submitForm(req:))
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
         return req.view.render("deepDivePg")
     }
     
-    func nextPg(req: Request) -> Response {
-//        print("Joint Page: \(req.description)")
-//        let joint = try! req.content.decode(Joint.self)
-//        print(joint.print2())
+    func submitForm(req: Request) -> Response {
+        print("Joint Page: \(req.description)")
+        let dds = try! req.content.decode(DeepDiveSurvey.self)
+        dds.print2()
         return req.redirect(to: "/demographics")
     }
 }
 
-//struct Joint: Content
-//{
-//    //TODO: Complete
-//    var toes: String?
+struct DeepDiveSurvey: Content
+{
+    //TODO: Complete
+    var belt: String?
 //    var ankles: String?
 //    var knees: String?
-//
-//    func print2() -> String {
-//        let ts = toes ?? "no toes"
-//        let ank = ankles ?? "no ankles"
-//        if let kn = knees {
-//            print("knees")
-//        }
-//
-//        return "Joint: " + ts + ank
-//    }
-//}
+
+    func print2() {
+        print(belt ?? "nil")
+    }
+}

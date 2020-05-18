@@ -11,8 +11,6 @@
         <hr>
         
         <p>What is your gender?</p>
-
-        <form action="" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -22,17 +20,16 @@
                         <input type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label><br>
                     </div>
-                    
-                    
                 </div>
             </div>
+            
             <hr>
+            
             <div class="form-row text-center">
                 <form action="" method="post">
                     <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
                 </form>
             </div>
-        </form>
     </div>
 </div>
 
