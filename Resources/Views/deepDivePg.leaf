@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .mybox {
-<!--            background-color: lightgray;-->
+            <!-- background-color: lightgray;-->
             margin-top: 9px;
             padding: 18px;
             border-radius: 9px;
@@ -17,15 +17,6 @@
     
     .mybox2 {
         background-color: darkgray;
-<!--        margin: 18px 9px;-->
-<!--        padding: 9px;-->
-<!--        border-radius: 9px;-->
-    }
-    
-    .mybox3 {
-<!--        background-color: gray;-->
-        padding: 9px;
-        border-radius: 9px;
     }
     
         .mycontainer {
@@ -79,6 +70,9 @@
 <body>
     
     <div class="container mycontainer">
+        
+        <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdyU_2F2sVuef7RZzgEK9P_2F7C5yrmy0qpojzgpuH8KJFKL1.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>
+        
         <form action="" method="post">
 
         
@@ -225,14 +219,15 @@
             
             <!--Survey2 Open Ended and Frequency-->
             <div class="row no-gutters">
+                <!--Open Ended-->
                 <div class="col">
                     <div class="mybox">
                         <div class="row">
                                 <div class="col">
-                                    <div class="mybox3">
+                                    <div class="mybox">
                                         <fieldset>
                                             <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
-                                            <textarea class="form-control" rows="10" id="openEndedQuestion"  name="openEndedQuestion" placeholder="I'm concerned about my lower back, I'm concerned about my knees, I'm concerned about my fingers. I'm searching because I want to practice jiujitsu for the rest of my life but pain is a problem." required></textarea>
+                                            <textarea class="form-control" rows="10" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
                                         </fieldset>
                                     </div> <!--mybox-->
                                 </div> <!--col-->
@@ -243,56 +238,55 @@
                         
                     </div> <!--mybox-->
                 </div> <!--col-->
-                <!--survey-->
+                
+                <!--Lead Capture-->
                 <div class="col-6">
                     <div class="mybox">
-                        
-                        
-                        
-                        <!--Lead Capture-->
                         <div class="row no-gutters">
                             <div class="col">
-                                <div class="mybox3">
                                     <fieldset>
     <!--                                    <form>-->
-                                            <label for="white">First Name</label><br>
-                                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Gordon" required>
+                                            <label for="firstName">First Name</label><br>
+                                            <input type="text" class="form-control" id="firstName" name="firstName" required>
                                             
-                                            <label for="white">Age</label><br>
-                                            <input type="number" class="form-control" id="age" name="age" required>
+                                            
                                             <br>
                                             
-                                            <div class="mybox2">
-                                                <input type="radio" id="male" name="gender" value="male" required>
-                                                <label for="white">Male</label>
+<!--                                            <div class="mybox2">-->
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="age">Age</label><br>
+                                                        <input type="number" class="form-control" id="age" name="age" required>
+                                                    </div>
+                                                    <div class="col-6 text-left align-self-center">
+                                                        <input type="radio" id="male" name="gender" value="male" required>
+                                                        <label for="male">Male</label><br>
 
-                                                <input type="radio" id="female" name="gender" value="female" required>
-                                                <label for="white">Female</label>
-                                            </div>
+                                                        <input type="radio" id="female" name="gender" value="female" required>
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                </div>
+<!--                                            </div>-->
+<br>
                                         
-                                            <label for="white">Email</label><br>
+                                            <label for="email">Email</label><br>
                                             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
                                         
     <!--                                    </form>-->
                                     </fieldset>
-                                </div> <!--mybox-->
                             </div> <!--col-->
-                </div> <!--row-->
-                        
+                        </div> <!--row-->
                         <br>
                         <div class="form-row text-center">
                             <div class="col">
-                                    
-                                    <form method="post">
-                                        <button type="submit" class="btn btn-primary btn-lg">Give me the Answers</button>
-                                    </form>
+                                <form method="post">
+                                    <button type="submit" class="btn btn-primary btn-lg">Give me the Answers</button>
+                                </form>
                             </div> <!--col-->
-                    </div> <!--row-->
-                        
-                        
-                    </div> <!--row-->
-                </div> <!--mybox-->
-            </div> <!--Survey2 Open Ended and Frequency-->
+                        </div> <!--row-->
+                    </div> <!--box-->
+                </div> <!--col-->
+            </div> <!--Survey2 Open Ended and Capture-->
             
             <!--Picture 3-->
             <div class="row ">
