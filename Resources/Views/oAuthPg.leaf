@@ -1,0 +1,19 @@
+#extend("basePg"):
+#export("title", "OAuth")
+#export("body"):
+<div class="col">
+    <div class="mybox1">
+        
+        <p>OAuth Test</p>
+        <hr>
+        <div class="form-row text-center">
+            <form action="" method="post">
+                <button type="submit" class="btn btn-primary btn-lg">Login w Google</button>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+#endexport
+#endextend

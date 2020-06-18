@@ -2,6 +2,8 @@ import Fluent
 import FluentSQLiteDriver
 import Vapor
 import Leaf
+import ImperialGoogle
+import ImperialGitHub
 
 public func configure(_ app: Application) throws
 {
@@ -86,4 +88,31 @@ public func configure(_ app: Application) throws
     try! app.register(collection: DeepDivePg())
     //try! app.register(collection: HomePg())
     //try! app.register(collection: YogurtPg())
+    
+//    try! app.register(collection: ImperialAPI())
+//    
+   // try! app.oAuth(from: Google.self, authenticate: "google", callback: "http://localhost:8080/google-complete", redirect: "/")
+    
+    //try! app.oAuth(from: GitHub.self, authenticate: "github", callback: "gh-auth-complete", redirect: "/")
+//    app.oAuth(from: <#T##FederatedService.Protocol#>, authenticate: <#T##String#>, authenticateCallback: <#T##((Request) throws -> (EventLoopFuture<Void>))?##((Request) throws -> (EventLoopFuture<Void>))?##(Request) throws -> (EventLoopFuture<Void>)#>, callback: <#T##String#>, scope: <#T##[String]#>, completion: <#T##(Request, String) throws -> EventLoopFuture<ResponseEncodable>#>)
+
+    //    app.oAuth(from: <#T##FederatedService.Protocol#>, authenticate: <#T##String#>, callback: <#T##String#>, redirect: <#T##String#>)
+    
+    //app.oAuth(from: <#T##FederatedService.Protocol#>, authenticate: <#T##String#>, callback: <#T##String#>, completion: <#T##(Request, String) throws -> EventLoopFuture<ResponseEncodable>#>)
+    
+    //app.oAuth(from: <#T##FederatedService.Protocol#>, authenticate: <#T##String#>, authenticateCallback: <#T##((Request) throws -> (EventLoopFuture<Void>))?##((Request) throws -> (EventLoopFuture<Void>))?##(Request) throws -> (EventLoopFuture<Void>)#>, callback: <#T##String#>, scope: <#T##[String]#>, redirect: <#T##String#>)
+
+    
+    try! app.register(collection: OAuthPg())
+    
+    //HTTPCookies(dictionaryLiteral: ["test", "234"])
+    
+   // app.grouped(<#T##middleware: [Middleware]##[Middleware]#>)
+    
+    try app.oAuth(from: GitHub.self, authenticate: "github", callback: "") { (request, token) in
+        print("auth token: \(token)")
+        print("request: \(request.description)")
+        return request.eventLoop.makeSucceededFuture(Response())
+        //return request.eventLoop.future(request.redirect(to: "/"))
+    }
 }
