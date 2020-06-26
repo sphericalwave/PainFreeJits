@@ -21,7 +21,7 @@ class LandingPg: RouteCollection
         if let session = req.cookies["vapor-session"] {
             //locate customer name using session
             let name = req.session.data["name"] ?? "unknown"
-            print("welcome back \(name)")
+            print("LandingPg welcome back \(name)")
         }
         else {
             print("Hi what's your name?")

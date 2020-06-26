@@ -1,9 +1,10 @@
+
 import Fluent
 import FluentSQLiteDriver
 import Vapor
 import Leaf
-import ImperialGoogle
 import ImperialGitHub
+import ImperialGoogle
 
 public func configure(_ app: Application) throws
 {
@@ -17,13 +18,12 @@ public func configure(_ app: Application) throws
     app.sessions.use(.fluent)
     app.migrations.add(SessionRecord.migration)
     app.middleware.use(app.sessions.middleware)
-    
-    try app.oAuth(from: GitHub.self, authenticate: "github", callback: "") { (request, token) in
-        print("auth token: \(token)")
-        print("request: \(request.description)")
-        return request.eventLoop.makeSucceededFuture(Response())
-        //return request.eventLoop.future(request.redirect(to: "/"))
-    }
+
+    //worked
+//    try app.oAuth(from: Google.self, authenticate: "google", callback: "http://localhost:8080/google-complete", scope: ["https://mail.google.com/"]) { (request, token) in
+//        print(token)
+//        return request.eventLoop.future(request.redirect(to: "/"))
+//    }
 
     try! app.register(collection: LandingPg())
     try! app.register(collection: JointQPg())
@@ -34,6 +34,4 @@ public func configure(_ app: Application) throws
     try! app.register(collection: SalesPg())
     try! app.register(collection: DeepDivePg())
     try! app.register(collection: OAuthPg())
-    
-
 }
