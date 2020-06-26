@@ -21,8 +21,6 @@ class DemographicPg: RouteCollection
     
     func nextPg(req: Request) -> Response {
         print("DemographicPg: \(req.description)")
-        let testForm = try! req.content.decode(Demographic.self)
-        print(testForm.print())
         return req.redirect(to: "/age")
     }
 }
