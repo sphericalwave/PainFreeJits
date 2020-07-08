@@ -13,21 +13,34 @@ final class Customer: Model
     static let schema = "customers"
     
     struct FieldKeys {
-        static var name: FieldKey { "name" }
+        static var givenName: FieldKey { "givenName" }
+        static var familyName: FieldKey { "familyName" }
         static var email: FieldKey { "email" }
+        static var belt: FieldKey { "belt" }
+        static var stripes: FieldKey { "stripes" }
+        static var painfulJoints: FieldKey { "painfulJoints" }
+        static var gender: FieldKey { "gender" }
+        static var birthDate: FieldKey { "birthDate" }
     }
 
+    //FIXME: That's a lot of optionals
     @ID() var id: UUID?
-    @Field(key: "name") var name: String
-    @Field(key: "name") var email: String
+    @Field(key: "givenName") var givenName: String?
+    @Field(key: "familyName") var familyName: String?
+    @Field(key: "email") var email: String?
+    @Field(key: "belt") var belt: String?
+    @Field(key: "stripes") var stripes: String?
+    @Field(key: "painfulJoints") var painfulJoints: String?
+    @Field(key: "gender") var gender: Bool?
+    @Field(key: "birthDate") var birthDate: Date?
 
     init() { }
 
-    init(id: Customer.IDValue? = nil, name: String, email: String ) {
-        self.id = id
-        self.name = name
-        self.email = email
-    }
+//    init(id: Customer.IDValue? = nil, name: String, email: String ) {
+//        self.id = id
+//        self.name = name
+//        self.email = email
+//    }
 }
 
 

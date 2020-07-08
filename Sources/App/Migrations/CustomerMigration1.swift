@@ -14,8 +14,14 @@ struct CustomerMigration1: Migration
         database.eventLoop.flatten([
         database.schema(Customer.schema)
             .id()
-            .field(Customer.FieldKeys.name, .string, .required)
-            .field(Customer.FieldKeys.email, .string, .required)
+            .field(Customer.FieldKeys.givenName, .string)
+            .field(Customer.FieldKeys.familyName, .string)
+            .field(Customer.FieldKeys.email, .string)
+            .field(Customer.FieldKeys.belt, .string)
+            .field(Customer.FieldKeys.stripes, .string)
+            .field(Customer.FieldKeys.painfulJoints, .string) //.array(of: .string))
+            .field(Customer.FieldKeys.gender, .bool)
+            .field(Customer.FieldKeys.birthDate, .date)
             .unique(on: Customer.FieldKeys.email)
             .create()
         ])
@@ -27,6 +33,25 @@ struct CustomerMigration1: Migration
     }
     
     private func users() -> [Customer] {
-        return [ Customer(name: "Aaron", email: "aaron@random.com") ]
+        let aaron = Customer()
+        aaron.givenName = "Aaron"
+        aaron.familyName = "Mcgrath"
+        aaron.email = "aaron@sphericalwave.com"
+        aaron.belt = "blue"
+        aaron.stripes = "2"
+        aaron.painfulJoints = "left hip" //= ["left hip", "left shoulder", "right elbow"]
+        aaron.gender = true
+        aaron.birthDate = Date()
+        return [ aaron ]
     }
 }
+
+//@ID() var id: UUID?
+//@Field(key: "givenName") var givenName: String?
+//@Field(key: "familyName") var familyName: String?
+//@Field(key: "email") var email: String?
+//@Field(key: "belt") var belt: String?
+//@Field(key: "stripes") var stripes: String?
+//@Field(key: "painfulJoints") var painfulJoints: String?
+//@Field(key: "gender") var gender: String?
+//@Field(key: "birthDate") var birthDate: String?
