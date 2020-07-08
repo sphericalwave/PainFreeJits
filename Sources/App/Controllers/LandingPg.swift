@@ -17,25 +17,24 @@ class LandingPg: RouteCollection
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
-//        if let name = req.session.data["name"] {
-//            print("Hello \(name)")
-//            //Fetch User with Session ID
-//        }
-//        else {
-//            print("Hi what's your name?")
-//            req.session.data["name"] = "Chewbacca"
-//            //Create User with sessionID
-//        }
         if let customer = req.auth.get(Customer.self) {
-            req.session.authenticate(customer)
+            req.session.authenticate(customer)  //save userId into current session storage
         }
         else {
             let newGuy = Customer()
             newGuy.givenName = "Elon"
-            let e = newGuy.create(on: req.db)
-            //req.session.authenticate(e)
+            req.session.data["name"] = newGuy.givenName //create session
+            _ = newGuy.create(on: req.db).map{
+                Customer.query(on: req.db)
+                    .filter(\.$givenName == newGuy.givenName)
+                    .first()
+                    .map {
+                        if let cust = $0 {
+                            req.session.authenticate(cust)
+                        }
+                    }
+            }            
         }
-        
         return req.view.render("landingPg")
     }
     
