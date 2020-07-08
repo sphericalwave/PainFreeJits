@@ -15,8 +15,11 @@ public func configure(_ app: Application) throws
     
     app.sessions.use(.fluent)
     app.migrations.add(SessionRecord.migration)
-    app.sessions.configuration.cookieName = "painFreeJits_survey1"
+    app.sessions.configuration.cookieName = "PainFreeJujitsu"
     app.middleware.use(app.sessions.middleware)
+    
+    app.middleware.use(CustomerSessionAuthenticator())
+
 
 
     try! app.register(collection: LandingPg())
@@ -29,4 +32,5 @@ public func configure(_ app: Application) throws
     try! app.register(collection: DeepDivePg())
     
     app.migrations.add(CustomerMigration1())
+    
 }

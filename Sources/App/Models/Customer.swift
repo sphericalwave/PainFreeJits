@@ -43,3 +43,19 @@ extension Customer: SessionAuthenticatable {
 }
 
 extension Customer: Authenticatable { }
+
+import Vapor
+import Fluent
+
+struct CustomerSessionAuthenticator: SessionAuthenticator {
+
+    typealias User = Customer
+    
+    func authenticate(sessionID: User.SessionID, for req: Request) -> EventLoopFuture<Void> {
+        User.find(sessionID, on: req.db).map { user  in
+            if let user = user {
+                req.auth.login(user)
+            }
+        }
+    }
+}

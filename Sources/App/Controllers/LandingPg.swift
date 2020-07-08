@@ -17,23 +17,38 @@ class LandingPg: RouteCollection
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
-        if let customer = req.auth.get(Customer.self) {
-            req.session.authenticate(customer)  //save userId into current session storage
+        if req.hasSession {
+            //guard let c = req.auth.get(Customer.self) else { fatalError() }
+            //guard let c = req.session.authenticated(Customer.self) else { fatalError() }
+            
+            //find associated Customer
+            //use
+            //guard let sessionID = req.session.data["_CustomerSession"] else { fatalError() }
+            //guard let uuid = UUID(uuidString: sessionID) else { fatalError() }
+//            _ = Customer.query(on: req.db)
+//                .filter(\.$id == c.sessionID)
+//                .first()
+//                .map {
+//                    if let cust = $0 {
+//                        print("hello \(cust.givenName!)")
+//                        //req.auth.login(cust)
+//                        //req.session.authenticate(cust)
+//                    }
+//            }
+            //print("Hi I'm \(c.givenName ?? "?")")
+            print("has session")
         }
         else {
+            //create session
             let newGuy = Customer()
             newGuy.givenName = "Elon"
-            req.session.data["name"] = newGuy.givenName //create session
+            //req.session.data["name"] = newGuy.givenName //create session
             _ = newGuy.create(on: req.db).map{
-                Customer.query(on: req.db)
-                    .filter(\.$givenName == newGuy.givenName)
-                    .first()
-                    .map {
-                        if let cust = $0 {
-                            req.session.authenticate(cust)
-                        }
-                    }
-            }            
+                req.session.authenticate(newGuy)
+            }
+//            let c = Customer
+//            let newSession = req.session.authenticate(<#T##a: SessionAuthenticatable##SessionAuthenticatable#>)
+            //associate a customer
         }
         return req.view.render("landingPg")
     }
@@ -42,11 +57,4 @@ class LandingPg: RouteCollection
         print("LandingPg: \(req.headers.description)")
         return req.redirect(to: "/rank")
     }
-    
-//    func login(req: Request) throws -> Response {
-//        guard let customer = req.auth.get(Customer.self) else {
-//            throw Abort(.unauthorized)
-//        }
-//        req.session.authenticate(customer)
-//    }
 }
