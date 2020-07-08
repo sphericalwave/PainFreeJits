@@ -8,35 +8,27 @@
 import Fluent
 import Vapor
 
-//final class Customer: Model, Content {
-//    // Name of the table or collection.
-//    static let schema = "customers"
-//
-//    @ID(key: .id) var id: UUID?   //TODO: Be Immutable
-//
-//    @Field(key: "name") var name: String    //TODO: Be Immutable
-//
-//    init() { }  //TODO: Disagree
-//
-//    init(id: UUID? = nil, name: String) {
-//        self.id = id
-//        self.name = name
-//    }
-//}
-//
-//
-//struct CustomerMgrt: Migration
-//{
-//    // Prepares the database for storing Customer models.
-//    func prepare(on database: Database) -> EventLoopFuture<Void> {
-//        database.schema("customers")
-//            .id()
-//            .field("name", .string)
-//            .create()
-//    }
-//
-//    // Optionally reverts the changes made in the prepare method.
-//    func revert(on database: Database) -> EventLoopFuture<Void> {
-//        database.schema("customers").delete()
-//    }
-//}
+final class Customer: Model
+{
+    static let schema = "customers"
+    
+    struct FieldKeys {
+        static var name: FieldKey { "name" }
+        static var email: FieldKey { "email" }
+    }
+
+    @ID() var id: UUID?
+    @Field(key: "name") var name: String
+    @Field(key: "name") var email: String
+
+    init() { }
+
+    init(id: Customer.IDValue? = nil, name: String, email: String ) {
+        self.id = id
+        self.name = name
+        self.email = email
+    }
+}
+
+
+

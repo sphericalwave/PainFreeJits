@@ -25,5 +25,6 @@ public func configure(_ app: Application) throws
     try! app.register(collection: AgeQPg())
     try! app.register(collection: SalesPg())
     try! app.register(collection: DeepDivePg())
-    try! app.register(collection: OAuthPg())
+    
+    app.migrations.add(CustomerMigration1())
 }

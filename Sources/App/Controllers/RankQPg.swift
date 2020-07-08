@@ -25,14 +25,16 @@ class RankQPg: RouteCollection
         print(testForm.print())
         return req.redirect(to: "/joints")
     }
-}
-
-struct Rank: Content
-{
-    var belt: String
-    var stripes: String
     
-    func print() -> String {
-        return "Rank: " + belt + " " + stripes
+    struct Rank: Content
+    {
+        var belt: String
+        var stripes: String
+        
+        func print() -> String {
+            return "Rank: " + belt + " " + stripes
+        }
     }
 }
+
+
