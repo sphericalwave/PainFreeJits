@@ -7,6 +7,7 @@
 
 import Foundation
 import Vapor
+import Fluent
 
 class LandingPg: RouteCollection
 {
@@ -16,17 +17,25 @@ class LandingPg: RouteCollection
     }
     
     func webpage(req: Request) -> EventLoopFuture<View> {
-        //if vapor-session matches customer say welcome back
-        //else create Customer with Vapor Session and say welcome to PainFree Jiujitsu
-        if let session = req.cookies["vapor-session"] {
-            //locate customer name using session
-            let name = req.session.data["name"] ?? "unknown"
-            print("LandingPg welcome back \(name)")
+//        if let name = req.session.data["name"] {
+//            print("Hello \(name)")
+//            //Fetch User with Session ID
+//        }
+//        else {
+//            print("Hi what's your name?")
+//            req.session.data["name"] = "Chewbacca"
+//            //Create User with sessionID
+//        }
+        if let customer = req.auth.get(Customer.self) {
+            req.session.authenticate(customer)
         }
         else {
-            print("Hi what's your name?")
-            req.session.data["name"] = "Chewbacca"
+            let newGuy = Customer()
+            newGuy.givenName = "Elon"
+            let e = newGuy.create(on: req.db)
+            //req.session.authenticate(e)
         }
+        
         return req.view.render("landingPg")
     }
     
@@ -34,4 +43,11 @@ class LandingPg: RouteCollection
         print("LandingPg: \(req.headers.description)")
         return req.redirect(to: "/rank")
     }
+    
+//    func login(req: Request) throws -> Response {
+//        guard let customer = req.auth.get(Customer.self) else {
+//            throw Abort(.unauthorized)
+//        }
+//        req.session.authenticate(customer)
+//    }
 }

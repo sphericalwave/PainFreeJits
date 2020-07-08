@@ -35,13 +35,11 @@ final class Customer: Model
     @Field(key: "birthDate") var birthDate: Date?
 
     init() { }
-
-//    init(id: Customer.IDValue? = nil, name: String, email: String ) {
-//        self.id = id
-//        self.name = name
-//        self.email = email
-//    }
 }
 
+extension Customer: SessionAuthenticatable {
+    typealias SessionID = UUID
+    var sessionID: SessionID { self.id! }
+}
 
-
+extension Customer: Authenticatable { }

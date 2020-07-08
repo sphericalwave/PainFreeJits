@@ -15,7 +15,9 @@ public func configure(_ app: Application) throws
     
     app.sessions.use(.fluent)
     app.migrations.add(SessionRecord.migration)
+    app.sessions.configuration.cookieName = "painFreeJits_survey1"
     app.middleware.use(app.sessions.middleware)
+
 
     try! app.register(collection: LandingPg())
     try! app.register(collection: JointQPg())

@@ -21,8 +21,19 @@ class RankQPg: RouteCollection
     
     func nextPg(req: Request) -> Response {
         print("RankPg: \(req.description)")
-        let testForm = try! req.content.decode(Rank.self)
-        print(testForm.print())
+        let rank = try! req.content.decode(Rank.self)
+        print(rank.print())
+        print(req.session.id ?? "no session found")
+        //TODO: check for existing sessionId and match with a customer
+        let newGuy = Customer()
+        newGuy.givenName = "Elon"
+        newGuy.belt = rank.belt
+        newGuy.stripes = rank.stripes
+        newGuy.create(on: req.db)
+        
+        req.session.data["user"] = "Aaron"
+        let d = req.session.data
+        
         return req.redirect(to: "/joints")
     }
     
