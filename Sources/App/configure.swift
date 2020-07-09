@@ -17,9 +17,7 @@ public func configure(_ app: Application) throws
     app.migrations.add(SessionRecord.migration)
     app.sessions.configuration.cookieName = "PainFreeJujitsu"
     app.middleware.use(app.sessions.middleware)
-    app.middleware.use(Customer.sessionAuthenticator())
-
-
+    //app.middleware.use(Customer.sessionAuthenticator())
 
     try! app.register(collection: LandingPg())
     try! app.register(collection: JointQPg())
@@ -33,16 +31,20 @@ public func configure(_ app: Application) throws
     app.migrations.add(CustomerMigration1())
     
     let protected = app.routes.grouped([
-        app.sessions.middleware,
         UserSessionAuthenticator(),
-        UserBearerAuthenticator(),
+        //UserBearerAuthenticator(),
         //User.guardMiddleware(),
     ])
 
     // Add GET /me route for reading user's email.
     protected.get("me") { req -> String in
-        let user = try req.auth.require(User.self)
-        return user.email
+        //let user = User(email: "hello@vapor.codes")
+        //req.auth.login(user)
+        let id = req.session.id
+        print("sessiondID = \(id?.string ?? "no session")" )
+        //let user = try req.auth.require(User.self)
+       // return user.email
+        return "sessiondID = \(id?.string ?? "no session")"
     }
     
 }

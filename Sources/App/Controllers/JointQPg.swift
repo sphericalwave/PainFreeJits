@@ -23,24 +23,41 @@ class JointQPg: RouteCollection
         print("Joint Page: \(req.description)")
         let joint = try! req.content.decode(Joint.self)
         print(joint.print2())
+        
+        let joints = try! req.content.decode(Joint.self)
+        do {
+            let customer = try req.auth.require(Customer.self)
+            customer.painfulJoints = joints.toes ?? "FIXME"
+            
+            customer.save(on: req.db)
+                .map{ return req.redirect(to: "/demographics") }
+        }
+        catch {
+            let customer = Customer()
+            customer.painfulJoints = joints.toes ?? "FIXME"
+            customer.save(on: req.db)
+                .map{ return req.redirect(to: "/demographics") }
+        }
         return req.redirect(to: "/demographics")
     }
-}
-
-struct Joint: Content
-{
-    //TODO: Complete
-    var toes: String?
-    var ankles: String?
-    var knees: String?
     
-    func print2() -> String {
-        let ts = toes ?? "no toes"
-        let ank = ankles ?? "no ankles"
-        if let kn = knees {
-            print("knees")
-        }
+    struct Joint: Content
+    {
+        //TODO: Complete
+        var toes: String?
+        var ankles: String?
+        var knees: String?
+        
+        func print2() -> String {
+            let ts = toes ?? "no toes"
+            let ank = ankles ?? "no ankles"
+            if let kn = knees {
+                print("knees")
+            }
 
-        return "Joint: " + ts + ank
+            return "Joint: " + ts + ank
+        }
     }
 }
+
+

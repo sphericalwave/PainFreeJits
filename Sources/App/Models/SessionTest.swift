@@ -20,20 +20,28 @@ extension User: SessionAuthenticatable {
 struct UserSessionAuthenticator: SessionAuthenticator {
     typealias User = App.User
     func authenticate(sessionID: String, for request: Request) -> EventLoopFuture<Void> {
-        print("UserSessionAuthenticator: sessionID \(sessionID)")
+        print("\nRequest session: \(request.session.data)\n")
+        print("\nRequest Description: \(request.description)\n")
+        print("\nUserSessionAuthenticator: sessionID \(sessionID)\n")
         let user = User(email: sessionID)
         request.auth.login(user)
+        
+        print("\n session post login: \(request.session.data)\n")
+
         return request.eventLoop.makeSucceededFuture(())
     }
 }
 
-struct UserBearerAuthenticator: BearerAuthenticator {
-    func authenticate(bearer: BearerAuthorization, for request: Request) -> EventLoopFuture<Void> {
-        print("UserBearerAuthenticator: bearer token \(bearer.token)")
-        if bearer.token == "test" {
-            let user = User(email: "hello@vapor.codes")
-            request.auth.login(user)
-        }
-        return request.eventLoop.makeSucceededFuture(())
-    }
-}
+//struct UserBearerAuthenticator: BearerAuthenticator {
+//    func authenticate(bearer: BearerAuthorization, for request: Request) -> EventLoopFuture<Void> {
+//        print("UserBearerAuthenticator: bearer token: \(bearer.token)")
+//        //print("\n session bearer auth 1 : \(request.session.data)\n")
+//
+//        if bearer.token == "test" {
+//            let user = User(email: "hello@vapor.codes")
+//            request.auth.login(user)
+//            print("\n session bearer auth 2 : \(request.session.data)\n")
+//        }
+//        return request.eventLoop.makeSucceededFuture(())
+//    }
+//}

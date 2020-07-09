@@ -22,42 +22,20 @@ class RankQPg: RouteCollection
     func nextPg(req: Request) -> Response {
         
         let rank = try! req.content.decode(Rank.self)
-        
-        if let st = req.session.id?.string, let uuid = UUID(uuidString: st) {
-            _ = Customer.query(on: req.db)
-                .filter(\.$id == uuid)
-                .first()
-                .map {
-                    if let cust = $0 {
-                        print("hello \(cust.givenName!)")
-                        //req.auth.login(cust)
-                        //req.session.authenticate(cust)
-                    }
-                    //        }
-            }
-            //.map { return req.redirect(to: "/joints") }
+        do {
+            let customer = try req.auth.require(Customer.self)
+            customer.belt = rank.belt
+            customer.stripes = rank.stripes
+            customer.save(on: req.db)
+                .map{ return req.redirect(to: "/joints") }
         }
-            
-        else {
-            let newGuy = Customer()
-            newGuy.givenName = "Elon"
-            newGuy.belt = rank.belt
-            newGuy.stripes = rank.stripes
-            newGuy.create(on: req.db)
-                //.map { return req.redirect(to: "/joints") }
+        catch {
+            let customer = Customer()
+            customer.belt = rank.belt
+            customer.stripes = rank.stripes
+            customer.save(on: req.db)
+                .map{ return req.redirect(to: "/joints") }
         }
-        
-        
-        //            print("RankPg: \(req.description)")
-        //            let rank = try! req.content.decode(Rank.self)
-        //            print(rank.print())
-        //            print(req.session.id ?? "no session found")
-        //            //TODO: check for existing sessionId and match with a customer
-        
-        //
-        //            req.session.data["user"] = "Aaron"
-        //            let d = req.session.data
-        
         return req.redirect(to: "/joints")
     }
     
