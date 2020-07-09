@@ -17,8 +17,7 @@ public func configure(_ app: Application) throws
     app.migrations.add(SessionRecord.migration)
     app.sessions.configuration.cookieName = "PainFreeJujitsu"
     app.middleware.use(app.sessions.middleware)
-    
-    app.middleware.use(CustomerSessionAuthenticator())
+    app.middleware.use(Customer.sessionAuthenticator())
 
 
 
@@ -32,5 +31,18 @@ public func configure(_ app: Application) throws
     try! app.register(collection: DeepDivePg())
     
     app.migrations.add(CustomerMigration1())
+    
+    let protected = app.routes.grouped([
+        app.sessions.middleware,
+        UserSessionAuthenticator(),
+        UserBearerAuthenticator(),
+        //User.guardMiddleware(),
+    ])
+
+    // Add GET /me route for reading user's email.
+    protected.get("me") { req -> String in
+        let user = try req.auth.require(User.self)
+        return user.email
+    }
     
 }
