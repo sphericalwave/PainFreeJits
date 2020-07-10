@@ -21,18 +21,24 @@ class EmailPg: RouteCollection
     
     func nextPg(req: Request) -> Response {
         print("EmailPg: \(req.description)")
-        let testForm = try! req.content.decode(Contact.self)
-        print(testForm.print())
+        let contact = try! req.content.decode(Contact.self)
+        req.session.data["givenName"] = contact.name
+        req.session.data["email"] = contact.email
+        
+        //TODO: Create a User in the DB and Sign Them In
+        
         return req.redirect(to: "/sales")
+    }
+    
+    struct Contact: Content
+    {
+        var name: String
+        var email: String
+        func print() -> String { return name + " " + email }
     }
 }
 
-struct Contact: Content
-{
-    var name: String
-    var email: String
-    func print() -> String { return name + " " + email }
-}
+
 
 
 //aweber

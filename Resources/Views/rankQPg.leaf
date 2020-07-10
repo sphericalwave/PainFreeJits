@@ -22,7 +22,7 @@
                             <label for="purple">Purple</label><br>
                             <input type="radio" id="brown" name="belt" value="brown">
                             <label for="brown">Brown</label><br>
-                            <input type="radio" id="hip" name="belt" value="hip">
+                            <input type="radio" id="black" name="belt" value="black">
                             <label for="hip">Black</label><br>
                         </div>
                         <div class="col-md-6">

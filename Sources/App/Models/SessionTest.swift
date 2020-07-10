@@ -8,12 +8,12 @@
 import Vapor
 
 struct User {
-    var email: String
+    var id: String
 }
 
 extension User: SessionAuthenticatable {
     var sessionID: String {
-        self.email
+        self.id
     }
 }
 
@@ -23,7 +23,7 @@ struct UserSessionAuthenticator: SessionAuthenticator {
         print("\nRequest session: \(request.session.data)\n")
         print("\nRequest Description: \(request.description)\n")
         print("\nUserSessionAuthenticator: sessionID \(sessionID)\n")
-        let user = User(email: sessionID)
+        let user = User(id: sessionID)
         request.auth.login(user)
         
         print("\n session post login: \(request.session.data)\n")

@@ -9,7 +9,7 @@ public func configure(_ app: Application) throws
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     
     app.views.use(.leaf)
-    app.leaf.cache.isEnabled = app.environment.isRelease
+    //app.leaf.cache.isEnabled = app.environment.isRelease
 
     app.databases.use(.sqlite(.file("db.sqlite") ), as: .sqlite)
     
@@ -30,6 +30,8 @@ public func configure(_ app: Application) throws
     
     app.migrations.add(CustomerMigration1())
     
+    app.middleware.use(UserSessionAuthenticator())
+    
     let protected = app.routes.grouped([
         UserSessionAuthenticator(),
         //UserBearerAuthenticator(),
@@ -40,11 +42,19 @@ public func configure(_ app: Application) throws
     protected.get("me") { req -> String in
         //let user = User(email: "hello@vapor.codes")
         //req.auth.login(user)
-        let id = req.session.id
-        print("sessiondID = \(id?.string ?? "no session")" )
+//        guard let id = req.session.id?.string else { fatalError("No Session Id") }
+//        //print("sessiondID = \(id?.string ?? "no session")" )
+//        let u = User(id: id)
+//        //req.auth.login(u)
         //let user = try req.auth.require(User.self)
-       // return user.email
-        return "sessiondID = \(id?.string ?? "no session")"
+//        return u.id
+        //return "sessiondID = \(id?.string ?? "no session")"
+        
+        //guard let user = req.auth.get(User.self) else { throw Abort(.unauthorized) }
+        //req.session.authenticate(user)
+        //return user.sessionID
+        
+        return "whatever"
     }
     
 }

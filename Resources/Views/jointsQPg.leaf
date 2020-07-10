@@ -12,50 +12,50 @@
 
             <p>What hurts because of Jiujitsu?</p>
 
-            <form action="" method="post">
+            <form action="/joints" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <input type="checkbox" id="toes" name="toes" value="toes">
-                        <label for="vehicle1">my toes</label><br>
+                        <input type="checkbox" id="toe" name="toe" value="toe">
+                        <label for="vehicle1">toe</label><br>
                         
-                        <input type="checkbox" id="ankles" name="ankles" value="ankles">
-                        <label for="vehicle1">my ankles</label><br>
+                        <input type="checkbox" id="ankle" name="ankle" value="ankle">
+                        <label for="vehicle1">ankle</label><br>
                         
-                        <input type="checkbox" id="knees" name="knees" value="knees">
-                        <label for="vehicle1">my knees</label><br>
+                        <input type="checkbox" id="knee" name="knee" value="knee">
+                        <label for="vehicle1">knee</label><br>
                         
-                        <input type="checkbox" id="hips" name="hips" value="hips">
-                        <label for="vehicle1">my hips</label><br>
+                        <input type="checkbox" id="hip" name="hip" value="hip">
+                        <label for="vehicle1">hip</label><br>
                     </div>
                     
                     <div class="col-md-4">
                         
-                        <input type="checkbox" id="lumbar" name="lumbar" value="lumbar">
-                        <label for="vehicle1">my lower back</label><br>
+                        <input type="checkbox" id="lowBack" name="lowBack" value="lowBack">
+                        <label for="vehicle1">low back</label><br>
                         
-                        <input type="checkbox" id="ribs" name="ribs" value="ribs">
-                        <label for="vehicle1">my ribs</label><br>
+                        <input type="checkbox" id="rib" name="rib" value="rib">
+                        <label for="vehicle1">rib</label><br>
                         
-                        <input type="checkbox" id="shoulders" name="shoulders" value="shoulders">
-                        <label for="vehicle1">my shoulders</label><br>
+                        <input type="checkbox" id="shoulder" name="shoulder" value="shoulder">
+                        <label for="vehicle1">shoulder</label><br>
                         
                         <input type="checkbox" id="elbow" name="elbow" value="elbow">
-                        <label for="vehicle1">my elbow</label><br>
+                        <label for="vehicle1">elbow</label><br>
                     </div>
 
                     <div class="col-md-4">
                         <input type="checkbox" id="wrist" name="wrist" value="wrist">
-                        <label for="vehicle1">my wrist</label><br>
+                        <label for="vehicle1">wrist</label><br>
                         
-                        <input type="checkbox" id="thumbs" name="thumbs" value="thumbs">
-                        <label for="vehicle1">my thumbs</label><br>
+                        <input type="checkbox" id="thumb" name="thumb" value="thumb">
+                        <label for="vehicle1">thumb</label><br>
                         
-                        <input type="checkbox" id="fingers" name="fingers" value="fingers">
-                        <label for="vehicle1">my fingers</label><br>
+                        <input type="checkbox" id="finger" name="finger" value="finger">
+                        <label for="vehicle1">finger</label><br>
                         
-                        <input type="checkbox" id="fingertips" name="fingertips" value="fingertips">
-                        <label for="vehicle1">my fingertips</label><br>
+                        <input type="checkbox" id="fingertip" name="fingertip" value="fingertip">
+                        <label for="vehicle1">fingertip</label><br>
                     </div>
                 </div>
             </div>

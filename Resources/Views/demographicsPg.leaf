@@ -11,6 +11,7 @@
         <hr>
         
         <p>What is your gender?</p>
+        <form action="/demographics" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -22,6 +23,7 @@
                     </div>
                 </div>
             </div>
+            </div>
             
             <hr>
             
@@ -30,6 +32,7 @@
                     <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
                 </form>
             </div>
+            </form>
     </div>
 </div>
 

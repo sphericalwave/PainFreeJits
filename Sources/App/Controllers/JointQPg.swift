@@ -20,43 +20,58 @@ class JointQPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        print("Joint Page: \(req.description)")
-        let joint = try! req.content.decode(Joint.self)
-        print(joint.print2())
-        
-        let joints = try! req.content.decode(Joint.self)
-        do {
-            let customer = try req.auth.require(Customer.self)
-            customer.painfulJoints = joints.toes ?? "FIXME"
-            
-            customer.save(on: req.db)
-                .map{ return req.redirect(to: "/demographics") }
-        }
-        catch {
-            let customer = Customer()
-            customer.painfulJoints = joints.toes ?? "FIXME"
-            customer.save(on: req.db)
-                .map{ return req.redirect(to: "/demographics") }
-        }
+        //print("\n\n \(req.description)\n\n")
+        //print("\n\n \(req.content)\n\n")
+        print("\n\n \(req.body.string ?? "no string")\n\n")
+
+        let joints = try! req.content.decode(Joints.self)
+        req.session.data["joints"] = joints.everything().description
         return req.redirect(to: "/demographics")
     }
     
-    struct Joint: Content
+    struct Joints: Content
     {
         //TODO: Complete
-        var toes: String?
-        var ankles: String?
-        var knees: String?
-        
-        func print2() -> String {
-            let ts = toes ?? "no toes"
-            let ank = ankles ?? "no ankles"
-            if let kn = knees {
-                print("knees")
-            }
+        var toe: String?
+        var ankle: String?
+        var knee: String?
+        var hip: String?
+        var lowBack: String?
+        var rib: String?
+        var shoulder: String?
+        var elbow: String?
+        var wrist: String?
+        var thumb: String?
+        var finger: String?
+        var fingerTip: String?
 
-            return "Joint: " + ts + ank
+        
+        func everything() -> [String] {
+            var all = [String]()
+            if let t = toe { all.append(t) }
+            if let a = ankle { all.append(a) }
+            if let kn = knee { all.append(kn) }
+            if let hp = hip { all.append(hp) }
+            if let lB = lowBack { all.append(lB) }
+            if let rb = rib { all.append(rb) }
+            if let sh = shoulder { all.append(sh) }
+            if let elb = elbow { all.append(elb) }
+            if let w = wrist { all.append(w) }
+            if let tb = thumb { all.append(tb) }
+            if let fg = finger { all.append(fg) }
+            if let fgT = fingerTip { all.append(fgT) }
+            return all
         }
+        
+//        func print2() -> String {
+//            let ts = toes ?? "no toes"
+//            let ank = ankles ?? "no ankles"
+////            if let kn = knees {
+////                print("knees")
+////            }
+//
+//            return "Joint: " + ts + ank
+//        }
     }
 }
 
