@@ -16,23 +16,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <input type="radio" id="age1" name="age" value="10" required>
-                            <label for="age1">Teens</label><br>
-                            
-                            <input type="radio" id="age1" name="age" value="20">
-                            <label for="age1">Twenties</label><br>
-                            
-                            <input type="radio" id="age1" name="age" value="30">
-                            <label for="age1">Thirties</label><br>
-                            
-                            <input type="radio" id="age2" name="age" value="40">
-                            <label for="age2">Fourties</label><br>
-                            
-                            <input type="radio" id="age3" name="age" value="50">
-                            <label for="age3">Fiftees</label><br>
-                            
-                            <input type="radio" id="age3" name="age" value="60">
-                            <label for="age3">Sixtees</label><br>
+                        
+                            <input type="date" name="bday" value="2000-01-01" min="1920-01-01" max="2020-01-01" placeholder="yyyy-mm-dd">
+                        
                         </div>
                     </div>
                 </div>
