@@ -14,8 +14,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="radio" id="white" name="belt" value="white" required>
-                            <label for="white">White</label><br>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="white" name="belt" value="white" required>
+                                <label class="custom-control-label" for="white">White</label><br>
+                            </div>
+                            
                             <input type="radio" id="blue" name="belt" value="blue">
                             <label for="blue">Blue</label><br>
                             <input type="radio" id="purple" name="belt" value="purple">
