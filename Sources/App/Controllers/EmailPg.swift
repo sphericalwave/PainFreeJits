@@ -19,15 +19,25 @@ class EmailPg: RouteCollection
         return req.view.render("emailPg")
     }
     
-    func nextPg(req: Request) -> Response {
+    func nextPg(req: Request) -> EventLoopFuture<Response> {
         print("EmailPg: \(req.description)")
         let contact = try! req.content.decode(Contact.self)
         req.session.data["givenName"] = contact.name
         req.session.data["email"] = contact.email
         
         //TODO: Create a User in the DB and Sign Them In
+        let c = Customer()
+        c.givenName = req.session.data["givenName"]
+        c.email = req.session.data["email"]
+        c.birthDate = Date() //TODO: req.session.data["birthdate"]
+        c.gender = true //TODO: req.session.data["gender"]
+        c.painfulJoints = req.session.data["joints"] //TODO;
+        c.belt = req.session.data["belt"]
+        c.stripes = req.session.data["stripes"]
         
-        return req.redirect(to: "/sales")
+        return c.create(on: req.db).map {
+            req.redirect(to: "/sales")
+        }
     }
     
     struct Contact: Content
@@ -35,6 +45,17 @@ class EmailPg: RouteCollection
         var name: String
         var email: String
         func print() -> String { return name + " " + email }
+    }
+    
+    func prospect(req: Request) {
+        let c = Customer()
+        c.givenName = req.session.data["givenName"]
+        c.email = req.session.data["email"]
+        c.birthDate = Date() //TODO: req.session.data["birthdate"]
+        c.gender = true //TODO: req.session.data["gender"]
+        c.painfulJoints = req.session.data["joints"] //TODO;
+        c.belt = req.session.data["belt"]
+        c.stripes = req.session.data["stripes"]
     }
 }
 

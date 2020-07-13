@@ -1,8 +1,12 @@
 
 import Fluent
-import FluentSQLiteDriver
+import FluentPostgresDriver
 import Vapor
 import Leaf
+
+extension Environment {
+    static let pgUrl = URL(string: Self.get("DB_URL")!)!
+}
 
 public func configure(_ app: Application) throws
 {
@@ -10,8 +14,15 @@ public func configure(_ app: Application) throws
     
     app.views.use(.leaf)
     //app.leaf.cache.isEnabled = app.environment.isRelease
-
-    app.databases.use(.sqlite(.file("db.sqlite") ), as: .sqlite)
+    
+    let dbConfig = PostgresConfiguration(hostname: "localhost",
+                                         port: 5432,
+                                         username: "myuser",
+                                         password: "mypass",
+                                         database: "mydb",
+                                         tlsConfiguration: nil)
+    app.databases.use(.postgres(configuration: dbConfig), as: .psql)
+    //try app.databases.use(.postgres(url: Environment.pgUrl), as: .psql)
     
     app.sessions.use(.fluent)
     app.migrations.add(SessionRecord.migration)
@@ -28,7 +39,7 @@ public func configure(_ app: Application) throws
     try! app.register(collection: SalesPg())
     try! app.register(collection: DeepDivePg())
     
-    app.migrations.add(CustomerMigration1())
+    app.migrations.add(CustomerMigration1(), to: .psql)
     
     app.middleware.use(UserSessionAuthenticator())
     

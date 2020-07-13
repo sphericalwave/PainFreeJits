@@ -22,18 +22,18 @@ class AgeQPg: RouteCollection
     func nextPg(req: Request) -> Response {
         print("AgeQPg: \(req.description)")
         print("\n\n \(req.body.string ?? "no string")\n\n")
-        //let age = try! req.content.decode(Age.self)
+        let age = try! req.content.decode(Age.self)
         //print(testForm.print())
 
-        //req.session.data["birthdate"] = age.age
+        req.session.data["birthdate"] = age.bday
 
         return req.redirect(to: "/email")
     }
     
     struct Age: Content
     {
-        var age: String
-        func print() -> String { return "Age: " + age }
+        var bday: String
+        //func print() -> String { return "Age: " + age }
     }
 }
 

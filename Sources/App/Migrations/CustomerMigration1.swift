@@ -9,7 +9,7 @@ import Fluent
 import Vapor
 
 struct CustomerMigration1: Migration
-{
+{    
     func prepare(on database: Database) -> EventLoopFuture<Void> {
         database.eventLoop.flatten([
         database.schema(Customer.schema)
@@ -45,13 +45,3 @@ struct CustomerMigration1: Migration
         return [ aaron ]
     }
 }
-
-//@ID() var id: UUID?
-//@Field(key: "givenName") var givenName: String?
-//@Field(key: "familyName") var familyName: String?
-//@Field(key: "email") var email: String?
-//@Field(key: "belt") var belt: String?
-//@Field(key: "stripes") var stripes: String?
-//@Field(key: "painfulJoints") var painfulJoints: String?
-//@Field(key: "gender") var gender: String?
-//@Field(key: "birthDate") var birthDate: String?
