@@ -15,11 +15,11 @@ public func configure(_ app: Application) throws
     app.views.use(.leaf)
     //app.leaf.cache.isEnabled = app.environment.isRelease
     
-    let dbConfig = PostgresConfiguration(hostname: "localhost",
+    let dbConfig = PostgresConfiguration(hostname: "ec2-34-206-31-217.compute-1.amazonaws.com",
                                          port: 5432,
-                                         username: "myuser",
-                                         password: "mypass",
-                                         database: "mydb",
+                                         username: "ppcrpeqjkasgze",
+                                         password: "0828764c2377b79a1cea8a798c43d6723f487ce4efd4df72bbfbe34db0219dc8",
+                                         database: "dctrcsa9n7d7k9",
                                          tlsConfiguration: nil)
     app.databases.use(.postgres(configuration: dbConfig), as: .psql)
     //try app.databases.use(.postgres(url: Environment.pgUrl), as: .psql)
