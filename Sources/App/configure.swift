@@ -16,8 +16,8 @@ public func configure(_ app: Application) throws
     app.views.use(.leaf)
     //app.leaf.cache.isEnabled = app.environment.isRelease
     
-    guard let databaseURL = Environment.get("DB_URL") else {
-        throw EnvironmentError.dbURL(msg: "DB_URL Error")
+    guard let databaseURL = Environment.get("DATABASE_URL") else {
+        throw EnvironmentError.dbURL(msg: "DATABASE_URL Error")
     }
     app.databases.use(try .postgres(url: databaseURL), as: .psql)
     
