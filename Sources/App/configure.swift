@@ -4,8 +4,9 @@ import FluentPostgresDriver
 import Vapor
 import Leaf
 
-extension Environment {
-    static let pgUrl = URL(string: Self.get("DB_URL")!)!
+
+enum EnvironmentError: Error {
+    case dbURL(msg: String)
 }
 
 public func configure(_ app: Application) throws
@@ -15,14 +16,10 @@ public func configure(_ app: Application) throws
     app.views.use(.leaf)
     //app.leaf.cache.isEnabled = app.environment.isRelease
     
-    let dbConfig = PostgresConfiguration(hostname: "ec2-34-206-31-217.compute-1.amazonaws.com",
-                                         port: 5432,
-                                         username: "ppcrpeqjkasgze",
-                                         password: "0828764c2377b79a1cea8a798c43d6723f487ce4efd4df72bbfbe34db0219dc8",
-                                         database: "dctrcsa9n7d7k9",
-                                         tlsConfiguration: nil)
-    app.databases.use(.postgres(configuration: dbConfig), as: .psql)
-    //try app.databases.use(.postgres(url: Environment.pgUrl), as: .psql)
+    guard let databaseURL = Environment.get("DB_URL") else {
+        throw EnvironmentError.dbURL(msg: "DB_URL Error")
+    }
+    app.databases.use(try .postgres(url: databaseURL), as: .psql)
     
     app.sessions.use(.fluent)
     app.migrations.add(SessionRecord.migration)
