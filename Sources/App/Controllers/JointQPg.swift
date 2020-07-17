@@ -62,16 +62,6 @@ class JointQPg: RouteCollection
             if let fgT = fingerTip { all.append(fgT) }
             return all
         }
-        
-//        func print2() -> String {
-//            let ts = toes ?? "no toes"
-//            let ank = ankles ?? "no ankles"
-////            if let kn = knees {
-////                print("knees")
-////            }
-//
-//            return "Joint: " + ts + ank
-//        }
     }
 }
 
