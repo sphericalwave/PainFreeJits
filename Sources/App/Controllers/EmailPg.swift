@@ -27,7 +27,7 @@ class EmailPg: RouteCollection
             req.session.data["givenName"] = contact.name
             req.session.data["email"] = contact.email
             
-            guard let sId = req.session.id?.string else { fatalError() }
+            guard let sId = req.session.id?.string else { throw Abort(.unauthorized) }
             print("\nEmailPg: SessionId: \(sId)\n")
             let uuid = UUID(uuidString: sId)
             
@@ -51,7 +51,7 @@ class EmailPg: RouteCollection
                     cust.givenName = req.session.data["givenName"]
                     return cust
                 }
-                .map{ _ = $0.save(on: req.db) }
+                .flatMap { customer in customer.save(on: req.db) }  //TODO: use .whenComplete to catch save error
                 .flatMap { req.view.render("salesPg") }
         }
         catch { throw Abort(.noContent) }
