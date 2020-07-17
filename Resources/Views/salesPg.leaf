@@ -5,7 +5,7 @@
     
     <div class="col-md">
         <div class="mybox1">
-            <h3>Solution to Specific Issue #1  == #(primary)</h3>
+            <h3>My Primary Pain is my #(primary)</h3>
             <hr>
             <div class="mybox2">
                 <h1>Monkey Lunge</h1>
@@ -18,7 +18,7 @@
     
     <div class="col-md">
         <div class="mybox1">
-            <h3>Solution to Specific Issue #2 == #(secondary)</h3>
+            <h3>My Secondary Pain is my #(secondary)</h3>
             <hr>
             <div class="mybox2">
                 <h1>Monkey Lunge</h1>
@@ -31,7 +31,7 @@
     
     <div class="col-md">
         <div class="mybox1">
-            <h3>Solution to Specific Issue #3  == #(tertiary)</h3>
+            <h3>My Tertiary Pain is my #(tertiary)</h3>
             <hr>
             <div class="mybox2">
                 <h1>Monkey Lunge</h1>
