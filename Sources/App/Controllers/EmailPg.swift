@@ -19,7 +19,7 @@ class EmailPg: RouteCollection
         return req.view.render("emailPg")
     }
     
-    func nextPg(req: Request) throws -> EventLoopFuture<View> {
+    func nextPg(req: Request) throws -> EventLoopFuture<Response> {
         print("\nEmailPg: \(req.description)\n")
         
         do {
@@ -52,7 +52,9 @@ class EmailPg: RouteCollection
                     return cust
                 }
                 .flatMap { customer in customer.save(on: req.db) }  //TODO: use .whenComplete to catch save error
-                .flatMap { req.view.render("salesPg") }
+                .map {
+                    req.redirect(to: "/sales")
+                }
         }
         catch { throw Abort(.noContent) }
     }
