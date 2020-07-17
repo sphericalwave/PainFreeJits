@@ -19,25 +19,42 @@ class EmailPg: RouteCollection
         return req.view.render("emailPg")
     }
     
-    func nextPg(req: Request) -> EventLoopFuture<Response> {
-        print("EmailPg: \(req.description)")
-        let contact = try! req.content.decode(Contact.self)
-        req.session.data["givenName"] = contact.name
-        req.session.data["email"] = contact.email
+    func nextPg(req: Request) throws -> EventLoopFuture<View> {
+        print("\nEmailPg: \(req.description)\n")
         
-        //TODO: Create a User in the DB and Sign Them In
-        let c = Customer()
-        c.givenName = req.session.data["givenName"]
-        c.email = req.session.data["email"]
-        c.birthDate = Date() //TODO: req.session.data["birthdate"]
-        c.gender = true //TODO: req.session.data["gender"]
-        c.painfulJoints = req.session.data["joints"] //TODO;
-        c.belt = req.session.data["belt"]
-        c.stripes = req.session.data["stripes"]
-        
-        return c.create(on: req.db).map {
-            req.redirect(to: "/sales")
+        do {
+            let contact = try req.content.decode(Contact.self)
+            req.session.data["givenName"] = contact.name
+            req.session.data["email"] = contact.email
+            
+            guard let sId = req.session.id?.string else { fatalError() }
+            print("\nEmailPg: SessionId: \(sId)\n")
+            let uuid = UUID(uuidString: sId)
+            
+            return Customer.query(on: req.db)
+                .filter(\.$email == contact.email)
+                .first()
+                .map { cust -> Customer in
+                    guard let cust = cust else {
+                        let c = Customer()
+                        c.id = uuid
+                        c.givenName = req.session.data["givenName"]
+                        c.email = req.session.data["email"]
+                        c.birthDate = Date() //TODO: req.session.data["birthdate"]
+                        c.gender = true //TODO: req.session.data["gender"]
+                        c.painfulJoints = req.session.data["joints"] //TODO;
+                        c.belt = req.session.data["belt"]
+                        c.stripes = req.session.data["stripes"]
+                        return c
+                    }
+                    cust.email = req.session.data["email"]
+                    cust.givenName = req.session.data["givenName"]
+                    return cust
+                }
+                .map{ _ = $0.save(on: req.db) }
+                .flatMap { req.view.render("salesPg") }
         }
+        catch { throw Abort(.noContent) }
     }
     
     struct Contact: Content
@@ -45,17 +62,6 @@ class EmailPg: RouteCollection
         var name: String
         var email: String
         func print() -> String { return name + " " + email }
-    }
-    
-    func prospect(req: Request) {
-        let c = Customer()
-        c.givenName = req.session.data["givenName"]
-        c.email = req.session.data["email"]
-        c.birthDate = Date() //TODO: req.session.data["birthdate"]
-        c.gender = true //TODO: req.session.data["gender"]
-        c.painfulJoints = req.session.data["joints"] //TODO;
-        c.belt = req.session.data["belt"]
-        c.stripes = req.session.data["stripes"]
     }
 }
 
@@ -66,7 +72,7 @@ class EmailPg: RouteCollection
 //awlist5620928
 //POST https://api.aweber.com/1.0/accounts/{accountId}/lists/{listId}/subscribers
 //POST https://api.aweber.com/1.0/accounts/{accountId}/lists/awlist5620928/subscribers
- //api@aweber.com 
+//api@aweber.com
 
 
 //https://mailchimp.com/developer/guides/manage-subscribers-with-the-mailchimp-api/

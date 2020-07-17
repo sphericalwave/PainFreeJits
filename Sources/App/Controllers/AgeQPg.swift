@@ -26,6 +26,7 @@ class AgeQPg: RouteCollection
         //print(testForm.print())
 
         req.session.data["birthdate"] = age.bday
+        print(req.session.data)
 
         return req.redirect(to: "/email")
     }
