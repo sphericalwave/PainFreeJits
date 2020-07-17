@@ -18,9 +18,8 @@
                 </div>
             </div>
           
-          <div class="row">
-              #import("body")
-          </div>
+            #import("body")
+
         </div>
 
         <!-- Btsrp -->

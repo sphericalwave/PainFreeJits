@@ -2,24 +2,26 @@
 #export("title", "PainFreeJits - Age")
 #export("body"):
 
-<div class="col">
-      <div class="mybox1">
-
+<div class="row">
+    
+    <div class="col">
+        <div class="mybox1">
+            
             <div class="progress" style="opacity: 1.0;">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
             </div>
             <hr>
             
             <p>What's your birthdate?</p>
-
+            
             <form action="" method="post">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                        
+                            
                             <input type="date" name="bday" min="1920-01-01" max="2020-01-01" placeholder="yyyy-mm-dd" pattern="^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$" required>
-                        
-                        </div>
+                                
+                                </div>
                     </div>
                 </div>
                 <hr>
@@ -29,8 +31,10 @@
                     </form>
                 </div>
             </form>
-      </div>
-</div>
+        </div>
+    </div>
+    
+</div><!--row-->
 
 
 #endexport

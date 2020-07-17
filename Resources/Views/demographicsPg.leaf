@@ -2,39 +2,43 @@
 #export("title", "PainFreeJits - Rank")
 #export("body"):
 
-<div class="col">
-    <div class="mybox1">
-
-        <div class="progress" style="opacity: 1.0;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-        </div>
-        <hr>
-        
-        <p>What is your gender?</p>
-        <form action="/demographics" method="post">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="radio" id="male" name="gender" value="male" required>
-                        <label for="male">Male</label><br>
-                        
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label><br>
-                    </div>
-                </div>
-            </div>
-            </div>
+<div class="row">
+    
+    <div class="col">
+        <div class="mybox1">
             
+            <div class="progress" style="opacity: 1.0;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+            </div>
             <hr>
             
-            <div class="form-row text-center">
-                <form action="" method="post">
-                    <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
-                </form>
-            </div>
+            <p>What is your gender?</p>
+            <form action="/demographics" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label><br>
+                                
+                                <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label><br>
+                                    </div>
+                    </div>
+                </div>
+                </div>
+        
+        <hr>
+        
+        <div class="form-row text-center">
+            <form action="" method="post">
+                <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
             </form>
+        </div>
+        </form>
     </div>
 </div>
+
+</div><!--row-->
 
 
 #endexport

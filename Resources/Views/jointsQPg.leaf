@@ -2,158 +2,162 @@
 #export("title", "PainFreeJits")
 #export("body"):
 
-<div class="col">
-      <div class="mybox1">
-
-            <div class="progress" style="opacity: 1.0;">
-              <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-            </div>
-            <hr>
-
-
-            <form action="/joints" method="post">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-md-4">
-                        
-                        <p>What hurts the most?</p>
-
-                        <input type="radio" id="toe1" name="primary" value="toe" required checked>
-                        <label for="toe1">toe</label><br>
-                        
-                        <input type="radio" id="ankle1" name="primary" value="ankle">
-                        <label for="ankle1">ankle</label><br>
-                        
-                        <input type="radio" id="knee1" name="primary" value="knee">
-                        <label for="knee1">knee</label><br>
-                        
-                        <input type="radio" id="hip1" name="primary" value="hip">
-                        <label for="hip1">hip</label><br>
-                        
-                        <input type="radio" id="lowBack1" name="primary" value="lowBack">
-                        <label for="lowBack1">lowBack</label><br>
-                        
-                        <input type="radio" id="rib1" name="primary" value="rib">
-                        <label for="rib1">rib</label><br>
-                        
-                        <input type="radio" id="shoulder1" name="primary" value="shoulder">
-                        <label for="shoulder1">shoulder</label><br>
-                        
-                        <input type="radio" id="elbow1" name="primary" value="elbow">
-                        <label for="elbow1">elbow</label><br>
-                        
-                        <input type="radio" id="wrist1" name="primary" value="wrist">
-                        <label for="wrist1">wrist</label><br>
-                        
-                        <input type="radio" id="thumb1" name="primary" value="thumb">
-                        <label for="thumb1">thumb</label><br>
-                        
-                        <input type="radio" id="finger1" name="primary" value="finger">
-                        <label for="finger1">finger</label><br>
-                        
-                        <input type="radio" id="fingertip1" name="primary" value="fingertip">
-                        <label for="fingertip1">fingertip</label><br>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        
-                        <p>What's hurts the second most?</p>
-
-                        <input type="radio" id="toe2" name="secondary" value="toe" required>
-                        <label for="toe2">toe</label><br>
-                        
-                        <input type="radio" id="ankle2" name="secondary" value="ankle" checked>
-                        <label for="ankle2">ankle</label><br>
-                        
-                        <input type="radio" id="knee2" name="secondary" value="knee">
-                        <label for="knee2">knee</label><br>
-                        
-                        <input type="radio" id="hip2" name="secondary" value="hip">
-                        <label for="hip2">hip</label><br>
-                        
-                        <input type="radio" id="lowBack2" name="secondary" value="lowBack">
-                        <label for="lowBack2">lowBack</label><br>
-                        
-                        <input type="radio" id="rib2" name="secondary" value="rib">
-                        <label for="rib2">rib</label><br>
-                        
-                        <input type="radio" id="shoulder2" name="secondary" value="shoulder">
-                        <label for="shoulder2">shoulder</label><br>
-                        
-                        <input type="radio" id="elbow2" name="secondary" value="elbow">
-                        <label for="elbow2">elbow</label><br>
-                        
-                        <input type="radio" id="wrist2" name="secondary" value="wrist">
-                        <label for="wrist2">wrist</label><br>
-                        
-                        <input type="radio" id="thumb2" name="secondary" value="thumb">
-                        <label for="thumb2">thumb</label><br>
-                        
-                        <input type="radio" id="finger2" name="secondary" value="finger">
-                        <label for="finger2">finger</label><br>
-                        
-                        <input type="radio" id="fingertip2" name="secondary" value="fingertip">
-                        <label for="fingertip2">fingertip</label><br>
-                    </div>
-                    
-                    
-                    <div class="col-md-4">
-                        
-                        <p>What's hurts the third most?</p>
-
-                        <input type="radio" id="toe3" name="tertiary" value="toe" required>
-                        <label for="toe3">toe</label><br>
-                        
-                        <input type="radio" id="ankle3" name="tertiary" value="ankle">
-                        <label for="ankle3">ankle</label><br>
-                        
-                        <input type="radio" id="knee3" name="tertiary" value="knee" checked>
-                        <label for="knee3">knee</label><br>
-                        
-                        <input type="radio" id="hip3" name="tertiary" value="hip">
-                        <label for="hip3">hip</label><br>
-                        
-                        <input type="radio" id="lowBack3" name="tertiary" value="lowBack">
-                        <label for="lowBack3">lowBack</label><br>
-                        
-                        <input type="radio" id="rib3" name="tertiary" value="rib">
-                        <label for="rib3">rib</label><br>
-                        
-                        <input type="radio" id="shoulder3" name="tertiary" value="shoulder">
-                        <label for="shoulder3">shoulder</label><br>
-                        
-                        <input type="radio" id="elbow3" name="tertiary" value="elbow">
-                        <label for="elbow3">elbow</label><br>
-                        
-                        <input type="radio" id="wrist3" name="tertiary" value="wrist">
-                        <label for="wrist3">wrist</label><br>
-                        
-                        <input type="radio" id="thumb3" name="tertiary" value="thumb">
-                        <label for="thumb3">thumb</label><br>
-                        
-                        <input type="radio" id="finger3" name="tertiary" value="finger">
-                        <label for="finger3">finger</label><br>
-                        
-                        <input type="radio" id="fingertip3" name="tertiary" value="fingertip">
-                        <label for="fingertip3">fingertip</label><br>
-                    </div>
-                    
-                    
-                    
-                </div>
-            </div>
-
-            <hr>
-            <div class="form-row text-center">
-                <form action="" method="post">
-                    <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
-                </form>
-            </div>
+<div class="row">
+    
+    <div class="col">
+        <div class="mybox1">
             
+            <div class="progress" style="opacity: 1.0;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+            </div>
+            <hr>
+            
+            
+            <form action="/joints" method="post">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            
+                            <p>What hurts the most?</p>
+                            
+                            <input type="radio" id="toe1" name="primary" value="toe" required checked>
+                                <label for="toe1">toe</label><br>
+                                
+                                <input type="radio" id="ankle1" name="primary" value="ankle">
+                                    <label for="ankle1">ankle</label><br>
+                                    
+                                    <input type="radio" id="knee1" name="primary" value="knee">
+                                        <label for="knee1">knee</label><br>
+                                        
+                                        <input type="radio" id="hip1" name="primary" value="hip">
+                                            <label for="hip1">hip</label><br>
+                                            
+                                            <input type="radio" id="lowBack1" name="primary" value="lowBack">
+                                                <label for="lowBack1">lowBack</label><br>
+                                                
+                                                <input type="radio" id="rib1" name="primary" value="rib">
+                                                    <label for="rib1">rib</label><br>
+                                                    
+                                                    <input type="radio" id="shoulder1" name="primary" value="shoulder">
+                                                        <label for="shoulder1">shoulder</label><br>
+                                                        
+                                                        <input type="radio" id="elbow1" name="primary" value="elbow">
+                                                            <label for="elbow1">elbow</label><br>
+                                                            
+                                                            <input type="radio" id="wrist1" name="primary" value="wrist">
+                                                                <label for="wrist1">wrist</label><br>
+                                                                
+                                                                <input type="radio" id="thumb1" name="primary" value="thumb">
+                                                                    <label for="thumb1">thumb</label><br>
+                                                                    
+                                                                    <input type="radio" id="finger1" name="primary" value="finger">
+                                                                        <label for="finger1">finger</label><br>
+                                                                        
+                                                                        <input type="radio" id="fingertip1" name="primary" value="fingertip">
+                                                                            <label for="fingertip1">fingertip</label><br>
+                                                                            </div>
+                        
+                        <div class="col-md-4">
+                            
+                            <p>What's hurts the second most?</p>
+                            
+                            <input type="radio" id="toe2" name="secondary" value="toe" required>
+                                <label for="toe2">toe</label><br>
+                                
+                                <input type="radio" id="ankle2" name="secondary" value="ankle" checked>
+                                    <label for="ankle2">ankle</label><br>
+                                    
+                                    <input type="radio" id="knee2" name="secondary" value="knee">
+                                        <label for="knee2">knee</label><br>
+                                        
+                                        <input type="radio" id="hip2" name="secondary" value="hip">
+                                            <label for="hip2">hip</label><br>
+                                            
+                                            <input type="radio" id="lowBack2" name="secondary" value="lowBack">
+                                                <label for="lowBack2">lowBack</label><br>
+                                                
+                                                <input type="radio" id="rib2" name="secondary" value="rib">
+                                                    <label for="rib2">rib</label><br>
+                                                    
+                                                    <input type="radio" id="shoulder2" name="secondary" value="shoulder">
+                                                        <label for="shoulder2">shoulder</label><br>
+                                                        
+                                                        <input type="radio" id="elbow2" name="secondary" value="elbow">
+                                                            <label for="elbow2">elbow</label><br>
+                                                            
+                                                            <input type="radio" id="wrist2" name="secondary" value="wrist">
+                                                                <label for="wrist2">wrist</label><br>
+                                                                
+                                                                <input type="radio" id="thumb2" name="secondary" value="thumb">
+                                                                    <label for="thumb2">thumb</label><br>
+                                                                    
+                                                                    <input type="radio" id="finger2" name="secondary" value="finger">
+                                                                        <label for="finger2">finger</label><br>
+                                                                        
+                                                                        <input type="radio" id="fingertip2" name="secondary" value="fingertip">
+                                                                            <label for="fingertip2">fingertip</label><br>
+                                                                            </div>
+                        
+                        
+                        <div class="col-md-4">
+                            
+                            <p>What's hurts the third most?</p>
+                            
+                            <input type="radio" id="toe3" name="tertiary" value="toe" required>
+                                <label for="toe3">toe</label><br>
+                                
+                                <input type="radio" id="ankle3" name="tertiary" value="ankle">
+                                    <label for="ankle3">ankle</label><br>
+                                    
+                                    <input type="radio" id="knee3" name="tertiary" value="knee" checked>
+                                        <label for="knee3">knee</label><br>
+                                        
+                                        <input type="radio" id="hip3" name="tertiary" value="hip">
+                                            <label for="hip3">hip</label><br>
+                                            
+                                            <input type="radio" id="lowBack3" name="tertiary" value="lowBack">
+                                                <label for="lowBack3">lowBack</label><br>
+                                                
+                                                <input type="radio" id="rib3" name="tertiary" value="rib">
+                                                    <label for="rib3">rib</label><br>
+                                                    
+                                                    <input type="radio" id="shoulder3" name="tertiary" value="shoulder">
+                                                        <label for="shoulder3">shoulder</label><br>
+                                                        
+                                                        <input type="radio" id="elbow3" name="tertiary" value="elbow">
+                                                            <label for="elbow3">elbow</label><br>
+                                                            
+                                                            <input type="radio" id="wrist3" name="tertiary" value="wrist">
+                                                                <label for="wrist3">wrist</label><br>
+                                                                
+                                                                <input type="radio" id="thumb3" name="tertiary" value="thumb">
+                                                                    <label for="thumb3">thumb</label><br>
+                                                                    
+                                                                    <input type="radio" id="finger3" name="tertiary" value="finger">
+                                                                        <label for="finger3">finger</label><br>
+                                                                        
+                                                                        <input type="radio" id="fingertip3" name="tertiary" value="fingertip">
+                                                                            <label for="fingertip3">fingertip</label><br>
+                                                                            </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="form-row text-center">
+                    <form action="" method="post">
+                        <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
+                    </form>
+                </div>
+                
             </form>
-      </div>
-</div>
+        </div>
+    </div>
+    
+</div><!--row-->
 
 
 #endexport
