@@ -17,6 +17,7 @@ class SalesPg: RouteCollection
     
     func webpage(req: Request) throws -> EventLoopFuture<View> {
             let email = req.session.data["email"]
+        let session = req.session.data
             
             return Customer.query(on: req.db)
                 .filter(\.$email == email)
@@ -24,12 +25,21 @@ class SalesPg: RouteCollection
                 .unwrap(or: Abort(.noContent))
                 .flatMap { customer in
                     print(customer.painfulJoints ?? "pain free")
-                    return req.view.render("salesPg")
+                    let vC = ViewContext(primary: session["primary"] ?? "1",
+                                         secondary: session["secondary"] ?? "2",
+                                         tertiary: session["tertiary"] ?? "3")
+                    return req.view.render("salesPg", vC)
                 }  //display 3 videos based on their selection
     }
     
     func nextPg(req: Request) -> Response {
         //FIXME:
         return req.redirect(to: "/landingPg")
+    }
+    
+    struct ViewContext: Encodable {
+        let primary: String
+        let secondary: String
+        let tertiary: String
     }
 }

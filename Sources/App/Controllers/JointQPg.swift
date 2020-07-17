@@ -25,43 +25,17 @@ class JointQPg: RouteCollection
         print("\n\n \(req.body.string ?? "no string")\n\n")
 
         let joints = try! req.content.decode(Joints.self)
-        req.session.data["joints"] = joints.everything().description
+        req.session.data["primary"] = joints.primary
+        req.session.data["secondary"] = joints.secondary
+        req.session.data["tertiary"] = joints.tertiary
         return req.redirect(to: "/demographics")
     }
     
     struct Joints: Content
     {
-        //TODO: Complete
-        var toe: String?
-        var ankle: String?
-        var knee: String?
-        var hip: String?
-        var lowBack: String?
-        var rib: String?
-        var shoulder: String?
-        var elbow: String?
-        var wrist: String?
-        var thumb: String?
-        var finger: String?
-        var fingerTip: String?
-
-        
-        func everything() -> [String] {
-            var all = [String]()
-            if let t = toe { all.append(t) }
-            if let a = ankle { all.append(a) }
-            if let kn = knee { all.append(kn) }
-            if let hp = hip { all.append(hp) }
-            if let lB = lowBack { all.append(lB) }
-            if let rb = rib { all.append(rb) }
-            if let sh = shoulder { all.append(sh) }
-            if let elb = elbow { all.append(elb) }
-            if let w = wrist { all.append(w) }
-            if let tb = thumb { all.append(tb) }
-            if let fg = finger { all.append(fg) }
-            if let fgT = fingerTip { all.append(fgT) }
-            return all
-        }
+        var primary: String
+        var secondary: String
+        var tertiary: String
     }
 }
 

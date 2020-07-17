@@ -19,7 +19,7 @@
                         
                         <p>What hurts the most?</p>
 
-                        <input type="radio" id="toe1" name="primary" value="toe">
+                        <input type="radio" id="toe1" name="primary" value="toe" required checked>
                         <label for="toe1">toe</label><br>
                         
                         <input type="radio" id="ankle1" name="primary" value="ankle">
@@ -60,10 +60,10 @@
                         
                         <p>What's hurts the second most?</p>
 
-                        <input type="radio" id="toe2" name="secondary" value="toe">
+                        <input type="radio" id="toe2" name="secondary" value="toe" required>
                         <label for="toe2">toe</label><br>
                         
-                        <input type="radio" id="ankle2" name="secondary" value="ankle">
+                        <input type="radio" id="ankle2" name="secondary" value="ankle" checked>
                         <label for="ankle2">ankle</label><br>
                         
                         <input type="radio" id="knee2" name="secondary" value="knee">
@@ -102,13 +102,13 @@
                         
                         <p>What's hurts the third most?</p>
 
-                        <input type="radio" id="toe3" name="tertiary" value="toe">
+                        <input type="radio" id="toe3" name="tertiary" value="toe" required>
                         <label for="toe3">toe</label><br>
                         
                         <input type="radio" id="ankle3" name="tertiary" value="ankle">
                         <label for="ankle3">ankle</label><br>
                         
-                        <input type="radio" id="knee3" name="tertiary" value="knee">
+                        <input type="radio" id="knee3" name="tertiary" value="knee" checked>
                         <label for="knee3">knee</label><br>
                         
                         <input type="radio" id="hip3" name="tertiary" value="hip">
