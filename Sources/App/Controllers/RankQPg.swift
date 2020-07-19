@@ -20,7 +20,7 @@ class RankQPg: RouteCollection
     }
     
     func nextPg(req: Request) -> Response {
-        
+        print(req.body.description)
         let rank = try! req.content.decode(Rank.self)
         req.session.data["belt"] = rank.belt
         req.session.data["stripes"] =  rank.stripes

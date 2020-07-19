@@ -2,10 +2,14 @@
 #export("title", "PainFreeJits - Rank")
 #export("body"):
 
+<form action="/rank" method="post">
+
 <div class="row">
+
     
     <div class="mybox1">
         <div class="col">
+
             
             
             <div class="row">
@@ -21,9 +25,11 @@
             </div><!--row-->
             
             <div class="row">
+
                 <div class="col-md-6">
                     <h4>Belt?</h4>
                     <hr>
+
                     <input type="radio" class="custom-control-input" id="white" name="belt" value="white" required>
                         <label class="custom-control-label" for="white">White</label><br>
                         <input type="radio" id="blue" name="belt" value="blue">
@@ -34,11 +40,13 @@
                                     <label for="brown">Brown</label><br>
                                     <input type="radio" id="black" name="belt" value="black">
                                         <label for="hip">Black</label><br>
+                                        
                                         </div><!--col-->
                 
                 <div class="col-md-6">
                     <h4>Stripes?</h4>
                     <hr>
+
                     <input type="radio" id="zero" name="stripes" value="one" required>
                         <label for="zero">0 stripes</label><br>
                         <input type="radio" id="one" name="stripes" value="one">
@@ -50,6 +58,7 @@
                                     <input type="radio" id="four" name="stripes" value="four">
                                         <label for="four">4 stripes</label>
                                         </div><!--col-->
+
                 
             </div><!--row-->
             
@@ -63,13 +72,14 @@
             </div><!--row-->
 
 
-            
+
         </div><!--col-->
         
     </div> <!--mybox1-->
     
-    
+
 </div><!--row-->
+</form>
 
 #endexport
 #endextend
