@@ -32,7 +32,7 @@
                 
                 <hr>
                 
-                <div class="form-row text-center">
+                <div class="form-row justify-content-center">
                     <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
                 </div>
             
