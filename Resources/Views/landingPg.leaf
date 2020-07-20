@@ -4,34 +4,41 @@
 
 
 <div class="row">
-        
+        <div class="col">
+
     <div class="mybox1">
 
-        
-        <div class="col">
-            <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
-            </div>
-            <hr>
-        </div> <!--col-->
+        <div class="row">
 
-        <div class="col-sm-6">
-            <h3 class="text-center">Learn Esoteric Concepts</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-            </div> <!--vid-->
-            <h4 class="text-center">Receive Spectacular Results!</h4>
-        </div> <!--col-->
+            <div class="col">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
+                </div>
+                <hr>
+            </div> <!--col-->
+        </div><!--row-->
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <h3 class="text-center">Learn Esoteric Concepts</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                </div> <!--vid-->
+                <h4 class="text-center">Receive Spectacular Results!</h4>
+            </div> <!--col-->
+            
+            <div class="col-sm-6">
+                <hr>
+                <p>Let's face it, Jiujitsu hurts. Jiujitsu causes aches, pains and injuries, in periods of high movement demand, like rolling we often move in sub optimal alignment. And other times we don't tap out safely or quickly enough.</p>
+                <p>Amazingly not only can you heal the nagging aches and pains, you can transcend them. You can learn to move like water over rocks and tap black belts. The martial arts dream is real.</p>
+                <p>I believe you can master the art of jiujitsu. But let's face it the reason most people quit jiujitsu is pain and injuries. That's tragic because the friends you make rolling are priceless. It just doesn't have to be that way. You can become a pain free, superfluid jiujitsu black belt if you invest in yourself.</p>
+                <p>There are so many powerful movements you can do to regenerate your body but it can be overwhelming diving into the deep end without a guide. That's why i put together the survey below. Take a few minutes to complete it and I’ll be able to share 3 exercises for YOU to start resolving whatever has been nagging you, absolutely FREE.</p>
+            </div>
         
-        <div class="col-sm-6">
-            <hr>
-            <p>Let's face it, Jiujitsu hurts. Jiujitsu causes aches, pains and injuries, in periods of high movement demand, like rolling we often move in sub optimal alignment. And other times we don't tap out safely or quickly enough.</p>
-            <p>Amazingly not only can you heal the nagging aches and pains, you can transcend them. You can learn to move like water over rocks and tap black belts. The martial arts dream is real.</p>
-            <p>I believe you can master the art of jiujitsu. But let's face it the reason most people quit jiujitsu is pain and injuries. That's tragic because the friends you make rolling are priceless. It just doesn't have to be that way. You can become a pain free, superfluid jiujitsu black belt if you invest in yourself.</p>
-            <p>There are so many powerful movements you can do to regenerate your body but it can be overwhelming diving into the deep end without a guide. That's why i put together the survey below. Take a few minutes to complete it and I’ll be able to share 3 exercises for YOU to start resolving whatever has been nagging you, absolutely FREE.</p>
-        </div>
+        </div><!--row-->
         
-        <div class="form-row text-center">
+        <div class="form-row justify-content-center">
             <hr>
             <form action="" method="post">
                 <button type="submit" class="btn btn-primary btn-lg">Give me the Survey!</button>
@@ -41,6 +48,7 @@
         
 
     </div> <!--mybox-->
+    </div> <!--col-->
 </div><!--row-->
 
 
