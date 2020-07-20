@@ -1,82 +1,25 @@
+<!doctype html>
 <html>
     
     <head>
-        <title>#import("title")</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="/css/styles_2.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>#import("title")</title>
+
     <head>
         
     <body>
         
-
-        <!-- Navbar text is dark and background is light -->
-<!--          <nav class="navbar navbar-custom navbar-expand-lg">-->
-<!--<!--              <a class="navbar-brand" href="#">-->-->
-<!--<!--                Light color background-->-->
-<!--<!--            </a>-->-->
-<!--              -->
-<!--              <div class="navbar-header">-->
-<!--                 <a class="navbar-brand" href="#">PainFreeJiujitsu</a>-->
-<!--               </div>-->
-<!--               -->
-<!--               <ul class="nav navbar-nav">-->
-<!--                 <li class="active"><a href="#">Home</a></li>-->
-<!--                 <li><a href="#">YouTube</a></li>-->
-<!--                 <li><a href="#">Blog</a></li>-->
-<!--               </ul>-->
-<!--               -->
-<!--          </nav>-->
-          
-          <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Page 1-1</a></li>
-                      <li><a href="#">Page 1-2</a></li>
-                      <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Page 2</a></li>
-                  <li><a href="#">Page 3</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        
-        
-<!--        <nav class="navbar navbar-dark bg-primary navbar-expand-lg" role="navigation">-->
-<!---->
-<!--            <div class="navbar-header">-->
-<!--              <a class="navbar-brand" href="#">PainFreeJiujitsu</a>-->
-<!--            </div>-->
-<!--            -->
-<!--            <ul class="nav navbar-nav">-->
-<!--              <li class="active"><a href="#">Home</a></li>-->
-<!--              <li><a href="#">YouTube</a></li>-->
-<!--              <li><a href="#">Blog</a></li>-->
-<!--            </ul>-->
-<!---->
-<!--        </nav>-->
-        
-        
         <div class="container">
+            
           <div class="row">
             <div class="col center-block text-center">
                 <div class="mybox1">
@@ -86,29 +29,68 @@
                 </div> <!-- bx -->
             </div> <!-- col -->
           </div> <!-- row -->
-<!--        </div> <!-- ctnr -->-->
-        
-<!--        <div class="container">-->
-<!--            <div class="mybox1">-->
-
-
-
-<!--        </div> <!-- bx -->-->
-
-<!--        </div> <!-- cntnr -->-->
-
           
+          #import("body")
+            
+          <div class="row">
+              <div class="col">
+                  
+                  <!-- Image and text -->
+                  <nav class="navbar">
+                    <a class="navbar-brand" href="#">
+<!--                      <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+                      Pain Free Jiujitsu
+                    </a>
+                    
+                    <div class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </div>
+                    
+                  </nav>
+                  
+                  
+                  
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar w/ text</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                      </ul>
+                      <span class="navbar-text">
+                        Navbar text with an inline element
+                      </span>
+                    </div>
+                  </nav>
+                  
+                  
+                  
+                  
+            </div> <!-- col -->
 
-<!--          <div class="container">-->
-            #import("body")
-            </div> <!-- ctnr -->
+        </div> <!-- row -->
+        
+    </div> <!-- ctnr -->
 
-        </div>
+    <!--</div>-->
 
         <!-- Btsrp -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
     </body>
     
 </html>
