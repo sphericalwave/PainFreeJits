@@ -28,7 +28,7 @@ hr {
     background-color: white;
     opacity: 0.75;
     min-height: 54px;
-    margin: 9px 3px;
+    margin: 9px;
     padding: 9px;
     border-radius: 6px;
 }
@@ -36,6 +36,22 @@ hr {
 .mybox2 {
     background-color: lightgray;
     min-height: 54px;
+}
+
+/* Modify the background color */
+  
+.navbar-custom {
+    background-color: white;
+}
+/* Modify brand and text color */
+  
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+icon-bar {
+    background-color: black;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -52,3 +68,4 @@ hr {
 /*      font-size:5vw;*/
 /*  }*/
 /*}*/
+
