@@ -3,53 +3,39 @@
 #export("body"):
 <div class="row">
     
-    <div class="col-md">
-        
-        <div class="row">
+    <div class="col">
+        <div class="mybox1">
+            <h3>My Primary Pain is my #(primary)</h3>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            </div> <!--vid-->
             
-            <div class="col-sm-8">
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-            </div> <!--col-->
-            
-            <div class="col-sm-4">
-                <div class="mybox2">
-                    <!--#(solution)-->
-                    <h3>My Primary Pain is my #(primary)</h3>
-                    <hr>
-                    <h1>Monkey Lunge</h1>
-                </div> <!--mybox2-->
-            </div> <!--col-->
-            
-            
-        </div> <!--row-->
+        </div> <!--myBox1-->
     </div> <!--col-->
     
-    <div class="col-md">
+    
+    <div class="col">
         <div class="mybox1">
             <h3>My Secondary Pain is my #(secondary)</h3>
-            <hr>
-            <div class="mybox2">
-                <h1>Monkey Lunge</h1>
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-            </div>
-        </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            </div> <!--vid-->
+            
+        </div> <!--myBox1-->
     </div> <!--col-->
     
-    <div class="col-md">
+    
+    <div class="col">
         <div class="mybox1">
             <h3>My Tertiary Pain is my #(tertiary)</h3>
-            <hr>
-            <div class="mybox2">
-                <h1>Monkey Lunge</h1>
-                <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-            </div>
-        </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            </div> <!--vid-->
+            
+        </div> <!--myBox1-->
     </div> <!--col-->
     
 </div><!--row-->
