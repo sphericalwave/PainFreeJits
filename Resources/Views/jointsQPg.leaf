@@ -2,19 +2,22 @@
 #export("title", "PainFreeJits")
 #export("body"):
 
+<form action="/joints" method="post">
+
 <div class="row">
     
     <div class="mybox1">
+        
 
-        <p class="text-center">What 3 parts of your body are reporting Pain?</p>
-        <div class="progress" style="opacity: 1.0;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-        </div>
+
+            <div class="col">
+                <p class="text-center">What 3 parts of your body are reporting Pain?</p>
+                <div class="progress" style="opacity: 1.0;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+            </div> <!--col-->
         
-<!--        <hr>-->
         
-        
-        <form action="/joints" method="post">
 
             <div class="col-xs-4">
                     
@@ -150,9 +153,9 @@
                  <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
             </div>
             
-        </form>
     </div> <!--myBox-->
 </div><!--row-->
+</form>
 
 
 #endexport
