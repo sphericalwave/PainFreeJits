@@ -3,36 +3,41 @@
 #export("body"):
 
 <div class="row">
-    
-    <div class="mybox1">
-            
-        <p class="text-center">When were you Born?</p>
+    <div class="col">
+        <div class="mybox1">
+            <form action="/age" method="post">
 
-        <div class="progress" style="opacity: 1.0;">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-        </div>
-        
-        <hr>
-            
-            
-        <form action="" method="post">
-            
-            <div class="col center-block text-center">
-                <input type="date" name="bday" min="1920-01-01" max="2020-01-01" placeholder="yyyy-mm-dd" pattern="^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$" required>
-            </div>
-            
-            <hr>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center">When were you Born?</p>
 
-            <div class="form-row text-center">
-                <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
-            </div>
+                        <div class="progress" style="opacity: 1.0;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                        </div>
+                        
+                        <hr>
+                    </div> <!--col-->
+                </div><!--row-->
             
-        </form>
-        
-    </div> <!--mybox1-->
-    
+                <div class="row">
+                    <div class="col center-block text-center">
+                        <div class="form-group">
+                            <input type="date" name="bday" min="1920-01-01" max="2020-01-01" class="form-control" required>
+                        </div>
+                    </div> <!--col-->
+                </div><!--row-->
+
+                <div class="form-row justify-content-center">
+                    <hr>
+                    <button type="submit" class="btn btn-primary btn-lg">Next Question</button>
+                </div>
+
+            </form>
+        </div> <!--myBox-->
+    </div> <!--col-->
 </div><!--row-->
-
+    
+    
 
 #endexport
 #endextend
