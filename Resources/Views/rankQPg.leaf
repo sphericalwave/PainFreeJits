@@ -5,60 +5,51 @@
 <div class="mybox1">
     
     <form action="/rank" method="post">
-        <h1>Belt?</h1>
+        <h1>What is your Rank in Jiujitsu?</h1>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="white" name="belt" value="white" required checked>
-            <label class="form-check-label" for="white">White</label>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="white" name="belt" value="white" required checked>White
+        </label>
         
+        <label class="radio-inline">
+          <input type="radio" id="blue" name="belt" value="blue">Blue
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="blue" name="belt" value="blue">
-            <label class="form-check-label" for="blue">Blue</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="purple" name="belt" value="purple">Purple
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="purple" name="belt" value="purple">
-            <label class="form-check-label" for="purple">Purple</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="brown" name="belt" value="brown">Brown
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="brown" name="belt" value="brown">
-            <label class="form-check-label" for="brown">Brown</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="black" name="belt" value="black">Black
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="black" name="belt" value="black">
-            <label class="form-check-label" for="hip">Black</label><br>
-        </div> <!--form-check-->
+        <hr>
         
-        <h1>Stripes?</h1>
+        <label class="radio-inline">
+          <input type="radio" id="zero" name="stripes" value="zero" required checked>0 stripes
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="zero" name="stripes" value="zero" required checked>
-            <label class="form-check-label"for="zero">0 stripes</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="one" name="stripes" value="one">1 stripes
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="one" name="stripes" value="one">
-            <label class="form-check-label" for="one">1 stripe</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="two" name="stripes" value="two">2 stripes
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="two" name="stripes" value="two">
-            <label class="form-check-label" for="two">2 stripes</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="three" name="stripes" value="three">3 stripes
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="three" name="stripes" value="three">
-            <label class="form-check-label" for="three">3 stripes</label><br>
-        </div> <!--form-check-->
+        <label class="radio-inline">
+          <input type="radio" id="four" name="stripes" value="four">4 stripes
+        </label>
         
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="four" name="stripes" value="four">
-            <label class="form-check-label" for="four">4 stripes</label>
-        </div> <!--form-check-->
+        <hr>
         
         <button type="submit" class="btn btn-primary">Submit</button>
         
