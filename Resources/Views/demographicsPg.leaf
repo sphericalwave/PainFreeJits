@@ -6,7 +6,7 @@
     
         <div class="mybox1">
             
-            <p>What is your gender?</p>
+            <p class="text-center">What is your gender?</p>
 
             <div class="progress" style="opacity: 1.0;">
                 <div class="progress-bar progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
