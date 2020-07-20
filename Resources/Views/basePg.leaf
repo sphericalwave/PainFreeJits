@@ -8,18 +8,43 @@
     <head>
         
     <body>
+        
+
+        
         <div class="container">
           <div class="row">
-                <div class="col center-block text-center">
-                    <div class="mybox1">
-                      <h1 >Pain Free Jiujitsu!</h1>
-                      <hr>
-                      <h4>Even if you’ve looked everywhere and Haven’t been able to find and Answer.</p>
-                    </div>
-                </div>
+            <div class="col center-block text-center">
+                <div class="mybox1">
+                  <h1 >Pain Free Jiujitsu!</h1>
+                  <hr>
+                  <h4>Even if you’ve looked everywhere and Haven’t been able to find and Answer.</p>
+                </div> <!-- bx -->
+            </div> <!-- col -->
+          </div> <!-- row -->
+        </div> <!-- ctnr -->
+        
+        <nav class="navbar navbar-dark navbar-expand-lg primary-color">
+          <div class="container">
+            <div class="mybox1">
+
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">PainFreeJiujitsu</a>
             </div>
+            
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            
+            </div> <!-- bx -->
+          </div>
+        </nav>
           
+
+          <div class="container">
             #import("body")
+            </div> <!-- ctnr -->
 
         </div>
 
