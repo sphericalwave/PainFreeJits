@@ -29,7 +29,7 @@ hr {
     opacity: 0.75;
     min-height: 54px;
     margin: 9px 0px;
-    padding: 3px 9px;
+    padding: 9px 9px;
     border-radius: 6px;
 }
 
@@ -40,11 +40,11 @@ hr {
 
 /* Modify the background color */
 .navbar {
-    margin: 3px 9px;
-    padding: 3px 3px;
+    margin: 9px 0px;
+    padding: 3px 9px;
     border-radius: 6px;
     background-color: white;
-/*    opacity: 0.75;*/
+    opacity: 0.75;
 
 }
 
