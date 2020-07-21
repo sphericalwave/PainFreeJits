@@ -7,13 +7,30 @@
         <title>Pain Free Jiujitsu</title>
                     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/styles_3.css">
+<!--        <link rel="stylesheet" href="/css/styles_3.css">-->
 
     </head>
     <body>
         <form action="" method="post">
             
+
+            
+            
             <div class="container mycontainer">
+                
+                <div class="d-flex flex-row bg-secondary">
+                  <div class="p-2 flex-fill bg-info">
+                  <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
+                  <p>Free Jiujitsu Recovery Drills</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
+                  
+                  </div>
+                  <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+                  <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+                  <div class="p-2 flex-fill bg-danger">Flex item 3</div>
+
+                </div>
+                
                 
                 <!--header-->
                 <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
@@ -154,6 +171,8 @@
                                     <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
                                     <textarea class="form-control" rows="6" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
                                 </fieldset>
+                                
+                                
                             </div> <!--col-->
                         </div> <!--row 1.2.2-->
 
