@@ -6,38 +6,20 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Pain Free Jiujitsu</title>
                     
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--        <link rel="stylesheet" href="/css/styles_3.css">-->
 
     </head>
     <body>
         <form action="" method="post">
             
-
-            
-            
             <div class="container mycontainer">
                 
-                <div class="d-flex flex-row bg-secondary">
-                  <div class="p-2 flex-fill bg-info">
-                  <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
-                  <p>Free Jiujitsu Recovery Drills</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
-                  
-                  </div>
-                  <div class="p-2 flex-fill bg-warning">Flex item 2</div>
-                  <div class="p-2 flex-fill bg-primary">Flex item 3</div>
-                  <div class="p-2 flex-fill bg-danger">Flex item 3</div>
-
-                </div>
-                
-                
-                <!--header-->
                 <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
-                    
-                    <!--navBar-->
+
+                <!--navBar-->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-                    <!--          <a class="navbar-brand" href="#">Superfluid Jiujitsu</a>-->
+                    <a class="navbar-brand" href="#">Superfluid Jiujitsu</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -58,168 +40,122 @@
                         </ul>
                     </div>
                 </nav>
-                    
-                <div class="row "> <!--row 1.0-->
-                    
-                    <div class="col-12 col-md-4 align-self-center"> <!--col 1.1-->
-                        <div class="mybox">
-                            <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
-                                <p>Free Jiujitsu Recovery Drills</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
-                                </div>
-                    </div> <!--col-->
-                    
-                    <div class="col-12 col-md-8 px-lg-5"> <!--col 1.2-->
-                        
-                        <div class="row mx-lg-n5"> <!--row 1.2.1-->
-                            
-                            <div class="col-12 col-md-4 py-3 px-lg-1">
-                                <fieldset>
-
-                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
-                                    <label for="firstName">Name</label><br>
-                                        
-                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
-                                    <label for="email">Email</label><br>
-                                        
-                                    <label for="age">Age</label><br>
-                                    <input type="number" class="form-control" id="age" name="age" required>
-                                        
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Male</label><br>
-                                                    
-                                    <input type="radio" id="female" name="gender" value="female" required>
-                                    <label for="female">Female</label>
-                                            
-                                </fieldset>
-                            </div> <!--col-->
-                            
-                            <div class="col-12 col-md-8 py-3 px-lg-1">
-                                
-                                <div class="row"> <!--row 1.2.1.?-->
-                                    
-                                    <div class="col">
-                                        <p>Which of the Following Best Describes You?</p>
-
-                                    </div> <!--col-->
-                                </div> <!--row 1.2.2.?-->
-                                
-                                <div class="row"> <!--row 1.2.1.?-->
-                                    
-                                    <div class="col-12 col-md-6">
-                                        <fieldset>
-
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        </fieldset>
-
-                                    </div> <!--col-->
-                                    
-                                    <div class="col-12 col-md-6">
-                                        <fieldset>
-
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Knee</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        </fieldset>
-
-                                    </div> <!--col-->
-                                </div> <!--row 1.2.2.?-->
-                                        
-                            </div> <!--col-->
-                            
-                            
-                            
-                            
-                            
-                        </div> <!--row 1.2.1-->
-                        
-                        <div class="row mx-lg-n5"> <!--row 1.2.2-->
-                            <div class="col-12 py-3 px-lg-1">
-                                <fieldset>
-                                    <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
-                                    <textarea class="form-control" rows="6" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
-                                </fieldset>
-                                
-                                
-                            </div> <!--col-->
-                        </div> <!--row 1.2.2-->
-
-                        <div class="row mx-lg-n5"> <!--row 1.2.3-->
-                            <div class="col justify-content-center py-3 px-lg-1">
-                                    <button type="submit" class="btn btn-danger btn-lg btn-block">Free Jiujitsu Recovery Secrets!</button>
-                            </div> <!--col-->
-                        </div> <!--row 1.2.2-->
-                        
-                        
-                    </div> <!--col-->
-                    
-                </div> <!--row-->
                 
-                <!--Testimonials-->
-                <div class="row">
-                    <div class="col">
-                        <div class="mybox">
-                            <fieldset>
-                                <p>Testimonial 1</p>
-                                <p>This stuff has made a major difference for me on the mats.</p>
-                                <p>- Dr Claw</p>
-                            </fieldset>
+                <div class="d-flex flex-row bg-secondary">
+                    
+                    <div class="p-2 flex-fill bg-info">
+                        <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
+                        <p>Free Jiujitsu Recovery Drills</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
+                    </div>
+                    
+                    <div class="p-2 flex-fill bg-warning">
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        <label for="firstName">Name</label><br>
+                            
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                        <label for="email">Email</label><br>
+                            
+                        <input type="number" class="form-control" id="age" name="age" required>
+                        <label for="age">Age</label><br>
+                            
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label><br>
+                                        
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    
+                    <div class="p-2 flex-fill bg-primary">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                    </div>
+                    
+                    <div class="p-2 flex-fill bg-primary">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                        
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Elbow</label><br>
+                    </div>
 
-                        </div>
-                    </div> <!--col-->
-                    <div class="col">
-                         <div class="mybox">
-                             <fieldset>
-                                <p>Testimonial 2</p>
-                                <p>This stuff has made a major difference for me on the mats.</p>
-                                <p>- Wolverine</p>
-                            </fieldset>
-                        </div>
-                    </div> <!--col-->
-                    <div class="col">
-                        <div class="mybox">
-                            <fieldset>
-                                <p>Testimonial 3</p>
-                                <p>This stuff has made a major difference for me on the mats.</p>
-                                <p>- Iron Rob</p>
-                            </fieldset>
-                        </div> <!--my box-->
-                    </div> <!--col-->
-                </div> <!--row Testimonials-->
+                </div>
+                
+                <div class="d-flex flex-row bg-secondary">
+                    <div class="p-2 flex-fill bg-primary">
+
+                    <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
+                    <textarea class="form-control" rows="6" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
+                    </div>
+
+                </div>
+                
+                <div class="d-flex flex-row bg-secondary">
+                    <div class="p-2 flex-fill bg-primary">
+
+
+                    <button type="submit" class="btn btn-danger btn-lg btn-block">Free Jiujitsu Recovery Secrets!</button>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="d-flex flex-row bg-secondary">
+                    
+                    <div class="p-2 flex-fill bg-primary">
+                        <p>Testimonial 1</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Dr Claw</p>
+                    </div>
+                    
+                    <div class="p-2 flex-fill bg-primary">
+                        <p>Testimonial 2</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Dr Claw</p>
+                    </div>
+                    
+                    <div class="p-2 flex-fill bg-primary">
+                        <p>Testimonial 3</p>
+                        <p>This stuff has made a major difference for me on the mats.</p>
+                        <p>- Dr Claw</p>
+                    </div>
+
+                    
+                </div>
                     
             </div> <!--container-->
         </form>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
     </body>
 </html>
