@@ -35,6 +35,7 @@ public func configure(_ app: Application) throws
     try! app.register(collection: AgeQPg())
     try! app.register(collection: SalesPg())
     try! app.register(collection: DeepDivePg())
+    try! app.register(collection: Landing2())
     
     app.migrations.add(CustomerMigration1(), to: .psql)
     

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pain Free Jiujitsu</title>
+                    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!--        <link rel="stylesheet" href="/css/styles_3.css">-->
+
+        <style>
+            
+            .mybox {
+                border 2px solid black;
+                background-color white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method="post">
+                
+            <div class="row">
+                <div class="col-12 col-md-3 bg-primary">
+                    <h1>Pain Free Jiujitsu</h1>
+                    <h2>Become a Superfluid Black Belt</h2>
+                </div>
+                
+                <div class="col-12 col-md-3 bg-danger">
+                    <h3>Improve your Mobility in 10 Days</h3>
+                    <h3>Transform your Movement Forever</h3>
+                    <h3>Guaranteed Results or your Money Back</h3>
+                </div>
+                
+                <div class="col-12 col-md-3 bg-info">
+                    <h3>Trust Logo</h3>
+                </div>
+                
+                <div class="col-12 col-md-3 bg-danger">
+                    <h3>NavBar</h3>
+                </div>
+                
+                
+            </div> <!--header-->
+            
+            <div class="row">
+                <div class="col-12 col-md-8 bg-secondary">
+                    Video
+                </div>
+                
+                <div class="col-12 col-md-4 bg-primary">
+                    Our Previous Work & Ressearch Covered in
+                </div>
+                
+            </div> <!--header-->
+            
+            <div class="row">
+                <div class="col bg-info">
+                    
+                    <div class="row">
+                        <div class="col bg-danger">
+                            For Readers
+                        </div>
+                    </div> <!--header-->
+                    
+                    <div class="row">
+                        <div class="col bg-primary">
+                            For Readers 2
+                        </div>
+                    </div> <!--header-->
+                    
+                </div>
+                
+                <div class="col-12 col-md-4 bg-secondary">
+                    Testimonials
+                </div>
+                
+            </div> <!--header-->
+             
+            </form>
+        </div> <!--container-->
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
