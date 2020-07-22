@@ -24,34 +24,59 @@
                 
             <div class="row">
                 <div class="col-12 col-md-3 bg-primary">
-                    <h1>Pain Free Jiujitsu</h1>
-                    <h2>Become a Superfluid Black Belt</h2>
+                    <h4>Pain Free Jiujitsu</h4>
+                    <p class="text-nowrap">Become Superfluid</p>
                 </div>
                 
-                <div class="col-12 col-md-3 bg-danger">
-                    <h3>Improve your Mobility in 10 Days</h3>
-                    <h3>Transform your Movement Forever</h3>
-                    <h3>Guaranteed Results or your Money Back</h3>
+                <div class="col-12 col-md-4 bg-danger">
+                    <p class="text-nowrap">
+                    Improve your Mobility in 10 Days<br>
+                    Transform your Movement Forever<br>
+                    Guaranteed Results or your Money Back
+                    </p>
                 </div>
                 
-                <div class="col-12 col-md-3 bg-info">
+                <div class="col-12 col-md-2 bg-info">
                     <h3>Trust Logo</h3>
                 </div>
                 
                 <div class="col-12 col-md-3 bg-danger">
-                    <h3>NavBar</h3>
+                    <div class="row">
+
+                        <div class="d-flex p-2">Home</div>
+                        <div class="d-flex p-2">About</div>
+                        <div class="d-flex p-2">Contact</div>
+                        <div class="d-flex p-2">FAQ</div>
+                    
+                    </div>
+                    
                 </div>
                 
                 
             </div> <!--header-->
             
             <div class="row">
+                
                 <div class="col-12 col-md-8 bg-secondary">
-                    Video
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                    </div> <!--vid-->
+                    <br>
+                    <button type="submit" class="btn btn-danger btn-lg btn-block">Get Your Free Jiujitsu Secrets</button>
+                    <br>
+                    
                 </div>
                 
                 <div class="col-12 col-md-4 bg-primary">
-                    Our Previous Work & Ressearch Covered in
+                    <div class="d-flex flex-column bg-primary justify-content-center">
+                      <div class="p-2"><p>Our Previous Work & Ressearch Covered in</p></div>
+                      <div class="p-2 bg-danger"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
+                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
+                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
+                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
+                    </div>
+                    
                 </div>
                 
             </div> <!--header-->
@@ -60,21 +85,124 @@
                 <div class="col bg-info">
                     
                     <div class="row">
-                        <div class="col bg-danger">
-                            For Readers
+                        <div class="col col-md-6 bg-danger">
+                            <h5>Release Myofascial Tension
+                            </h5>
+                            <h6>& Accelerate your Jiujitsu
+                            </h6>
+                            <i>Permanently release myofascial padlocks and cut your black belt time in half.</i>
+                            
+                            
+                            <p>
+                            &#10004; &nbsp; Learn to construct "mental databases" in your
+                            brain to remember virtually anything including
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Historical dates, facts & figures
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Scripts, speeches and monologues...
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Foreign Languages
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Learn to construct "mental databases" in your
+                            brain to remember virtually anything including
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; And even the contents of entire books...
+                            (If the above sounds crazy, but believe me this
+                            is a skill that can be learned...)
+                            </p>
                         </div>
-                    </div> <!--header-->
+                        
+                        <div class="col col-md-6 bg-success">
+                            <h5>Release Myofascial Tension
+                            </h5>
+                            <h6>& Accelerate your Jiujitsu
+                            </h6>
+                            <i>Permanently release myofascial padlocks and cut your black belt time in half.</i>
+                            
+                            <p>
+                            &#10004; &nbsp; Learn to construct "mental databases" in your
+                            brain to remember virtually anything including
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Historical dates, facts & figures
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Scripts, speeches and monologues...
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Foreign Languages
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; Learn to construct "mental databases" in your
+                            brain to remember virtually anything including
+                            </p>
+                            
+                            <p>
+                            &#10004; &nbsp; And even the contents of entire books...
+                            (If the above sounds crazy, but believe me this
+                            is a skill that can be learned...)
+                            </p>
+                        </div>
+                        
+                    </div> <!--readers row 1-->
                     
                     <div class="row">
+                        
                         <div class="col bg-primary">
-                            For Readers 2
+                            
+                            <h5>Here's how to Improve Your Memory Now:</h5>
+                            <hr>
+                            <p>
+                            Good memory ins't something you're born with. It's simply a SKILL...And it's somthng you can develop at any age(even if you've struggled with poorr memory all you life...)
+                            <br>
+                            All it takes is knowing a few simple (but unconentional) techniques..
+                            <br>
+                            And to see the sort of techniques I'm talking about, simply click the button below to your very own <a href="url">Memory Quick Start Toolkit</a> (TM) (at no cost) containing specific memory tips and techniques geared to your personal situation...
+                            </p>
+                            <br>
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Get Your Free Jiujitsu Secrets</button>
+                            <br>
+                            <small>We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
+                            
                         </div>
-                    </div> <!--header-->
+                        
+                    </div> <!--readers row 2-->
                     
                 </div>
                 
                 <div class="col-12 col-md-4 bg-secondary">
-                    Testimonials
+                    <h5>What People are Saying</h5>
+                    <hr>
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                    
+                    <br>
+                    
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                    
+                    <br>
+                    
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                    
                 </div>
                 
             </div> <!--header-->
