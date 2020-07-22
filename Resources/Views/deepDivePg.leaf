@@ -9,161 +9,179 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--        <link rel="stylesheet" href="/css/styles_3.css">-->
 
+        <style>
+            
+            .mybox {
+                border 2px solid black;
+                background-color white;
+            }
+        </style>
+
     </head>
     <body>
-            <div class="container-fluid d-flex flex-column">
-                <form action="" method="post">
+        <div class="container">
+            <form action="" method="post">
+                
+            <div class="row">
+                <div class="col bg-secondary">
+                    <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
+                </div>
+            </div> <!--header-->
+            
+            <div class="row">
+                <div class="col bg-info">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded nav-fill w-100">
+                        <a class="navbar-brand" href="#">Superfluid Jiujitsu</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="\#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Get Started</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div> <!--nav-->
+            
+            <div class="row">
+                <div class="col bg-success">
+                    <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
+                    <p>Free Jiujitsu Recovery Drills</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
+                </div> <!--Pic & Blurb-->
+                
+                <div class="col bg-success">
+                    <div class="row">
+                        <div class="col bg-primary">
+                            <p class="text-center">Enter Your Name and Email to Download the Free Kit</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col col-md-4 bg-primary py-3">
+                            <label for="firstName">Name</label><br>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+
+                            <label for="email">Email</label><br>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                            
+                            <label for="age">Age</label><br>
+                            <input type="number" class="form-control" id="age" name="age" required>
+                            
+                            <br>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="male" checked>Male
+                            </label>
+                            
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" value="female">Female
+                            </label>
+                        </div> <!--Contact Info-->
+                        
+                        <div class="col col-md-8 bg-secondary">
+                            <div class="row">
+                                <div class="col bg-danger">
+                                    <p class="text-center">Which of the following best describes you?</p>
+                                </div> <!--Best Describes? col-->
+                            </div> <!--Best Describes? row-->
+                            
+                            <div class="row">
+                                
+                                <div class="col bg-info py-3">
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                </div> <!--radio 1-->
+                                
+                                <div class="col bg-warning py-3">
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                    
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Elbow</label><br>
+                                </div> <!--radio 2-->
+                            </div> <!--radio row-->
+
+                        </div> <!--col best describe, radio, button, text area-->
+                    </div>
                     
                     <div class="row">
                         <div class="col bg-secondary py-3">
-                            <img src="/imgs/belt_banner_2.png" class="img-fluid rounded" alt="Responsive image">
-                        </div>
-                    </div> <!--header-->
-                
-                <div class="row">
-                    <div class="col bg-info py-3">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-                            <a class="navbar-brand" href="#">Superfluid Jiujitsu</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="\#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Get Started</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div> <!--nav-->
-                
-
-                
-                <div class="row">
-                    <div class="col bg-success">
-                        <img src="/imgs/jiujitsu_matrix_72.png" class="img-fluid rounded" alt="Responsive image">
-                        <p>Free Jiujitsu Recovery Drills</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Diam in arcu cursus euismod quis.</p>
-                    </div> <!--Pic & Blurb-->
-                    
-                    <div class="col bg-success">
-                        <div class="row">
-                            <div class="col bg-primary py-3">
-                                <input type="text" class="form-control" id="firstName" name="firstName" required>
-                                <label for="firstName">Name</label><br>
-                                    
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
-                                <label for="email">Email</label><br>
-                                    
-                                <input type="number" class="form-control" id="age" name="age" required>
-                                <label for="age">Age</label><br>
-                                    
-                                <input type="radio" id="male" name="gender" value="male" required>
-                                <label for="male">Male</label><br>
-                                                
-                                <input type="radio" id="female" name="gender" value="female" required>
-                                <label for="female">Female</label>
-                            </div> <!--Contact Info-->
-                            
-                            <div class="col bg-secondary">
-                                <div class="row">
-                                    <div class="col bg-danger">
-                                        Best Describes?
-                                    </div> <!--Best Describes? col-->
-                                </div> <!--Best Describes? row-->
-                                
-                                <div class="row">
-                                    
-                                    <div class="col bg-info py-3">
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                    </div> <!--radio 1-->
-                                    
-                                    <div class="col bg-warning py-3">
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                        
-                                        <input type="radio" id="male" name="gender" value="male" required>
-                                        <label for="male">Elbow</label><br>
-                                    </div> <!--radio 2-->
-                                </div> <!--radio row-->
-
-                            </div> <!--col best describe, radio, button, text area-->
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col bg-secondary py-3">
-                                
+                            <div class="mybox">
                                 <p>What parts of your body hurt or cause you concern as a result of Jiujitsu? And what prompted you to search for the answer today in particular?</p>
-                                <textarea class="form-control" rows="6" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
-                                </div>
-                                
-                                <button type="submit" class="btn btn-danger btn-lg btn-block">Free Jiujitsu Recovery Secrets!</button>
-                            </div> <!--text area col-->
-                        </div> <!--text area row-->
-                        
-                    </div>
-                </div> <!--main row-->
+                                <textarea class="form-control" rows="5" id="openEndedQuestion"  name="openEndedQuestion" required></textarea>
+                            </div>
+                        </div> <!--text area col-->
+                    </div> <!--text area row-->
+                    
+                    <div class="row">
+                        <div class="col bg-secondary">
+                            <button type="submit" class="btn btn-danger btn-lg btn-block">Free Jiujitsu Recovery Secrets!</button>
+                        </div> <!--text area col-->
+                    </div> <!--text area row-->
+                </div> <!--col-->
+            </div> <!--main row-->
+            
+            <div class="row">
+                <div class="col bg-warning py-3">
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                </div>
                 
-                <div class="row bg-primary">
-                    <div class="col bg-warning py-3">
-                        <p>Testimonial 1</p>
-                        <p>This stuff has made a major difference for me on the mats.</p>
-                        <p>- Dr Claw</p>
-                    </div>
-                    
-                    <div class="col bg-warning py-3">
-                        <p>Testimonial 1</p>
-                        <p>This stuff has made a major difference for me on the mats.</p>
-                        <p>- Dr Claw</p>
-                    </div>
-                    
-                    <div class="col bg-warning py-3">
-                        <p>Testimonial 1</p>
-                        <p>This stuff has made a major difference for me on the mats.</p>
-                        <p>- Dr Claw</p>
-                    </div>
-                </div> <!--testimonial row-->
-                 
-                </form>
-            </div> <!--container-->
+                <div class="col bg-warning py-3">
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                </div>
+                
+                <div class="col bg-warning py-3">
+                    <p>Testimonial 1</p>
+                    <p>This stuff has made a major difference for me on the mats.</p>
+                    <p>- Dr Claw</p>
+                </div>
+            </div> <!--testimonial row-->
+             
+            </form>
+        </div> <!--container-->
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
