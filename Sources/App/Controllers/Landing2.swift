@@ -22,6 +22,6 @@ class Landing2: RouteCollection
     
     func startSurvey(req: Request) -> Response {
         print("LandingPg: \(req.headers.description)")
-        return req.redirect(to: "/rank")
+        return req.redirect(to: "/dd")
     }
 }
