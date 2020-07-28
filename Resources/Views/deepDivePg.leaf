@@ -82,7 +82,7 @@
                             
                             <br>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="male" checked>Male
+                                <input type="radio" name="gender" value="male" required checked>Male
                             </label>
                             
                             <label class="radio-inline">
@@ -100,43 +100,43 @@
                             <div class="row">
                                 
                                 <div class="col bg-info py-3">
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" checked required>
+                                    <label for="male">Amateur Athlete</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" required>
+                                    <label for="male">Competitive Athlete</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" required>
+                                    <label for="male">Office Worker</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" required>
+                                    <label for="male">Trade Worker</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" required>
+                                    <label for="male">First Responder</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="category" value="male" required>
+                                    <label for="male">Elderly</label><br>
                                 </div> <!--radio 1-->
                                 
                                 <div class="col bg-warning py-3">
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" checked required>
+                                    <label for="male">Tight</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" required>
+                                    <label for="male">Sore</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" required>
+                                    <label for="male">Aches</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" required>
+                                    <label for="male">Restrictions</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" required>
+                                    <label for="male">Injured</label><br>
                                     
-                                    <input type="radio" id="male" name="gender" value="male" required>
-                                    <label for="male">Elbow</label><br>
+                                    <input type="radio" id="male" name="feel" value="male" required>
+                                    <label for="male">Nervous</label><br>
                                 </div> <!--radio 2-->
                             </div> <!--radio row-->
 
