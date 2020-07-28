@@ -15,6 +15,8 @@
                 border 2px solid black;
                 background-color white;
             }
+        
+
         </style>
 
     </head>
@@ -22,31 +24,34 @@
         <div class="container">
             <form action="" method="post">
                 
-            <div class="row">
+            <div class="row justify-content-center align-self-center">
                 <div class="col-12 col-md-3 bg-primary">
-                    <h4>Pain Free Jiujitsu</h4>
-                    <p class="text-nowrap">Become Superfluid</p>
+                    <h4 class="mb-0">Pain Free Jiujitsu </h4>
+                    <p class="text-nowrap mb-0">Become Superfluid</p>
                 </div>
                 
                 <div class="col-12 col-md-4 bg-danger">
-                    <p class="text-nowrap">
+                    <div class="d-flex flex-column">
+                    <p class="text-nowrap mb-0">
                     Improve your Mobility in 10 Days<br>
                     Transform your Movement Forever<br>
                     Guaranteed Results or your Money Back
                     </p>
+                    </div>
+
                 </div>
                 
                 <div class="col-12 col-md-2 bg-info">
-                    <h3>Trust Logo</h3>
+                    <h3 class="mb-0">Trust Logo</h3>
                 </div>
                 
                 <div class="col-12 col-md-3 bg-danger">
                     <div class="row">
 
-                        <div class="d-flex p-2">Home</div>
-                        <div class="d-flex p-2">About</div>
-                        <div class="d-flex p-2">Contact</div>
-                        <div class="d-flex p-2">FAQ</div>
+                        <div class="d-flex p-2 justify-content-between">Home</div>
+                        <div class="d-flex p-2 justify-content-between">About</div>
+                        <div class="d-flex p-2 justify-content-between">Contact</div>
+                        <div class="d-flex p-2 justify-content-between">FAQ</div>
                     
                     </div>
                     
