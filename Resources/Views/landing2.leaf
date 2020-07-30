@@ -16,33 +16,35 @@
                 background-color white;
             }
         
+            .mycontainer { border-radius: 6px; }
+        
 
         </style>
 
     </head>
     <body>
-        <div class="container h-100">
+        <div class="container h-100 mt-3">
             <form action="" method="post">
                 
-            <div class="row justify-content-center h-100">
-                <div class="col-12 col-md-3 bg-primary my-auto">
+            <div class="row justify-content-center h-100 bg-danger">
+                <div class="col-12 col-md-3 my-auto">
                     <h4 class="mb-0">Pain Free Jiujitsu </h4>
                     <p class="text-nowrap mb-0">Become Superfluid</p>
                 </div>
                 
-                <div class="col-12 col-md-4 bg-danger">
-                        <p class="text-nowrap mb-0">
+                <div class="col-12 col-md-4 ">
+                        <p class="text-nowrap mb-0"> <small>
                         Improve your Mobility in 10 Days<br>
                         Transform your Movement Forever<br>
-                        Guaranteed Results or your Money Back
+                        Guaranteed Results or your Money Back</small>
                         </p>
                 </div>
                 
-                <div class="col-12 col-md-2 bg-info">
+                <div class="col-12 col-md-1">
                     <h3 class="mb-0">Trust Logo</h3>
                 </div>
                 
-                <div class="col-12 col-md-3 bg-danger my-auto">
+                <div class="col-12 col-md-4 my-auto">
                     <div class="row">
 
                         <div class="d-flex p-2 justify-content-between">Home</div>
@@ -61,7 +63,7 @@
                 
                 <div class="col-12 col-md-8 bg-secondary">
                     
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-16by9 mt-3">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
                     </div> <!--vid-->
                     <br>
