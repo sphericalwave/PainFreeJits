@@ -2,244 +2,251 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Pain Free Jiujitsu</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <title>Pain Free Jiujitsu</title>
                     
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<!--        <link rel="stylesheet" href="/css/styles_3.css">-->
-
-        <style>
-            
-            .mybox {
-                border 2px solid black;
-                background-color white;
-            }
-        
-            .mycontainer { border-radius: 6px; }
-            
-            .top-buffer { margin-top: 18px; }
-            
-            .translucent { opacity: 0.5; }
-        
-
-        </style>
-
-    </head>
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+                        
+                        <style>
+                            
+                            .mybox {
+                                border 2px solid black;
+                                background-color white;
+                            }
+                        
+                        .mycontainer { border-radius: 6px; }
+                        
+                        .top-buffer { margin-top: 18px; }
+                        
+                        .translucent { opacity: 0.5; }
+                        
+                        
+                            </style>
+                        
+                        </head>
     <body>
         <div class="container-fluid">
             <form action="" method="post">
                 
-            <div class="row justify-content-center h-100 bg-danger">
-                <div class="col-12 col-md-3 my-auto">
-                    <h4 class="mb-0">Pain Free Jiujitsu </h4>
-                    <p class="text-nowrap mb-0">Become Superfluid</p>
-                </div>
-                
-                <div class="col-12 col-md-5 ">
+                <div class="row justify-content-center h-100 bg-danger">
+                    <div class="col-12 col-md-3 my-auto">
+                        <h4 class="mb-0">Pain Free Jiujitsu </h4>
+                        <p class="text-nowrap mb-0">Become Superfluid</p>
+                    </div>
+                    
+                    <div class="col-12 col-md-5 ">
                         <p class="text-nowrap mb-0"> <small>
-                        Improve your Mobility in 10 Days<br>
-                        Transform your Movement Forever<br>
-                        Guaranteed Results or your Money Back</small>
+                            Improve your Mobility in 10 Days<br>
+                            Transform your Movement Forever<br>
+                            Guaranteed Results or your Money Back</small>
                         </p>
-                </div>
-                
-                <div class="col-12 col-md-4 my-auto">
-                    <div class="row text-center">
-
-                        <div class="col-3 p-2">Home</div>
-                        <div class="col-3 p-2">About</div>
-                        <div class="col-3 p-2">Contact</div>
-                        <div class="col-3 p-2">FAQ</div>
-                    
                     </div>
                     
-                </div>
-                
-                
-            </div> <!--header-->
-            
-            <div class="row">
-                
-                <div class="col-12 col-md-8 bg-secondary">
-                    
-                    <div class="embed-responsive embed-responsive-16by9 mt-3 shadow">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-                    </div> <!--vid-->
-                    <br>
-                    <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
-                    <br>
-                    
-                </div>
-                
-                <div class="col-12 col-md-4 bg-primary">
-                    
-                    <div class="row ">
-                        <div class="col-12 text-center">
-                            <h6 class="pt-2"> Previously Covered in ... </h4>
-                        </div>
-                        <div class="col-6 col-md-12">
-                            <div class="bd-example p-1">
-                              <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-12">
-                            <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
-
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-12">
-                            <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
-
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-12">
-                            <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--row-->
-            </div> <!-- covered in -->
-            
-            <div class="row">
-                <div class="col bg-info">
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-6 bg-danger">
-                            <h5 class="pt-2">Release Myofascial Tension
-                            </h5>
-                            <h6>& Accelerate your Jiujitsu
-                            </h6>
-                            <i>Permanently release myofascial padlocks and cut your black belt time in half.</i>
+                    <div class="col-12 col-md-4 my-auto">
+                        <div class="row text-center">
                             
+                            <div class="col-3 p-2">Home</div>
+                            <div class="col-3 p-2">About</div>
+                            <div class="col-3 p-2">Contact</div>
+                            <div class="col-3 p-2">FAQ</div>
                             
-                            <p>
-                            &#10004; &nbsp; Learn to construct "mental databases" in your
-                            brain to remember virtually anything including
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Historical dates, facts & figures
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Scripts, speeches and monologues...
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Foreign Languages
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Learn to construct "mental databases" in your
-                            brain to remember virtually anything including
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; And even the contents of entire books...
-                            (If the above sounds crazy, but believe me this
-                            is a skill that can be learned...)
-                            </p>
                         </div>
                         
-                        <div class="col-12 col-md-6 bg-success">
+                    </div>
+                    
+                    
+                </div> <!--header-->
+                
+                <div class="row">
+                    
+                    <div class="col-12 col-md-8 bg-secondary">
+                                <div class="embed-responsive embed-responsive-16by9 mt-3 shadow">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                                </div> <!--vid-->
+                                
+                                <br>
+                                <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
+                                <br>
+                    </div>
+                    
+                    <div class="col-12 col-md-4 bg-primary">
+                        
+                        <div class="row ">
                             
-                            <div class="card bg-light my-3">
-                              <div class="card-header">Release Myofascial Tension & Accelerate your Jiujitsu</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Permanently release myofascial padlocks and cut your black belt time in half.</h5>
+                            <div class="col-12 text-center">
+                                
+                                <h6 class="pt-2"> Previously Covered in ... </h4>
+                                    </div>
+                            <div class="col-6 col-md-12">
+                                <div class="bd-example p-1">
+                                    <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
+                                        </div>
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <div class="bd-example p-1">
+                                    <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
+                                        
+                                        </div>
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <div class="bd-example p-1">
+                                    <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
+                                        
+                                        </div>
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <div class="bd-example p-1">
+                                    <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
+                                        </div>
+
+                            </div>
+                            </div>
+                    </div> <!--row-->
+                </div> <!-- covered in -->
+                
+                <div class="row">
+                    <div class="col bg-info">
+                        
+                        <div class="row">
+                            
+                            <div class="col-12 col-md-6 bg-danger">
+                                
+                                <div class="card bg-light my-3">
+                                    <div class="card-header">Release Myofascial Tension & Accelerate your Jiujitsu</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Permanently release myofascial padlocks and cut your black belt time in half.</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Learn to construct "mental databases" in your
+                                        brain to remember virtually anything including
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Historical dates, facts & figures
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Scripts, speeches and monologues...
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Foreign Languages
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Learn to construct "mental databases" in your
+                                        brain to remember virtually anything including
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; And even the contents of entire books...
+                                        (If the above sounds crazy, but believe me this
+                                        is a skill that can be learned...)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-md-6 bg-success">
+                                
+                                <div class="card bg-light my-3">
+                                    <div class="card-header">Release Myofascial Tension & Accelerate your Jiujitsu</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Permanently release myofascial padlocks and cut your black belt time in half.</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Learn to construct "mental databases" in your
+                                        brain to remember virtually anything including
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Historical dates, facts & figures
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Scripts, speeches and monologues...
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Foreign Languages
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; Learn to construct "mental databases" in your
+                                        brain to remember virtually anything including
+                                        </p>
+                                        
+                                        <p class="card-text">
+                                        &#10004; &nbsp; And even the contents of entire books...
+                                        (If the above sounds crazy, but believe me this
+                                        is a skill that can be learned...)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> <!--readers row 1-->
+                        
+                        <div class="row">
+                            
+                            <div class="col bg-primary">
+                                
+                                <div class="card bg-light my-3">
+                                    <div class="card-header">Here's how to Improve Your Memory Now:</div>
+                                    <div class="card-body">
+                                        <p class="my-2 card-text">
+                                        Good memory ins't something you're born with. It's simply a SKILL...And it's somthng you can develop at any age(even if you've struggled with poorr memory all you life...)
+                                        <br>
+                                        All it takes is knowing a few simple (but unconventional) techniques..
+                                        <br>
+                                        And to see the sort of techniques I'm talking about, simply click the button below to your very own <a href="url">Memory Quick Start Toolkit</a> (TM) (at no cost) containing specific memory tips and techniques geared to your personal situation...
+                                        </p>
+                                        <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
+                                        <small class="mb-2">We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
+                                    </div>
+                                </div> <!--last card-->
+                            </div>
+                            
+                        </div> <!--readers row 2-->
+                        
+                    </div>
+                    
+                    <div class="col-12 col-md-4 bg-secondary text-center">
+                        
+                        <h5 class="pt-2">What People are Saying</h5>
+                        <hr>
+                        
+                        <div class="card bg-light mb-3 shadow">
+                            <div class="card-header">Testimonial 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Light card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; Learn to construct "mental databases" in your
-                                brain to remember virtually anything including
-                                </p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; Historical dates, facts & figures
-                                </p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; Scripts, speeches and monologues...
-                                </p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; Foreign Languages
-                                </p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; Learn to construct "mental databases" in your
-                                brain to remember virtually anything including
-                                </p>
-                                
-                                <p class="card-text">
-                                &#10004; &nbsp; And even the contents of entire books...
-                                (If the above sounds crazy, but believe me this
-                                is a skill that can be learned...)
-                                </p>
-                              </div>
                             </div>
                         </div>
                         
-                    </div> <!--readers row 1-->
-                    
-                    <div class="row">
-                        
-                        <div class="col bg-primary">
-                            
-                            <h5 class="pt-3 mb-0">Here's how to Improve Your Memory Now:</h5>
-                            <hr class="my-1">
-                            <p class="my-2">
-                            Good memory ins't something you're born with. It's simply a SKILL...And it's somthng you can develop at any age(even if you've struggled with poorr memory all you life...)
-                            <br>
-                            All it takes is knowing a few simple (but unconventional) techniques..
-                            <br>
-                            And to see the sort of techniques I'm talking about, simply click the button below to your very own <a href="url">Memory Quick Start Toolkit</a> (TM) (at no cost) containing specific memory tips and techniques geared to your personal situation...
-                            </p>
-                            <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
-                            <small class="mb-2">We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
-                            
+                        <div class="card bg-light mb-3 shadow">
+                            <div class="card-header">Testimonial 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Light card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
                         
-                    </div> <!--readers row 2-->
+                        <div class="card bg-light mb-3 shadow">
+                            <div class="card-header">Testimonial 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Light card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
                     
-                </div>
+                </div> <!--header-->
                 
-                <div class="col-12 col-md-4 bg-secondary text-center">
-                    <h5 class="pt-2">What People are Saying</h5>
-                    <hr>
-
-                    <div class="card bg-light mb-3 shadow">
-                      <div class="card-header">Testimonial 1</div>
-                      <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-                    
-                    <div class="card bg-light mb-3 shadow">
-                      <div class="card-header">Testimonial 1</div>
-                      <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-                    
-                    <div class="card bg-light mb-3 shadow">
-                      <div class="card-header">Testimonial 1</div>
-                      <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-                    
-                </div>
-                
-            </div> <!--header-->
-             
             </form>
         </div> <!--container-->
         
