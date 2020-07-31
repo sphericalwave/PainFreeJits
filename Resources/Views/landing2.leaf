@@ -19,6 +19,8 @@
             .mycontainer { border-radius: 6px; }
             
             .top-buffer { margin-top: 18px; }
+            
+            .translucent { opacity: 0.5; }
         
 
         </style>
@@ -74,28 +76,28 @@
                     
                     <div class="row ">
                         <div class="col-12 text-center">
-                            <h4 class="pt-1"> Previously Covered in ... </h4>
+                            <h6 class="pt-2"> Previously Covered in ... </h4>
                         </div>
                         <div class="col-6 col-md-12">
                             <div class="bd-example p-1">
-                              <img class="img-fluid mx-auto d-block" src="https://picsum.photos/99/99">
+                              <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
                             </div>
                         </div>
                         <div class="col-6 col-md-12">
                             <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/99/99">
+                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
 
                             </div>
                         </div>
                         <div class="col-6 col-md-12">
                             <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/99/99">
+                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
 
                             </div>
                         </div>
                         <div class="col-6 col-md-12">
                             <div class="bd-example p-1">
-                                <img class="img-fluid mx-auto d-block" src="https://picsum.photos/99/99">
+                                <img class="img-fluid mx-auto d-block translucent" src="https://picsum.photos/99/99">
                             </div>
                         </div>
                     </div>
@@ -107,7 +109,7 @@
                     
                     <div class="row">
                         <div class="col col-md-6 bg-danger">
-                            <h5>Release Myofascial Tension
+                            <h5 class="pt-2">Release Myofascial Tension
                             </h5>
                             <h6>& Accelerate your Jiujitsu
                             </h6>
@@ -144,39 +146,42 @@
                         </div>
                         
                         <div class="col col-md-6 bg-success">
-                            <h5>Release Myofascial Tension
-                            </h5>
-                            <h6>& Accelerate your Jiujitsu
-                            </h6>
-                            <i>Permanently release myofascial padlocks and cut your black belt time in half.</i>
                             
-                            <p>
-                            &#10004; &nbsp; Learn to construct "mental databases" in your
-                            brain to remember virtually anything including
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Historical dates, facts & figures
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Scripts, speeches and monologues...
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Foreign Languages
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; Learn to construct "mental databases" in your
-                            brain to remember virtually anything including
-                            </p>
-                            
-                            <p>
-                            &#10004; &nbsp; And even the contents of entire books...
-                            (If the above sounds crazy, but believe me this
-                            is a skill that can be learned...)
-                            </p>
+                            <div class="card bg-light my-3">
+                              <div class="card-header">Release Myofascial Tension & Accelerate your Jiujitsu</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Permanently release myofascial padlocks and cut your black belt time in half.</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; Learn to construct "mental databases" in your
+                                brain to remember virtually anything including
+                                </p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; Historical dates, facts & figures
+                                </p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; Scripts, speeches and monologues...
+                                </p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; Foreign Languages
+                                </p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; Learn to construct "mental databases" in your
+                                brain to remember virtually anything including
+                                </p>
+                                
+                                <p class="card-text">
+                                &#10004; &nbsp; And even the contents of entire books...
+                                (If the above sounds crazy, but believe me this
+                                is a skill that can be learned...)
+                                </p>
+                              </div>
+                            </div>
                         </div>
                         
                     </div> <!--readers row 1-->
@@ -185,19 +190,17 @@
                         
                         <div class="col bg-primary">
                             
-                            <h5>Here's how to Improve Your Memory Now:</h5>
-                            <hr>
-                            <p>
+                            <h5 class="pt-3 mb-0">Here's how to Improve Your Memory Now:</h5>
+                            <hr class="my-1">
+                            <p class="my-2">
                             Good memory ins't something you're born with. It's simply a SKILL...And it's somthng you can develop at any age(even if you've struggled with poorr memory all you life...)
                             <br>
-                            All it takes is knowing a few simple (but unconentional) techniques..
+                            All it takes is knowing a few simple (but unconventional) techniques..
                             <br>
                             And to see the sort of techniques I'm talking about, simply click the button below to your very own <a href="url">Memory Quick Start Toolkit</a> (TM) (at no cost) containing specific memory tips and techniques geared to your personal situation...
                             </p>
-                            <br>
                             <button type="submit" class="btn btn-danger btn-lg btn-block">Get Your Free Jiujitsu Secrets</button>
-                            <br>
-                            <small>We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
+                            <small class="mb-2">We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
                             
                         </div>
                         
@@ -205,8 +208,8 @@
                     
                 </div>
                 
-                <div class="col-12 col-md-4 bg-secondary">
-                    <h5>What People are Saying</h5>
+                <div class="col-12 col-md-4 bg-secondary text-center">
+                    <h5 class="pt-2">What People are Saying</h5>
                     <hr>
 
                     <div class="card bg-light mb-3" style="max-width: 18rem;">
