@@ -17,6 +17,8 @@
             }
         
             .mycontainer { border-radius: 6px; }
+            
+            .top-buffer { margin-top: 18px; }
         
 
         </style>
@@ -69,17 +71,16 @@
                 </div>
                 
                 <div class="col-12 col-md-4 bg-primary">
-                    <div class="d-flex flex-column bg-primary justify-content-center">
-                      <div class="p-2"><p>Our Previous Work & Ressearch Covered in</p></div>
-                      <div class="p-2 bg-danger"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
-                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
-                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
-                      <div class="p-2"><img class="mx-auto d-block" src="https://picsum.photos/50/50"></div>
-                    </div>
                     
-                </div>
-                
-            </div> <!--header-->
+                    <div class="row">
+                        <div class="col-6"><img class="img-fluid m-3" src="https://picsum.photos/200/200"></div>
+                        <div class="col-6"><img class="img-fluid m-3" src="https://picsum.photos/200/200"></div>
+
+                        <div class="col-6"><img class="img-fluid m-3" src="https://picsum.photos/200/200"></div>
+                        <div class="col-6"><img class="img-fluid m-3" src="https://picsum.photos/200/200"></div>
+                    </div>
+                </div> <!--row-->
+            </div> <!-- covered in -->
             
             <div class="row">
                 <div class="col bg-info">
