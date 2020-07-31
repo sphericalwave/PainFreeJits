@@ -63,11 +63,11 @@
                 
                 <div class="col-12 col-md-8 bg-secondary">
                     
-                    <div class="embed-responsive embed-responsive-16by9 mt-3">
+                    <div class="embed-responsive embed-responsive-16by9 mt-3 shadow">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
                     </div> <!--vid-->
                     <br>
-                    <button type="submit" class="btn btn-danger btn-lg btn-block">Get Your Free Jiujitsu Secrets</button>
+                    <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
                     <br>
                     
                 </div>
@@ -199,7 +199,7 @@
                             <br>
                             And to see the sort of techniques I'm talking about, simply click the button below to your very own <a href="url">Memory Quick Start Toolkit</a> (TM) (at no cost) containing specific memory tips and techniques geared to your personal situation...
                             </p>
-                            <button type="submit" class="btn btn-danger btn-lg btn-block">Get Your Free Jiujitsu Secrets</button>
+                            <button type="submit" class="btn btn-danger btn-lg btn-block shadow">Get Your Free Jiujitsu Secrets</button>
                             <small class="mb-2">We will never rent, sell or share your information and you can unsubscribe at anytime. Yuo can read our entire <a href="url">privacy policy</a>  here.</small>
                             
                         </div>
@@ -212,7 +212,7 @@
                     <h5 class="pt-2">What People are Saying</h5>
                     <hr>
 
-                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card bg-light mb-3 shadow">
                       <div class="card-header">Testimonial 1</div>
                       <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
@@ -220,7 +220,7 @@
                       </div>
                     </div>
                     
-                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card bg-light mb-3 shadow">
                       <div class="card-header">Testimonial 1</div>
                       <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
@@ -228,7 +228,7 @@
                       </div>
                     </div>
                     
-                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card bg-light mb-3 shadow">
                       <div class="card-header">Testimonial 1</div>
                       <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
