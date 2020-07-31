@@ -32,7 +32,7 @@
                     <p class="text-nowrap mb-0">Become Superfluid</p>
                 </div>
                 
-                <div class="col-12 col-md-4 ">
+                <div class="col-12 col-md-5 ">
                         <p class="text-nowrap mb-0"> <small>
                         Improve your Mobility in 10 Days<br>
                         Transform your Movement Forever<br>
@@ -40,17 +40,13 @@
                         </p>
                 </div>
                 
-                <div class="col-12 col-md-1">
-                    <h3 class="mb-0">Trust Logo</h3>
-                </div>
-                
                 <div class="col-12 col-md-4 my-auto">
-                    <div class="row">
+                    <div class="row text-center">
 
-                        <div class="d-flex p-2 justify-content-between">Home</div>
-                        <div class="d-flex p-2 justify-content-between">About</div>
-                        <div class="d-flex p-2 justify-content-between">Contact</div>
-                        <div class="d-flex p-2 justify-content-between">FAQ</div>
+                        <div class="col-3 p-2">Home</div>
+                        <div class="col-3 p-2">About</div>
+                        <div class="col-3 p-2">Contact</div>
+                        <div class="col-3 p-2">FAQ</div>
                     
                     </div>
                     
@@ -191,21 +187,30 @@
                 <div class="col-12 col-md-4 bg-secondary">
                     <h5>What People are Saying</h5>
                     <hr>
-                    <p>Testimonial 1</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Dr Claw</p>
+
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Testimonial 1</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
                     
-                    <br>
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Testimonial 1</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
                     
-                    <p>Testimonial 1</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Dr Claw</p>
-                    
-                    <br>
-                    
-                    <p>Testimonial 1</p>
-                    <p>This stuff has made a major difference for me on the mats.</p>
-                    <p>- Dr Claw</p>
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Testimonial 1</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
                     
                 </div>
                 
