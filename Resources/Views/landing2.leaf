@@ -108,7 +108,7 @@
                 <div class="col bg-info">
                     
                     <div class="row">
-                        <div class="col col-md-6 bg-danger">
+                        <div class="col-12 col-md-6 bg-danger">
                             <h5 class="pt-2">Release Myofascial Tension
                             </h5>
                             <h6>& Accelerate your Jiujitsu
@@ -145,7 +145,7 @@
                             </p>
                         </div>
                         
-                        <div class="col col-md-6 bg-success">
+                        <div class="col-12 col-md-6 bg-success">
                             
                             <div class="card bg-light my-3">
                               <div class="card-header">Release Myofascial Tension & Accelerate your Jiujitsu</div>
